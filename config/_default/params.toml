@@ -23,6 +23,7 @@ replyByEmail = false
 disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
+disableImageZoom = true
 # backgroundImageWidth = 1200
 
 # Quote request destinations. WhatsApp number must include country code, without + or spaces.

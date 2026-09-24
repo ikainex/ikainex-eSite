@@ -1,7 +1,6 @@
 {{ define "main" }}
   {{ .Scratch.Set "scope" "list" }}
-
-  {{/* Header (same as default list header) */}}
+  {{ if ne .Params.showTitle false }}
   <header>
     {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
@@ -11,8 +10,7 @@
       {{ partial "article-meta/list.html" (dict "context" . "scope" "single") }}
     </div>
   </header>
-
-  {{/* Description (markdown content) - only render .Content and skip the automatic .Pages listing */}}
+  {{ end }}
   {{ $enableToc := .Params.showTableOfContents | default (site.Params.list.showTableOfContents | default false) }}
   {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
   {{ $tocMargin := cond $showToc "mt-12" "mt-0" }}
@@ -20,16 +18,9 @@
   <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]">
     <section class="{{ $tocMargin }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
       {{ if $showToc }}
-        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
-          <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
-            {{ partial "toc.html" . }}
-          </div>
-        </div>
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs"><div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">{{ partial "toc.html" . }}</div></div>
       {{ end }}
-      <div class="eboards-content min-w-0 min-h-0 flex-1 w-full max-w-none">
-        {{ .Content }}
-      </div>
+      <div class="eboards-content min-w-0 min-h-0 flex-1 w-full max-w-none">{{ .Content }}</div>
     </section>
   </div>
-
 {{ end }}

@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ $style := resources.Get "css/etutorials.css" | minify | fingerprint }}
+  <style>{{ $style.Content | safeCSS }}</style>
+
+  <div class="ikx-etutorials">
+    {{ partial "eTutorials/hero.html" . }}
+    {{ partial "eTutorials/series.html" . }}
+    {{ partial "eTutorials/footer-strip.html" . }}
+  </div>
+{{ end }}

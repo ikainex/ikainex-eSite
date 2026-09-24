@@ -1,0 +1,881 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63558&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>Motor Control Tutorials &middot; Ikainex Technologies</title>
+    <meta name="title" content="Motor Control Tutorials &middot; Ikainex Technologies">
+  
+
+  
+  
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    <meta name="description" content="Motor driver and control tutorials for embedded system projects.">
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:63558/etutorials/motor-control/">
+  
+  
+    
+      <link rel="alternate" type="application/rss+xml" href="/etutorials/motor-control/index.xml" title="Ikainex Technologies" />
+  
+
+  
+  
+    <meta name="author" content="Ikainex&amp;trade;">
+  
+  
+
+  
+  <meta property="og:url" content="http://localhost:63558/etutorials/motor-control/">
+  <meta property="og:site_name" content="Ikainex Technologies">
+  <meta property="og:title" content="Motor Control Tutorials">
+  <meta property="og:description" content="Motor driver and control tutorials for embedded system projects.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Motor Control Tutorials">
+  <meta name="twitter:description" content="Motor driver and control tutorials for embedded system projects.">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.74500ab50d0969469c01a82ae368e86a73f81dbf5ff3325b08cc7945fbe1c8c5c39ac18febed2068613a2521fffe2df1e3765444f16d4632dace3f4d6ebd340f.css"
+    integrity="sha512-dFAKtQ0JaUacAagq42joanP4Hb9f8zJbCMx5RfvhyMXDmsGP6&#43;0gaGE6JSH//i3x43ZURPFtRjLazj9Nbr00Dw==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.ecde4393b7348405774ad47459b74f73673ea7e170d83b1858d04fa1ec8330281a5fb97d2d868e6411fbba964b8f2bc5b6dbabcc4115672779f264450dbd7f07.js"
+      integrity="sha512-7N5Dk7c0hAV3StR0WbdPc2c&#43;p&#43;Fw2DsYWNBPoeyDMCgaX7l9LYaOZBH7upZLjyvFtturzEEVZyd58mRFDb1/Bw=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "eTutorials",
+    "name": "Motor Control Tutorials",
+    "headline": "Motor Control Tutorials",
+    "description": "Motor driver and control tutorials for embedded system projects.",
+    "inLanguage": "en",
+    "url" : "http://localhost:63558/etutorials/motor-control/",
+    "author" : {
+      "@type": "Person",
+      "name": "Ikainex\u0026trade;"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "60"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <body class="flex flex-col min-h-screen leading-7 w-full px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]">
+      
+        <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 bg-neutral dark:bg-neutral-800 z-100">
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+  <div>
+    <a href="/" class="ik-navbar-logo flex items-center" aria-label="Ikainex Technologies home">
+      <span class="sr-only">Ikainex Technologies</span>
+      <img src="/img/logo/ikainex_brand_logo_black.svg" width="220" height="66" class="logo ik-navbar-logo-light object-contain object-left nozoom" alt="">
+      <img src="/img/logo/ikainex_brand_logo_white.svg" width="220" height="66" class="logo ik-navbar-logo-dark object-contain object-left nozoom" alt="">
+    </a>
+  </div>
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+    
+      
+  
+    <a
+      href="/eboards/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="eBoards"
+      title="eBoards">
+      
+      
+        <span class="text-base font-medium break-normal">
+          eBoards
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/eblogs/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="eBlogs"
+      title="eBlogs">
+      
+      
+        <span class="text-base font-medium break-normal">
+          eBlogs
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/elearn/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="eLearn"
+      title="eLearn">
+      
+      
+        <span class="text-base font-medium break-normal">
+          eLearn
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/etutorials/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="eTutorials"
+      title="eTutorials">
+      
+      
+        <span class="text-base font-medium break-normal">
+          eTutorials
+        </span>
+      
+    </a>
+  
+
+    
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label for="mobile-menu-toggle" class="flex items-center justify-center cursor-pointer bf-icon-color-hover">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+    </label>
+
+    <div
+      role="dialog"
+      aria-modal="true"
+      style="scrollbar-gutter: stable;"
+      class="fixed inset-0 z-50 invisible overflow-y-auto px-6 py-20 opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100 bg-neutral-50/97 dark:bg-neutral-900/99
+      bf-scrollbar">
+      <label
+        for="mobile-menu-toggle"
+        class="fixed end-8 top-5 flex items-center justify-center z-50 h-12 w-12 cursor-pointer select-none rounded-full bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </label>
+      <nav class="mx-auto max-w-md space-y-6">
+        
+  
+    
+    <div class="px-2">
+      <a
+        href="/eboards/"
+        aria-label="eBoards"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="eBoards" class="text-2xl font-bold tracking-tight">
+          eBoards
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href="/eblogs/"
+        aria-label="eBlogs"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="eBlogs" class="text-2xl font-bold tracking-tight">
+          eBlogs
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href="/elearn/"
+        aria-label="eLearn"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="eLearn" class="text-2xl font-bold tracking-tight">
+          eLearn
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href="/etutorials/"
+        aria-label="eTutorials"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="eTutorials" class="text-2xl font-bold tracking-tight">
+          eTutorials
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+
+        
+  
+
+        
+  
+
+      </nav>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+      
+    </div>
+    <div class="relative flex flex-col grow w-full">
+      <main id="main-content" class="grow">
+        <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]">
+          
+  
+  <style>.ikx-etutorials{--ikx-navy:#0b2338;--ikx-blue:#1ca3f2;--ikx-blue-deep:#1a87d9;--ikx-green:#2abf8d;--ikx-gray:#dfeaf7;--ikx-ink:#122b4d;--ikx-muted:#64748b;--ikx-accent:#2563eb;--ikx-accent-soft:#e7f0ff;--ikx-border:rgba(100, 116, 139, 0.22);--ikx-surface:rgba(148, 163, 184, 0.08);--ikx-card:rgba(255, 255, 255, 0.38);--ikx-text:var(--ikx-ink);--ikx-font:inherit;color:var(--ikx-text);background:0 0;font-family:var(--ikx-font);margin:0 auto;max-width:1600px}.dark .ikx-etutorials{--ikx-ink:#e7eefb;--ikx-muted:#a6b4c9;--ikx-accent:#76a9ff;--ikx-accent-soft:rgba(59, 130, 246, 0.16);--ikx-border:rgba(148, 163, 184, 0.25);--ikx-surface:rgba(148, 163, 184, 0.08);--ikx-card:rgba(15, 23, 42, 0.5);--ikx-text:var(--ikx-ink)}.ikx-etutorials *{box-sizing:border-box}.ikx-etutorials a{text-decoration:none}.ikx-etutorials img{max-width:100%;display:block}.ikx-hero{display:grid;grid-template-columns:minmax(0,.96fr)minmax(0,1.35fr);align-items:center;min-height:500px;padding:0 clamp(1rem,4vw,3.5rem);background:radial-gradient(circle at 80% 20%,rgba(96,165,250,.18),transparent 35%),linear-gradient(135deg,var(--ikx-surface),transparent);border:1px solid var(--ikx-border);border-radius:1rem}.ikx-hero-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:1.5rem 0 2rem}.ikx-eyebrow-pill{display:inline-flex;align-items:center;gap:.7rem;padding:.45rem 1rem .5rem;border-radius:999px;background:linear-gradient(135deg,var(--ikx-accent),var(--ikx-blue-deep));color:#fff;font-size:.85rem;font-weight:800;letter-spacing:-.02em}.ikx-play-icon{display:grid;place-items:center;width:1.1rem;height:1.1rem;border-radius:50%;background:#fff;color:#1079db;font-size:.56rem}.ikx-hero h1{margin:1.15rem 0 1.1rem;max-width:560px;color:var(--ikx-ink);font-size:clamp(2.7rem,4vw,5.2rem);line-height:.96;letter-spacing:-.06em;font-weight:800}.ikx-hero-description{max-width:720px;margin:0;color:var(--ikx-muted);font-size:clamp(1rem,1.2vw,1.2rem);line-height:1.55}.ikx-hero-note{display:flex;align-items:center;gap:.8rem;margin-top:1.2rem;color:var(--ikx-muted);font-size:1.05rem;font-style:italic;font-weight:600}.ikx-hero-note>span{width:2.5rem;height:4px;border-radius:999px;background:#7fd3ff}.ikx-hero-visual{display:flex;align-items:center;justify-content:center;min-height:440px;padding:1rem 0 1.5rem}.ikx-hero-visual img{width:min(100%,870px);height:auto;object-fit:contain}.ikx-series-section{padding:1.8rem 0 1.2rem;background:0 0}.ikx-section-heading{margin-bottom:1.5rem}.ikx-heading-line,.ikx-section-heading h2,.ikx-section-heading p{display:none}.ikx-series-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}.ikx-series-card{border:1px solid var(--ikx-border);border-radius:1.15rem;padding:1.2rem 1.2rem .9rem;overflow:hidden}.ikx-series-automotive{background:linear-gradient(135deg,#f0faff 0%,#edf6ff 100%)}.ikx-series-motor{background:linear-gradient(135deg,#f1fcf9 0%,#edfaf5 100%)}.ikx-series-main{display:grid;grid-template-columns:minmax(0,1.16fr)minmax(180px,.84fr);align-items:center;gap:.7rem}.ikx-series-title-row{display:flex;align-items:flex-start;gap:.9rem}.ikx-series-icon{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--ikx-blue);color:#fff;font-size:1.65rem;flex-shrink:0}.ikx-series-motor .ikx-series-icon{background:var(--ikx-green)}.ikx-series-copy h3{margin:0 0 .35rem;color:#104a7b;font-size:clamp(1.8rem,2.1vw,2.8rem);line-height:1;letter-spacing:-.05em;font-weight:800}.ikx-series-copy p{margin:0;color:#285a8d;font-size:.96rem;line-height:1.5}.ikx-tag-list{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.1rem}.ikx-tag-list span{display:inline-flex;align-items:center;padding:.38rem .7rem;border-radius:999px;background:rgba(71,158,234,.12);color:#117bd5;font-size:.72rem;font-weight:700}.ikx-series-motor .ikx-tag-list span{background:rgba(69,190,131,.12);color:#188f63}.ikx-series-button{display:inline-flex;align-items:center;gap:.8rem;padding:.72rem 1.2rem;border-radius:999px;background:var(--ikx-blue);color:#fff!important;font-size:.82rem;font-weight:800}.ikx-series-motor .ikx-series-button{background:var(--ikx-green)}.ikx-series-products{display:flex;align-items:center;justify-content:center;flex-direction:column;min-width:0}.ikx-series-products img{width:100%;max-width:320px;height:135px;object-fit:contain}.ikx-product-labels{display:flex;align-items:center;justify-content:center;gap:1.2rem;width:100%;margin-top:.1rem;color:#0d7ad9;font-size:.68rem;font-weight:800}.ikx-series-motor .ikx-product-labels{color:#169364}.ikx-featured{padding-top:.9rem;margin-top:1.1rem;border-top:1px solid rgba(129,169,203,.24)}.ikx-featured h4{margin:0 0 .7rem;color:#0f2e4d;font-size:1rem;font-weight:800;font-style:italic}.ikx-tutorial-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}.ikx-tutorial-item{display:flex;align-items:flex-start;gap:.7rem;padding:.45rem .5rem .55rem;border-right:1px solid rgba(113,161,206,.26);color:inherit}.ikx-tutorial-item:last-child{border-right:0}.ikx-tutorial-number{display:grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--ikx-blue);color:#fff;font-size:.7rem;font-weight:800;flex-shrink:0}.ikx-series-motor .ikx-tutorial-number{background:var(--ikx-green)}.ikx-tutorial-content{display:flex;flex-direction:column;gap:.2rem;min-width:0}.ikx-tutorial-content strong{color:#0f2e4d;font-size:.72rem;line-height:1.35;font-weight:800}.ikx-tutorial-content small{color:#4e6d8b;font-size:.6rem;line-height:1.45}.ikx-tutorial-arrow{margin-left:auto;color:var(--ikx-blue);font-size:1.3rem;line-height:1}.ikx-series-motor .ikx-tutorial-arrow{color:var(--ikx-green)}.ikx-footer-strip{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.8rem;padding:1.1rem 1rem 1.5rem;color:#6d7f98;font-size:.78rem}.ikx-footer-strip a{color:#5d7190}.ikx-footer-strip i{display:block;width:1px;height:1rem;background:rgba(113,135,162,.4)}.ikx-footer-strip b{color:#6d7f98;font-weight:500}@media(max-width:980px){.ikx-brand{font-size:1.7rem}.ikx-hero{grid-template-columns:1fr;padding-bottom:2rem}.ikx-series-grid{grid-template-columns:1fr}.ikx-series-main{grid-template-columns:1fr}.ikx-tutorial-list{grid-template-columns:1fr}.ikx-tutorial-item{border-right:none;border-bottom:1px solid rgba(113,161,206,.26);padding-bottom:.7rem}.ikx-tutorial-item:last-child{border-bottom:none}}@media(max-width:700px){.ikx-nav{flex-wrap:wrap;gap:.6rem;padding:.8rem 1rem}.ikx-nav-links{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:.3rem}.ikx-hero{min-height:400px}.ikx-hero-copy{padding-top:1.2rem}.ikx-hero h1{font-size:2.5rem}.ikx-section-heading h2{font-size:2.3rem}.ikx-series-card{padding:.9rem}}</style>
+
+  <div class="ikx-etutorials">
+    
+
+<section class="ikx-hero">
+  <div class="ikx-hero-copy">
+    <div class="ikx-eyebrow-pill">
+      <span class="ikx-play-icon" aria-hidden="true">▶</span>
+      eTutorials
+    </div>
+
+    <h1>Build Real Projects.<br>Learn by Doing.</h1>
+
+    <p class="ikx-hero-description">
+      Step-by-step hardware tutorials, practical projects and hands-on guides
+      to help you master embedded systems, automotive and motor control applications.
+    </p>
+
+    <div class="ikx-hero-note">
+      <span aria-hidden="true"></span>
+      From setup to working projects
+    </div>
+  </div>
+
+  <div class="ikx-hero-visual">
+    
+      <img
+        src="/img/etutorials/landing-page/Build-with-Parth-and-Ved.png"
+        alt="Parth and Ved working together on an electronics project"
+        loading="eager">
+    
+  </div>
+</section>
+
+    <section class="ikx-series-section">
+  <div class="ikx-series-grid">
+    
+
+<article class="ikx-series-card ikx-series-automotive">
+  <div class="ikx-series-main">
+    <div class="ikx-series-copy">
+      <div class="ikx-series-title-row">
+        <div class="ikx-series-icon" aria-hidden="true">
+          🚘
+        </div>
+        <div>
+          <h3>Automotive Series</h3>
+          <p>Explore LIN and CAN communication with real-world automotive applications.</p>
+        </div>
+      </div>
+
+      <div class="ikx-tag-list">
+        <span>LIN</span><span>CAN</span><span>Diagnostics</span><span>Vehicle Networks</span>
+      </div>
+
+      <a class="ikx-series-button" href="/etutorials/automotive/">
+        Start Learning <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="ikx-series-products">
+      
+        <img
+          src="/img/etutorials/landing-page/boards.png"
+          alt="Ikainex LIN and CAN boards"
+          loading="lazy">
+      
+      <div class="ikx-product-labels">
+        <span>LIN</span><span>CAN</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ikx-featured">
+    <h4>Featured Tutorials</h4>
+    <div class="ikx-tutorial-list">
+      
+        <a class="ikx-tutorial-item" href="/etutorials/automotive/">
+          <span class="ikx-tutorial-number">1</span>
+          <span class="ikx-tutorial-content">
+            <strong>LIN Basics &amp; Setup</strong>
+            <small>Learn the fundamentals of LIN communication.</small>
+          </span>
+          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
+        </a>
+      
+        <a class="ikx-tutorial-item" href="/etutorials/automotive/">
+          <span class="ikx-tutorial-number">2</span>
+          <span class="ikx-tutorial-content">
+            <strong>CAN Bus Communication</strong>
+            <small>Configure and test CAN with real data.</small>
+          </span>
+          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
+        </a>
+      
+        <a class="ikx-tutorial-item" href="/etutorials/automotive/">
+          <span class="ikx-tutorial-number">3</span>
+          <span class="ikx-tutorial-content">
+            <strong>Automotive Project</strong>
+            <small>Build a simple vehicle network project.</small>
+          </span>
+          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
+        </a>
+      
+    </div>
+  </div>
+</article>
+
+
+    
+
+<article class="ikx-series-card ikx-series-motor">
+  <div class="ikx-series-main">
+    <div class="ikx-series-copy">
+      <div class="ikx-series-title-row">
+        <div class="ikx-series-icon" aria-hidden="true">
+          ▣
+        </div>
+        <div>
+          <h3>Motor Control Series</h3>
+          <p>Control motors and read real-world signals with our DC Motor Driver and ADC boards.</p>
+        </div>
+      </div>
+
+      <div class="ikx-tag-list">
+        <span>DC Motor Driver</span><span>ADC</span><span>Feedback</span><span>Control</span>
+      </div>
+
+      <a class="ikx-series-button" href="/etutorials/motor-control/">
+        Start Learning <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="ikx-series-products">
+      
+        <img
+          src="/img/etutorials/landing-page/boards.png"
+          alt="Ikainex DC Motor Driver and ADC boards"
+          loading="lazy">
+      
+      <div class="ikx-product-labels">
+        <span>DC Motor Driver</span><span>ADC</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ikx-featured">
+    <h4>Featured Tutorials</h4>
+    <div class="ikx-tutorial-list">
+      
+        <a class="ikx-tutorial-item" href="/etutorials/motor-control/">
+          <span class="ikx-tutorial-number">1</span>
+          <span class="ikx-tutorial-content">
+            <strong>DC Motor Driver Setup</strong>
+            <small>Configure and run your first motor.</small>
+          </span>
+          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
+        </a>
+      
+        <a class="ikx-tutorial-item" href="/etutorials/motor-control/">
+          <span class="ikx-tutorial-number">2</span>
+          <span class="ikx-tutorial-content">
+            <strong>Read Analog Data (ADC)</strong>
+            <small>Capture sensor data and process it.</small>
+          </span>
+          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
+        </a>
+      
+        <a class="ikx-tutorial-item" href="/etutorials/motor-control/">
+          <span class="ikx-tutorial-number">3</span>
+          <span class="ikx-tutorial-content">
+            <strong>Motor Control Project</strong>
+            <small>Build a closed-loop speed control project.</small>
+          </span>
+          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
+        </a>
+      
+    </div>
+  </div>
+</article>
+
+  </div>
+</section>
+
+    <footer class="ikx-footer-strip">
+  <span>Ikainex™</span>
+  <i aria-hidden="true"></i>
+  <a href="/learn/">Learn</a>
+  <b aria-hidden="true">•</b>
+  <a href="/etutorials/">Build</a>
+  <b aria-hidden="true">•</b>
+  <a href="/posts/">Innovate</a>
+</footer>
+
+  </div>
+
+        </div>
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main>
+      <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]"><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+      
+      
+        
+          
+          
+      
+      
+      
+      <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 ">
+        <ul class="flex list-none flex-col sm:flex-row">
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="https://github.com/ikainex"
+                title="">
+                
+                Github
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+  
+  
+    <p class="mt-6 border-t border-neutral-200 pt-4 text-center text-xs text-neutral-500 dark:border-neutral-700 dark:text-neutral-400">
+  Ikainex&trade; is a trademark of Ikainex Technologies. &copy; 2026 Ikainex Technologies. All rights reserved.
+</p>
+
+  
+</footer>
+</div>
+      <div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:63558/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

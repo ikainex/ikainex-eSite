@@ -1,127 +1,32 @@
-{{/* Hero */}}
-<div class="home-hero mb-12 text-center">
-  {{ $logoBlack := resources.Get "img/logo/ikainex_brand_logo_black.svg" }}
-  {{ $logoWhite := resources.Get "img/logo/ikainex_brand_logo_white.svg" }}
-  <h1 class="home-hero-title" style="font-weight: 500; margin-bottom: 0.75rem; margin-top: 2rem;">
-    <img class="home-hero-logo home-hero-logo-light" src="{{ $logoBlack.RelPermalink }}" alt="Ikainex Technologies" />
-    <img class="home-hero-logo home-hero-logo-dark" src="{{ $logoWhite.RelPermalink }}" alt="Ikainex Technologies" />
-  </h1>
-  <p class="home-hero-copy text-neutral-500 max-w-sm mx-auto leading-relaxed" style="margin-bottom: 2rem;">
-    Development boards, embedded hardware, and practical engineering resources for makers and teams.
-  </p>
-  <div class="home-hero-actions flex gap-3 justify-center">
-    {{ with .Site.GetPage "/eBoards" }}
-    <a href="{{ .RelPermalink }}" class="home-primary-action px-4 py-2 bg-neutral-900 dark:bg-neutral-100
-       text-white dark:text-neutral-900 rounded-lg text-sm">
-      Explore boards →
-    </a>
-    {{ end }}
-    {{ with .Site.GetPage "/eBlogs" }}
-    <a href="{{ .RelPermalink }}" class="home-secondary-action px-4 py-2 border border-neutral-200
-       dark:border-neutral-700 rounded-lg text-sm text-neutral-500">
-      Start learning
-    </a>
-    {{ end }}
-  </div>
+<div id="ik-home">
+  <main>
+    <section class="ik-hero"><div class="ik-wrap ik-hero-inner">
+      <div><h1>Boards you plug in. <span>Skills you keep.</span></h1>
+        <p class="ik-lead">Open-source add-on boards, and the lessons, tutorials and build notes that go with them.</p>
+        {{ with site.GetPage "/eBoards" }}<a class="ik-btn" href="{{ .RelPermalink }}">Explore boards</a>{{ end }}
+        {{ with site.GetPage "/eLearn" }}<a class="ik-btn ik-ghost" href="{{ .RelPermalink }}">Start learning</a>{{ end }}
+      </div>
+      <svg class="ik-pcb" viewBox="0 0 520 440" role="img" aria-label="A circuit board linking eBoards, eBlogs, eLearn and eTutorials">
+        <g class="ik-tr"><path d="M260 220H120V100"/><path d="M260 220H400V100"/><path d="M260 220H120V340"/><path d="M260 220H400V340"/></g>
+        <path class="ik-sig" d="M260 220H120V100"/><path class="ik-sig" d="M260 220H400V100"/><path class="ik-sig" d="M400 340V220H260"/><path class="ik-sig" d="M120 340V220H260"/>
+        <g fill="var(--ik-line)"><circle cx="60" cy="40" r="5"/><circle cx="460" cy="40" r="5"/><circle cx="60" cy="400" r="5"/><circle cx="460" cy="400" r="5"/></g>
+        <g stroke="var(--ik-mut)" stroke-width="3" opacity=".5"><path d="M212 178v-14M236 178v-14M260 178v-14M284 178v-14M308 178v-14M212 262v14M236 262v14M260 262v14M284 262v14M308 262v14"/></g>
+        <rect class="ik-core" x="196" y="178" width="128" height="84" rx="12"/><circle class="ik-led" cx="214" cy="196" r="5" fill="#e5322d"/>
+        <text x="260" y="228" text-anchor="middle" font-weight="800" font-size="24" fill="#fff">ikainex</text>
+        <a class="ik-node" href="#ik-eboards"><rect x="48" y="66" width="144" height="56" rx="14"/><text x="66" y="90">eBoards<tspan x="66" y="108" class="ik-small">add-on hardware</tspan></text></a>
+        <a class="ik-node" href="#ik-eblogs"><rect x="328" y="66" width="144" height="56" rx="14"/><text x="346" y="90">eBlogs<tspan x="346" y="108" class="ik-small">build notes</tspan></text></a>
+        <a class="ik-node" href="#ik-elearn"><rect x="48" y="318" width="144" height="56" rx="14"/><text x="66" y="342">eLearn<tspan x="66" y="360" class="ik-small">concepts, explained</tspan></text></a>
+        <a class="ik-node" href="#ik-etutorials"><rect x="328" y="318" width="144" height="56" rx="14"/><text x="346" y="342">eTutorials<tspan x="346" y="360" class="ik-small">real projects</tspan></text></a>
+      </svg>
+    </div></section>
+    <div class="ik-strip" aria-hidden="true"><div>{{ range seq 2 }}<span>LIN</span><span>CAN</span><span>DC motor driver</span><span>ADC</span><span>Firmware</span><span>Schematics</span><span>Embedded systems</span><span>Open source</span>{{ end }}</div></div>
+    <div class="ik-wrap"><div class="ik-grid">
+      {{ with site.GetPage "/eBoards" }}<article class="ik-card ik-dark ik-w2" id="ik-eboards"><h2>eBoards</h2><p>Add-on boards you can drop into your project today. Schematics and firmware are open, so you can see how each one works.</p><div class="ik-chips"><span>LIN board</span><span>CAN board</span><span>DC motor driver</span><span>ADC board</span></div><a class="ik-more" href="{{ .RelPermalink }}">Browse all boards →</a>
+      <svg class="ik-board" viewBox="0 0 250 300" aria-hidden="true"><rect x="10" y="10" width="230" height="280" rx="14" fill="#1f7a63"/><rect x="34" y="28" width="182" height="46" rx="4" fill="#2b9c7f"/><g fill="#0d1b2a"><circle cx="60" cy="51" r="11"/><circle cx="100" cy="51" r="11"/><circle cx="140" cy="51" r="11"/><circle cx="180" cy="51" r="11"/></g><rect x="80" y="120" width="90" height="70" rx="6" fill="#111"/><circle cx="92" cy="132" r="4" fill="#e5322d"/><g stroke="#e6d9a8" stroke-width="3"><path d="M70 130h10M70 145h10M70 160h10M70 175h10M170 130h10M170 145h10M170 160h10M170 175h10"/></g><g fill="none" stroke="#7fd6b8" stroke-width="2"><path d="M30 130H70M30 175H70M180 130H220M180 175H220M125 190V250"/></g><g fill="#e6d9a8"><circle cx="30" cy="270" r="6"/><circle cx="220" cy="270" r="6"/><circle cx="30" cy="100" r="6"/><circle cx="220" cy="100" r="6"/></g></svg></article>{{ end }}
+      {{ with site.GetPage "/eLearn" }}<article class="ik-card" id="ik-elearn"><h2>eLearn</h2><p>Meet Parth and Ved. They ask the questions you were about to ask.</p><div class="ik-chat"><div class="ik-who"><b>P</b><span>Why does my LED need a resistor?</span></div><div class="ik-who ik-right"><b>V</b><span>Let's work it out with Ohm's law.</span></div></div><div class="ik-chips"><span>Beginner friendly</span><span>Step by step</span></div><a class="ik-more" href="{{ .RelPermalink }}">Start learning →</a></article>{{ end }}
+      {{ with site.GetPage "/eTutorials" }}<article class="ik-card ik-w2" id="ik-etutorials"><h2>eTutorials</h2><p>Hands-on projects from first wiring to a working build.</p><div class="ik-series"><a href="{{ .RelPermalink }}"><b>Automotive Series</b><span>Explore LIN and CAN communication with real-world automotive applications.</span><em>Open series →</em></a><a href="{{ .RelPermalink }}"><b>Motor Control Series</b><span>Control motors and read real-world signals with our DC Motor Driver and ADC boards.</span><em>Open series →</em></a></div></article>{{ end }}
+      {{ with site.GetPage "/eBlogs" }}<article class="ik-card" id="ik-eblogs"><h2>eBlogs</h2><div>{{ range first 3 (where site.RegularPages "Section" "eBlogs") }}<a class="ik-post" href="{{ .RelPermalink }}"><b>{{ .Title }}</b><time>{{ .Date.Format "Jan 2006" }}</time></a>{{ end }}</div><a class="ik-more" href="{{ .RelPermalink }}">Read the blog →</a></article>{{ end }}
+    </div></div>
+  </main>
+  <footer class="ik-footer"><div class="ik-wrap"><span><b>Ikainex Technologies</b> · Development boards and engineering resources for makers and teams.</span><span>eBoards · eBlogs · eLearn · eTutorials</span></div></footer>
 </div>
-
-{{/* Products */}}
-<section class="home-products mb-10">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-1">Products</p>
-  <h2 class="text-lg font-medium mb-1">Ikainex eBoards</h2>
-  <p class="text-sm text-neutral-500 mb-4">Hardware you can drop into your project today.</p>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-    {{ range first 3 (where .Site.RegularPages "Section" "eBoards") }}
-     <a href="{{ .Permalink }}"
-       aria-label="View {{ .Title }} product"
-       class="block border border-neutral-200 dark:border-neutral-700
-            home-product-card rounded-xl p-4 hover:border-neutral-400 transition-colors">
-      <p class="text-sm font-medium mb-1">{{ .Title }}</p>
-      <p class="text-xs text-neutral-400 mb-2">
-        {{ .Params.mcu }} · {{ .Params.interface }} · {{ .Params.voltage }}
-      </p>
-      <p class="text-xs text-neutral-500">{{ .Summary }}</p>
-    </a>
-    {{ end }}
-  </div>
-  <div class="text-right mt-3">
-    {{ with .Site.GetPage "/eBoards" }}
-    <a href="{{ .RelPermalink }}" class="text-xs text-neutral-400 hover:text-neutral-700">
-      All products →
-    </a>
-    {{ end }}
-  </div>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
-
-{{/* About strip */}}
-<section class="mb-10">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">About</p>
-  <div class="bg-neutral-50 dark:bg-neutral-800 rounded-xl p-5 flex gap-6 flex-wrap">
-    <p class="text-sm text-neutral-500 leading-relaxed flex-1 min-w-48">
-      Ikainex builds open-source add-on boards and shares the process —
-      schematics, firmware, and lessons learned.
-    </p>
-    <div class="flex gap-3">
-      {{ $eBoards := len (where .Site.RegularPages "Section" "eBoards") }}
-      {{ $eTutorials := len (where .Site.RegularPages "Section" "eTutorials") }}
-      <div class="text-center bg-white dark:bg-neutral-900 rounded-lg
-                  border border-neutral-200 dark:border-neutral-700 px-4 py-3">
-        <p class="text-xl font-medium">{{ $eBoards }}</p>
-        <p class="text-xs text-neutral-400">Boards</p>
-      </div>
-      <div class="text-center bg-white dark:bg-neutral-900 rounded-lg
-                  border border-neutral-200 dark:border-neutral-700 px-4 py-3">
-        <p class="text-xl font-medium">{{ $eTutorials }}</p>
-        <p class="text-xs text-neutral-400">Tutorials</p>
-      </div>
-    </div>
-  </div>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
-
-{{/* Recent blog posts */}}
-<section class="mb-10">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-1">Recent</p>
-  <h2 class="text-lg font-medium mb-4">From the blog</h2>
-  {{ range first 3 (where .Site.RegularPages "Section" "eBlogs") }}
-  <a href="{{ .Permalink }}"
-     class="flex items-baseline justify-between py-3
-            border-b border-neutral-100 dark:border-neutral-800
-            hover:text-neutral-900 group">
-    <span class="text-sm font-medium text-neutral-500 group-hover:text-neutral-900
-                 flex-1 transition-colors">
-      {{ .Title }}
-    </span>
-    <span class="text-xs text-neutral-400 ml-4 whitespace-nowrap">
-      {{ .Date.Format "Jan 2006" }}
-    </span>
-  </a>
-  {{ end }}
-  <div class="text-right mt-3">
-    {{ with .Site.GetPage "/eBlogs" }}
-    <a href="{{ .RelPermalink }}" class="text-xs text-neutral-400 hover:text-neutral-700">
-      All posts →
-    </a>
-    {{ end }}
-  </div>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
-
-{{/* Now building */}}
-{{ with .Site.GetPage "/now" }}
-<section class="mb-4">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">Now building</p>
-  <a href="{{ .Permalink }}"
-     class="flex items-center gap-4 border border-neutral-200
-            dark:border-neutral-700 rounded-xl p-4 hover:border-neutral-400 transition-colors">
-    <span class="text-2xl text-neutral-400">⚙</span>
-    <div class="flex-1">
-      <p class="text-sm font-medium mb-0.5">{{ .Title }}</p>
-      <p class="text-xs text-neutral-500">{{ .Params.status }}</p>
-    </div>
-    <span class="text-neutral-400 text-sm">→</span>
-  </a>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
-{{ end }}

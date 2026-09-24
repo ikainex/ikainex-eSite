@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Ikainex eTutorials hero illustration</title>
+  <desc id="desc">Abstract engineering workspace with boards, a laptop, and a learning dashboard.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#eaf8ff"/>
+      <stop offset="100%" stop-color="#d9edff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#edf6ff"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" x2="1">
+      <stop offset="0%" stop-color="#1b4ea3"/>
+      <stop offset="100%" stop-color="#0f2d61"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)"/>
+  <circle cx="960" cy="130" r="90" fill="#dff4ff"/>
+  <circle cx="230" cy="150" r="130" fill="#eff9ff"/>
+  <rect x="120" y="130" width="950" height="600" rx="26" fill="url(#panel)" stroke="#b8d7f5" stroke-width="2"/>
+  <rect x="205" y="235" width="380" height="260" rx="20" fill="url(#board)"/>
+  <rect x="660" y="250" width="280" height="180" rx="18" fill="#ffffff" stroke="#d2e8ff" stroke-width="2"/>
+  <rect x="700" y="285" width="200" height="16" rx="8" fill="#dfeeff"/>
+  <rect x="700" y="320" width="160" height="12" rx="6" fill="#dfeeff"/>
+  <rect x="700" y="345" width="170" height="12" rx="6" fill="#dfeeff"/>
+  <rect x="700" y="370" width="130" height="12" rx="6" fill="#dfeeff"/>
+  <rect x="700" y="410" width="140" height="46" rx="16" fill="#eaf6ff"/>
+  <path d="M120 647 L1080 647" stroke="#bfdaf1" stroke-width="2"/>
+  <rect x="310" y="536" width="530" height="90" rx="18" fill="#ffffff" stroke="#d9eafe" stroke-width="2"/>
+  <rect x="328" y="555" width="150" height="14" rx="7" fill="#eaf4ff"/>
+  <rect x="500" y="555" width="140" height="14" rx="7" fill="#eaf4ff"/>
+  <rect x="660" y="555" width="140" height="14" rx="7" fill="#eaf4ff"/>
+  <circle cx="880" cy="495" r="54" fill="#f3fbff" stroke="#c9e2ff" stroke-width="3"/>
+  <circle cx="879" cy="495" r="28" fill="#7bc7ff" opacity="0.9"/>
+  <path d="M830 204 L945 204 L980 260 L830 260 Z" fill="#d9f2ff"/>
+  <g fill="#64baf8">
+    <circle cx="278" cy="280" r="8"/>
+    <circle cx="320" cy="280" r="8"/>
+    <circle cx="362" cy="280" r="8"/>
+    <circle cx="278" cy="320" r="8"/>
+    <circle cx="320" cy="320" r="8"/>
+    <circle cx="362" cy="320" r="8"/>
+    <circle cx="278" cy="360" r="8"/>
+    <circle cx="320" cy="360" r="8"/>
+    <circle cx="362" cy="360" r="8"/>
+  </g>
+  <g fill="#2fb174">
+    <circle cx="440" cy="280" r="10"/>
+    <circle cx="480" cy="280" r="10"/>
+    <circle cx="520" cy="280" r="10"/>
+    <circle cx="440" cy="320" r="10"/>
+    <circle cx="480" cy="320" r="10"/>
+    <circle cx="520" cy="320" r="10"/>
+  </g>
+  <g>
+    <path d="M88 655 C180 610, 220 620, 305 636" stroke="#1b4ea3" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M880 650 C960 610, 1030 620, 1090 640" stroke="#1b4ea3" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g>
+    <rect x="560" y="560" width="20" height="50" rx="6" fill="#5eb2ff"/>
+    <rect x="597" y="560" width="20" height="50" rx="6" fill="#2aa26f"/>
+    <rect x="634" y="560" width="20" height="50" rx="6" fill="#ffb84d"/>
+  </g>
+</svg>

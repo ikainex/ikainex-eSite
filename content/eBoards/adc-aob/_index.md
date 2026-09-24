@@ -3,6 +3,7 @@ title: "ADC Add-on Board"
 tagline: "ADC add-on board — Analog to digital Converter"
 image: "img/eboards/addon-boards/adc-aob.png"
 group: "annex"
+category: "Analog"
 description: "ADC Add-on Board for analog front-end evaluation, sampling and calibration."
 draft: false
 showHero: false
@@ -270,3 +271,4 @@ before processing your order.
 Request a quote for the ADC Add-on Board
 </a>
 </p>
+
