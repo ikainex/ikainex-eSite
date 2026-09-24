@@ -3,144 +3,144 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:63558/elearn/parth-ved/episodes/microcontroller-basics/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/elearn/parth-ved/episodes/gpio-digital-hands/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/elearn/parth-ved/episodes/adc-fundamentals/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/adc-fundamentals/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/elearn/parth-ved/episodes/first-firmware/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/first-firmware/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/elearn/</loc>
+    <loc>http://localhost:1313/elearn/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/elearn/parth-ved/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/automotive/10base-t1s/</loc>
+    <loc>http://localhost:1313/eblogs/automotive/10base-t1s/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eboards/adc-aob/</loc>
+    <loc>http://localhost:1313/eboards/adc-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eboards/add-on/</loc>
+    <loc>http://localhost:1313/eboards/add-on/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/automotive/</loc>
+    <loc>http://localhost:1313/eblogs/automotive/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/etutorials/automotive/</loc>
+    <loc>http://localhost:1313/etutorials/automotive/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/automotive/canfd/</loc>
+    <loc>http://localhost:1313/eblogs/automotive/canfd/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eboards/canfd-aob/</loc>
+    <loc>http://localhost:1313/eboards/canfd-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/automotive/cxpi/</loc>
+    <loc>http://localhost:1313/eblogs/automotive/cxpi/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eboards/dc-motor-aob/</loc>
+    <loc>http://localhost:1313/eboards/dc-motor-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/</loc>
+    <loc>http://localhost:1313/eblogs/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eboards/</loc>
+    <loc>http://localhost:1313/eboards/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/now/</loc>
+    <loc>http://localhost:1313/now/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/etutorials/</loc>
+    <loc>http://localhost:1313/etutorials/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/fpgas/</loc>
+    <loc>http://localhost:1313/eblogs/fpgas/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/iot/</loc>
+    <loc>http://localhost:1313/eblogs/iot/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eboards/lin-aob/</loc>
+    <loc>http://localhost:1313/eboards/lin-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/automotive/lin/</loc>
+    <loc>http://localhost:1313/eblogs/automotive/lin/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/eblogs/motor-control/</loc>
+    <loc>http://localhost:1313/eblogs/motor-control/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/etutorials/motor-control/</loc>
+    <loc>http://localhost:1313/etutorials/motor-control/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:63558/request-quote/</loc>
+    <loc>http://localhost:1313/request-quote/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -48,17 +48,24 @@
 {{ if .Site.Params.highlightCurrentMenuArea }}
   <script>
     (function () {
-      var mainmenu = document.querySelector(".main-menu");
-      if (!mainmenu) return;
+      var currentPath = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
+      var menu = document.querySelector(".main-menu nav");
+      if (!menu) return;
 
-      var path = window.location.pathname;
-      var links = mainmenu.querySelectorAll('a[href="' + path + '"]');
-
+      var links = menu.querySelectorAll('a[href]');
       links.forEach(function (link) {
-        var targets = link.querySelectorAll("span");
-        targets.forEach(function (el) {
-          el.classList.add("active");
-        });
+        var href = (link.getAttribute("href") || "").trim();
+        if (!href || href === "#" || href.indexOf("http") === 0) return;
+
+        var normalizedHref = href.replace(/\/+$/, "") || "/";
+        var matches = normalizedHref === currentPath || currentPath.startsWith(normalizedHref + "/");
+
+        if (matches) {
+          link.classList.add("active");
+          link.querySelectorAll("span").forEach(function (el) {
+            el.classList.add("active");
+          });
+        }
       });
     })();
   </script>

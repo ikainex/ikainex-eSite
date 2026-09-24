@@ -2,91 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ikainex Technologies</title>
-    <link>http://localhost:63558/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Ikainex Technologies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
     <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
     
-    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:63558/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ADC</title>
-      <link>http://localhost:63558/tags/adc/</link>
+      <link>http://localhost:1313/tags/adc/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/adc/</guid>
+      <guid>http://localhost:1313/tags/adc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Analog</title>
-      <link>http://localhost:63558/tags/analog/</link>
+      <link>http://localhost:1313/tags/analog/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/analog/</guid>
+      <guid>http://localhost:1313/tags/analog/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Beginner</title>
-      <link>http://localhost:63558/tags/beginner/</link>
+      <link>http://localhost:1313/tags/beginner/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/beginner/</guid>
+      <guid>http://localhost:1313/tags/beginner/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>C</title>
-      <link>http://localhost:63558/tags/c/</link>
+      <link>http://localhost:1313/tags/c/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/c/</guid>
+      <guid>http://localhost:1313/tags/c/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Firmware</title>
-      <link>http://localhost:63558/tags/firmware/</link>
+      <link>http://localhost:1313/tags/firmware/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/firmware/</guid>
+      <guid>http://localhost:1313/tags/firmware/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>GPIO</title>
-      <link>http://localhost:63558/tags/gpio/</link>
+      <link>http://localhost:1313/tags/gpio/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/gpio/</guid>
+      <guid>http://localhost:1313/tags/gpio/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MCU</title>
-      <link>http://localhost:63558/tags/mcu/</link>
+      <link>http://localhost:1313/tags/mcu/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/mcu/</guid>
+      <guid>http://localhost:1313/tags/mcu/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>STM32</title>
-      <link>http://localhost:63558/tags/stm32/</link>
+      <link>http://localhost:1313/tags/stm32/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:63558/tags/stm32/</guid>
+      <guid>http://localhost:1313/tags/stm32/</guid>
       <description></description>
       
     </item>

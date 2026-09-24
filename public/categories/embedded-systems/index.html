@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="light"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63558&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="en">
@@ -34,7 +34,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:63558/categories/embedded-systems/">
+  <link rel="canonical" href="http://localhost:1313/categories/embedded-systems/">
   
   
     
@@ -48,7 +48,7 @@
   
 
   
-  <meta property="og:url" content="http://localhost:63558/categories/embedded-systems/">
+  <meta property="og:url" content="http://localhost:1313/categories/embedded-systems/">
   <meta property="og:site_name" content="Ikainex Technologies">
   <meta property="og:title" content="Embedded Systems">
   <meta property="og:locale" content="en">
@@ -101,8 +101,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.74500ab50d0969469c01a82ae368e86a73f81dbf5ff3325b08cc7945fbe1c8c5c39ac18febed2068613a2521fffe2df1e3765444f16d4632dace3f4d6ebd340f.css"
-    integrity="sha512-dFAKtQ0JaUacAagq42joanP4Hb9f8zJbCMx5RfvhyMXDmsGP6&#43;0gaGE6JSH//i3x43ZURPFtRjLazj9Nbr00Dw==">
+    href="/css/main.bundle.min.8d63f089da69b70f4005f43c3837f01276b7076040c936ef162db8aa16d3e2a550eb53db402d17c023b1a3e11fedfc796fa7168f89723b51febc36eab77ce58d.css"
+    integrity="sha512-jWPwidpptw9ABfQ8ODfwEna3B2BAyTbvFi24qhbT4qVQ61PbQC0XwCOxo&#43;Ef7fx5b6cWj4lyO1H&#43;vDbqt3zljQ==">
 
   
   
@@ -210,16 +210,16 @@
     "headline": "Embedded Systems",
     
     "inLanguage": "en",
-    "url" : "http://localhost:63558/categories/embedded-systems/",
+    "url" : "http://localhost:1313/categories/embedded-systems/",
     "author" : {
       "@type": "Person",
       "name": "Ikainex\u0026trade;"
     },
-    "copyrightYear": "2026",
-    "dateCreated": "2026-09-20T00:00:00\u002b00:00",
-    "datePublished": "2026-09-20T00:00:00\u002b00:00",
     
-    "dateModified": "2026-09-20T00:00:00\u002b00:00",
+    
+    
+    
+    
     
     
     
@@ -548,6 +548,30 @@
 
 
 
+
+  <script>
+    (function () {
+      var currentPath = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
+      var menu = document.querySelector(".main-menu nav");
+      if (!menu) return;
+
+      var links = menu.querySelectorAll('a[href]');
+      links.forEach(function (link) {
+        var href = (link.getAttribute("href") || "").trim();
+        if (!href || href === "#" || href.indexOf("http") === 0) return;
+
+        var normalizedHref = href.replace(/\/+$/, "") || "/";
+        var matches = normalizedHref === currentPath || currentPath.startsWith(normalizedHref + "/");
+
+        if (matches) {
+          link.classList.add("active");
+          link.querySelectorAll("span").forEach(function (el) {
+            el.classList.add("active");
+          });
+        }
+      });
+    })();
+  </script>
 
 
   </div>
@@ -968,7 +992,7 @@
       <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
-  data-url="http://localhost:63558/">
+  data-url="http://localhost:1313/">
   <div
     id="search-modal"
     class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">

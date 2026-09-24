@@ -516,6 +516,36 @@ body:has(#ik-home) #main-content { width:100%; padding:0; }
 }
 .fixed.inset-x-0.bg-neutral .main-menu nav a:hover span.text-base { color:#3f7397; transform:translateY(-1px); }
 html.dark .fixed.inset-x-0.bg-neutral .main-menu nav a:hover span.text-base { color:#6aa5cc; }
+.fixed.inset-x-0.bg-neutral .main-menu nav a.active > span.text-base,
+.fixed.inset-x-0.bg-neutral .main-menu nav a.active span.text-base {
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  padding:0.5rem 0.8rem;
+  border-radius:9999px;
+  border:1px solid rgba(15, 118, 110, 0.28);
+  background:rgba(15, 118, 110, 0.08);
+  box-shadow:0 0 0 1px rgba(15, 118, 110, 0.06);
+  color:#0f172a;
+  text-decoration:none !important;
+  text-decoration-line:none !important;
+}
+html.dark .fixed.inset-x-0.bg-neutral .main-menu nav a.active > span.text-base,
+html.dark .fixed.inset-x-0.bg-neutral .main-menu nav a.active span.text-base {
+  color:#e2e8f0;
+  border-color:rgba(125, 211, 252, 0.4);
+  background:rgba(59, 130, 246, 0.12);
+  text-decoration:none !important;
+  text-decoration-line:none !important;
+}
+.fixed.inset-x-0.bg-neutral .main-menu .active,
+.fixed.inset-x-0.bg-neutral .main-menu .active span,
+.fixed.inset-x-0.bg-neutral .main-menu nav a.active,
+.fixed.inset-x-0.bg-neutral .main-menu nav a.active span {
+  text-decoration:none !important;
+  text-decoration-line:none !important;
+  text-underline-offset:0 !important;
+}
 .fixed.inset-x-0.bg-neutral .main-menu a.text-base { font-size:1.95rem !important; font-weight:700 !important; }
 .fixed.inset-x-0.bg-neutral .main-menu .logo { max-height:68px !important; max-width:240px !important; }
 .ik-navbar-logo-light { display:block; width:220px !important; height:66px !important; }
