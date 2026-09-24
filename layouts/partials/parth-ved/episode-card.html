@@ -1,0 +1,21 @@
+<article class="pv-episode-card">
+  <div class="pv-episode-art">
+    {{ if eq .Params.lessonType "Practical" }}
+      <img src="{{ "images/parth-ved/Parth.svg" | relURL }}" alt="" loading="lazy">
+      <span class="pv-episode-badge">Practical</span>
+    {{ else }}
+      <img src="{{ "images/parth-ved/Ved.svg" | relURL }}" alt="" loading="lazy">
+      <span class="pv-episode-badge">Concept</span>
+    {{ end }}
+  </div>
+
+  <div class="pv-episode-body">
+    <div class="pv-meta">
+      <span>{{ .Params.difficulty | default "All levels" }}</span>
+      <span>{{ .Params.lessonType | default "Lesson" }}</span>
+    </div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Description | default .Summary | plainify | truncate 120 }}</p>
+    <a class="pv-card-link" href="{{ .RelPermalink }}">Read lesson →</a>
+  </div>
+</article>

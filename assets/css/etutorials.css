@@ -1,0 +1,464 @@
+/* =========================================================
+   Ikainex eTutorials landing page
+   Matched to the supplied reference image.
+   ========================================================= */
+
+.ikx-etutorials {
+  --ikx-navy: #0b2338;
+  --ikx-blue: #1ca3f2;
+  --ikx-blue-deep: #1a87d9;
+  --ikx-green: #2abf8d;
+  --ikx-gray: #dfeaf7;
+  --ikx-ink: #122b4d;
+  --ikx-muted: #64748b;
+  --ikx-accent: #2563eb;
+  --ikx-accent-soft: #e7f0ff;
+  --ikx-border: rgba(100, 116, 139, 0.22);
+  --ikx-surface: rgba(148, 163, 184, 0.08);
+  --ikx-card: rgba(255, 255, 255, 0.38);
+  --ikx-text: var(--ikx-ink);
+  --ikx-font: inherit;
+  color: var(--ikx-text);
+  background: transparent;
+  font-family: var(--ikx-font);
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.dark .ikx-etutorials {
+  --ikx-ink: #e7eefb;
+  --ikx-muted: #a6b4c9;
+  --ikx-accent: #76a9ff;
+  --ikx-accent-soft: rgba(59, 130, 246, 0.16);
+  --ikx-border: rgba(148, 163, 184, 0.25);
+  --ikx-surface: rgba(148, 163, 184, 0.08);
+  --ikx-card: rgba(15, 23, 42, 0.5);
+  --ikx-text: var(--ikx-ink);
+}
+
+.ikx-etutorials * { box-sizing: border-box; }
+.ikx-etutorials a { text-decoration: none; }
+.ikx-etutorials img { max-width: 100%; display: block; }
+
+.ikx-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.35fr);
+  align-items: center;
+  min-height: 500px;
+  padding: 0 clamp(1rem, 4vw, 3.5rem);
+  background:
+    radial-gradient(circle at 80% 20%, rgba(96, 165, 250, 0.18), transparent 35%),
+    linear-gradient(135deg, var(--ikx-surface), transparent);
+  border: 1px solid var(--ikx-border);
+  border-radius: 1rem;
+}
+
+.ikx-hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.5rem 0 2rem;
+}
+
+.ikx-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.45rem 1rem 0.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--ikx-accent), var(--ikx-blue-deep));
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ikx-play-icon {
+  display: grid;
+  place-items: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background: #fff;
+  color: #1079db;
+  font-size: 0.56rem;
+}
+
+.ikx-hero h1 {
+  margin: 1.15rem 0 1.1rem;
+  max-width: 560px;
+  color: var(--ikx-ink);
+  font-size: clamp(2.7rem, 4vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+}
+
+.ikx-hero-description {
+  max-width: 720px;
+  margin: 0;
+  color: var(--ikx-muted);
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.55;
+}
+
+.ikx-hero-note {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  color: var(--ikx-muted);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.ikx-hero-note > span {
+  width: 2.5rem;
+  height: 4px;
+  border-radius: 999px;
+  background: #7fd3ff;
+}
+
+.ikx-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 440px;
+  padding: 1rem 0 1.5rem;
+}
+
+.ikx-hero-visual img {
+  width: min(100%, 870px);
+  height: auto;
+  object-fit: contain;
+}
+
+.ikx-series-section {
+  padding: 1.8rem 0 1.2rem;
+  background: transparent;
+}
+
+.ikx-section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.ikx-heading-line,
+.ikx-section-heading h2,
+.ikx-section-heading p {
+  display: none;
+}
+
+.ikx-series-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.ikx-series-card {
+  border: 1px solid var(--ikx-border);
+  border-radius: 1.15rem;
+  padding: 1.2rem 1.2rem 0.9rem;
+  overflow: hidden;
+}
+
+.ikx-series-automotive {
+  background: linear-gradient(135deg, #f0faff 0%, #edf6ff 100%);
+}
+
+.ikx-series-motor {
+  background: linear-gradient(135deg, #f1fcf9 0%, #edfaf5 100%);
+}
+
+.ikx-series-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.16fr) minmax(180px, 0.84fr);
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.ikx-series-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.ikx-series-icon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--ikx-blue);
+  color: white;
+  font-size: 1.65rem;
+  flex-shrink: 0;
+}
+
+.ikx-series-motor .ikx-series-icon {
+  background: var(--ikx-green);
+}
+
+.ikx-series-copy h3 {
+  margin: 0 0 0.35rem;
+  color: #104a7b;
+  font-size: clamp(1.8rem, 2.1vw, 2.8rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+}
+
+.ikx-series-copy p {
+  margin: 0;
+  color: #285a8d;
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.ikx-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 1.1rem;
+}
+
+.ikx-tag-list span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(71, 158, 234, 0.12);
+  color: #117bd5;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.ikx-series-motor .ikx-tag-list span {
+  background: rgba(69, 190, 131, 0.12);
+  color: #188f63;
+}
+
+.ikx-series-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.72rem 1.2rem;
+  border-radius: 999px;
+  background: var(--ikx-blue);
+  color: #fff !important;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.ikx-series-motor .ikx-series-button {
+  background: var(--ikx-green);
+}
+
+.ikx-series-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.ikx-series-products img {
+  width: 100%;
+  max-width: 320px;
+  height: 135px;
+  object-fit: contain;
+}
+
+.ikx-product-labels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  width: 100%;
+  margin-top: 0.1rem;
+  color: #0d7ad9;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.ikx-series-motor .ikx-product-labels {
+  color: #169364;
+}
+
+.ikx-featured {
+  padding-top: 0.9rem;
+  margin-top: 1.1rem;
+  border-top: 1px solid rgba(129, 169, 203, 0.24);
+}
+
+.ikx-featured h4 {
+  margin: 0 0 0.7rem;
+  color: #0f2e4d;
+  font-size: 1rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.ikx-tutorial-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+}
+
+.ikx-tutorial-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.45rem 0.5rem 0.55rem;
+  border-right: 1px solid rgba(113, 161, 206, 0.26);
+  color: inherit;
+}
+
+.ikx-tutorial-item:last-child {
+  border-right: 0;
+}
+
+.ikx-tutorial-number {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--ikx-blue);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.ikx-series-motor .ikx-tutorial-number {
+  background: var(--ikx-green);
+}
+
+.ikx-tutorial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.ikx-tutorial-content strong {
+  color: #0f2e4d;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.ikx-tutorial-content small {
+  color: #4e6d8b;
+  font-size: 0.6rem;
+  line-height: 1.45;
+}
+
+.ikx-tutorial-arrow {
+  margin-left: auto;
+  color: var(--ikx-blue);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.ikx-series-motor .ikx-tutorial-arrow {
+  color: var(--ikx-green);
+}
+
+.ikx-footer-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 1.1rem 1rem 1.5rem;
+  color: #6d7f98;
+  font-size: 0.78rem;
+}
+
+.ikx-footer-strip a {
+  color: #5d7190;
+}
+
+.ikx-footer-strip i {
+  display: block;
+  width: 1px;
+  height: 1rem;
+  background: rgba(113, 135, 162, 0.4);
+}
+
+.ikx-footer-strip b {
+  color: #6d7f98;
+  font-weight: 500;
+}
+
+@media (max-width: 980px) {
+  .ikx-brand {
+    font-size: 1.7rem;
+  }
+
+  .ikx-hero {
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+  }
+
+  .ikx-series-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ikx-series-main {
+    grid-template-columns: 1fr;
+  }
+
+  .ikx-tutorial-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ikx-tutorial-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(113, 161, 206, 0.26);
+    padding-bottom: 0.7rem;
+  }
+
+  .ikx-tutorial-item:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .ikx-nav {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .ikx-nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.3rem;
+  }
+
+  .ikx-hero {
+    min-height: 400px;
+  }
+
+  .ikx-hero-copy {
+    padding-top: 1.2rem;
+  }
+
+  .ikx-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .ikx-section-heading h2 {
+    font-size: 2.3rem;
+  }
+
+  .ikx-series-card {
+    padding: 0.9rem;
+  }
+}
+

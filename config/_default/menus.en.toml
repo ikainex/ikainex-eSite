@@ -21,13 +21,13 @@
  weight = 2
 
 [[main]]
- name = "eTutorials"
- pageRef = "eTutorials"
+ name = "eLearn"
+ pageRef = "eLearn"
  weight = 3
 
 [[main]]
- name = "eCooking"
- pageRef = "eCooking"
+ name = "eTutorials"
+ pageRef = "eTutorials"
  weight = 4
 
 #[[subnavigation]]

@@ -101,14 +101,12 @@
     
   
   
-    
-  
   
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.7173b12e88c3d7a3dc0019c4ff8068ec1b249356493bbf5b828cd7646d197aec176cc822f017df9ac0c374d812a0b5d5085a091ba10d361e3f6874a8d15107d6.css"
-    integrity="sha512-cXOxLojD16PcABnE/4Bo7Bskk1ZJO79bgozXZG0ZeuwXbMgi8BffmsDDdNgSoLXVCFoJG6ENNh4/aHSo0VEH1g==">
+    href="/css/main.bundle.min.8d63f089da69b70f4005f43c3837f01276b7076040c936ef162db8aa16d3e2a550eb53db402d17c023b1a3e11fedfc796fa7168f89723b51febc36eab77ce58d.css"
+    integrity="sha512-jWPwidpptw9ABfQ8ODfwEna3B2BAyTbvFi24qhbT4qVQ61PbQC0XwCOxo&#43;Ef7fx5b6cWj4lyO1H&#43;vDbqt3zljQ==">
 
   
   
@@ -121,9 +119,6 @@
   
   
   
-  
-    
-    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
   
 
   
@@ -279,10 +274,13 @@
     <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
   
   
-    <a href="/" class="text-base font-medium truncate min-w-0 shrink ms-3">
-      Ikainex
+  <div>
+    <a href="/" class="ik-navbar-logo flex items-center" aria-label="Ikainex Technologies home">
+      <span class="sr-only">Ikainex Technologies</span>
+      <img src="/img/logo/ikainex_brand_logo_black.svg" width="220" height="66" class="logo ik-navbar-logo-light object-contain object-left nozoom" alt="">
+      <img src="/img/logo/ikainex_brand_logo_white.svg" width="220" height="66" class="logo ik-navbar-logo-dark object-contain object-left nozoom" alt="">
     </a>
-  
+  </div>
   <div class="flex items-center ms-auto">
     <div class="hidden md:flex">
       <nav class="flex items-center gap-x-5 h-12">
@@ -327,15 +325,15 @@
       
   
     <a
-      href="/etutorials/"
+      href="/elearn/"
       
       class="flex items-center bf-icon-color-hover"
-      aria-label="eTutorials"
-      title="eTutorials">
+      aria-label="eLearn"
+      title="eLearn">
       
       
         <span class="text-base font-medium break-normal">
-          eTutorials
+          eLearn
         </span>
       
     </a>
@@ -345,15 +343,15 @@
       
   
     <a
-      href="/ecooking/"
+      href="/etutorials/"
       
       class="flex items-center bf-icon-color-hover"
-      aria-label="eCooking"
-      title="eCooking Recipies">
+      aria-label="eTutorials"
+      title="eTutorials">
       
       
         <span class="text-base font-medium break-normal">
-          eCooking
+          eTutorials
         </span>
       
     </a>
@@ -489,13 +487,13 @@
     
     <div class="px-2">
       <a
-        href="/etutorials/"
-        aria-label="eTutorials"
+        href="/elearn/"
+        aria-label="eLearn"
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
-        <span title="eTutorials" class="text-2xl font-bold tracking-tight">
-          eTutorials
+        <span title="eLearn" class="text-2xl font-bold tracking-tight">
+          eLearn
         </span>
         
       </a>
@@ -506,13 +504,13 @@
     
     <div class="px-2">
       <a
-        href="/ecooking/"
-        aria-label="eCooking"
+        href="/etutorials/"
+        aria-label="eTutorials"
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
-        <span title="eCooking Recipies" class="text-2xl font-bold tracking-tight">
-          eCooking
+        <span title="eTutorials" class="text-2xl font-bold tracking-tight">
+          eTutorials
         </span>
         
       </a>
@@ -545,6 +543,30 @@
 
 
 
+  <script>
+    (function () {
+      var currentPath = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
+      var menu = document.querySelector(".main-menu nav");
+      if (!menu) return;
+
+      var links = menu.querySelectorAll('a[href]');
+      links.forEach(function (link) {
+        var href = (link.getAttribute("href") || "").trim();
+        if (!href || href === "#" || href.indexOf("http") === 0) return;
+
+        var normalizedHref = href.replace(/\/+$/, "") || "/";
+        var matches = normalizedHref === currentPath || currentPath.startsWith(normalizedHref + "/");
+
+        if (matches) {
+          link.classList.add("active");
+          link.querySelectorAll("span").forEach(function (el) {
+            el.classList.add("active");
+          });
+        }
+      });
+    })();
+  </script>
+
 
   </div>
 </div>
@@ -557,108 +579,38 @@
           
   
   
-    
-<div class="home-hero mb-12 text-center">
-  
-  
-  <h1 class="home-hero-title" style="font-weight: 500; margin-bottom: 0.75rem; margin-top: 2rem;">
-    <img class="home-hero-logo home-hero-logo-light" src="/img/logo/ikainex_brand_logo_black.svg" alt="Ikainex Technologies" />
-    <img class="home-hero-logo home-hero-logo-dark" src="/img/logo/ikainex_brand_logo_white.svg" alt="Ikainex Technologies" />
-  </h1>
-  <p class="home-hero-copy text-neutral-500 max-w-sm mx-auto leading-relaxed" style="margin-bottom: 2rem;">
-    Development boards, embedded hardware, and practical engineering resources for makers and teams.
-  </p>
-  <div class="home-hero-actions flex gap-3 justify-center">
-    
-    <a href="/eboards/" class="home-primary-action px-4 py-2 bg-neutral-900 dark:bg-neutral-100
-       text-white dark:text-neutral-900 rounded-lg text-sm">
-      Explore boards →
-    </a>
-    
-    
-    <a href="/eblogs/" class="home-secondary-action px-4 py-2 border border-neutral-200
-       dark:border-neutral-700 rounded-lg text-sm text-neutral-500">
-      Start learning
-    </a>
-    
-  </div>
+    <div id="ik-home">
+  <main>
+    <section class="ik-hero"><div class="ik-wrap ik-hero-inner">
+      <div><h1>Boards you plug in. <span>Skills you keep.</span></h1>
+        <p class="ik-lead">Open-source add-on boards, and the lessons, tutorials and build notes that go with them.</p>
+        <a class="ik-btn" href="/eboards/">Explore boards</a>
+        <a class="ik-btn ik-ghost" href="/elearn/">Start learning</a>
+      </div>
+      <svg class="ik-pcb" viewBox="0 0 520 440" role="img" aria-label="A circuit board linking eBoards, eBlogs, eLearn and eTutorials">
+        <g class="ik-tr"><path d="M260 220H120V100"/><path d="M260 220H400V100"/><path d="M260 220H120V340"/><path d="M260 220H400V340"/></g>
+        <path class="ik-sig" d="M260 220H120V100"/><path class="ik-sig" d="M260 220H400V100"/><path class="ik-sig" d="M400 340V220H260"/><path class="ik-sig" d="M120 340V220H260"/>
+        <g fill="var(--ik-line)"><circle cx="60" cy="40" r="5"/><circle cx="460" cy="40" r="5"/><circle cx="60" cy="400" r="5"/><circle cx="460" cy="400" r="5"/></g>
+        <g stroke="var(--ik-mut)" stroke-width="3" opacity=".5"><path d="M212 178v-14M236 178v-14M260 178v-14M284 178v-14M308 178v-14M212 262v14M236 262v14M260 262v14M284 262v14M308 262v14"/></g>
+        <rect class="ik-core" x="196" y="178" width="128" height="84" rx="12"/><circle class="ik-led" cx="214" cy="196" r="5" fill="#e5322d"/>
+        <text x="260" y="228" text-anchor="middle" font-weight="800" font-size="24" fill="#fff">ikainex</text>
+        <a class="ik-node" href="#ik-eboards"><rect x="48" y="66" width="144" height="56" rx="14"/><text x="66" y="90">eBoards<tspan x="66" y="108" class="ik-small">add-on hardware</tspan></text></a>
+        <a class="ik-node" href="#ik-eblogs"><rect x="328" y="66" width="144" height="56" rx="14"/><text x="346" y="90">eBlogs<tspan x="346" y="108" class="ik-small">build notes</tspan></text></a>
+        <a class="ik-node" href="#ik-elearn"><rect x="48" y="318" width="144" height="56" rx="14"/><text x="66" y="342">eLearn<tspan x="66" y="360" class="ik-small">concepts, explained</tspan></text></a>
+        <a class="ik-node" href="#ik-etutorials"><rect x="328" y="318" width="144" height="56" rx="14"/><text x="346" y="342">eTutorials<tspan x="346" y="360" class="ik-small">real projects</tspan></text></a>
+      </svg>
+    </div></section>
+    <div class="ik-strip" aria-hidden="true"><div><span>LIN</span><span>CAN</span><span>DC motor driver</span><span>ADC</span><span>Firmware</span><span>Schematics</span><span>Embedded systems</span><span>Open source</span><span>LIN</span><span>CAN</span><span>DC motor driver</span><span>ADC</span><span>Firmware</span><span>Schematics</span><span>Embedded systems</span><span>Open source</span></div></div>
+    <div class="ik-wrap"><div class="ik-grid">
+      <article class="ik-card ik-dark ik-w2" id="ik-eboards"><h2>eBoards</h2><p>Add-on boards you can drop into your project today. Schematics and firmware are open, so you can see how each one works.</p><div class="ik-chips"><span>LIN board</span><span>CAN board</span><span>DC motor driver</span><span>ADC board</span></div><a class="ik-more" href="/eboards/">Browse all boards →</a>
+      <svg class="ik-board" viewBox="0 0 250 300" aria-hidden="true"><rect x="10" y="10" width="230" height="280" rx="14" fill="#1f7a63"/><rect x="34" y="28" width="182" height="46" rx="4" fill="#2b9c7f"/><g fill="#0d1b2a"><circle cx="60" cy="51" r="11"/><circle cx="100" cy="51" r="11"/><circle cx="140" cy="51" r="11"/><circle cx="180" cy="51" r="11"/></g><rect x="80" y="120" width="90" height="70" rx="6" fill="#111"/><circle cx="92" cy="132" r="4" fill="#e5322d"/><g stroke="#e6d9a8" stroke-width="3"><path d="M70 130h10M70 145h10M70 160h10M70 175h10M170 130h10M170 145h10M170 160h10M170 175h10"/></g><g fill="none" stroke="#7fd6b8" stroke-width="2"><path d="M30 130H70M30 175H70M180 130H220M180 175H220M125 190V250"/></g><g fill="#e6d9a8"><circle cx="30" cy="270" r="6"/><circle cx="220" cy="270" r="6"/><circle cx="30" cy="100" r="6"/><circle cx="220" cy="100" r="6"/></g></svg></article>
+      <article class="ik-card" id="ik-elearn"><h2>eLearn</h2><p>Meet Parth and Ved. They ask the questions you were about to ask.</p><div class="ik-chat"><div class="ik-who"><b>P</b><span>Why does my LED need a resistor?</span></div><div class="ik-who ik-right"><b>V</b><span>Let's work it out with Ohm's law.</span></div></div><div class="ik-chips"><span>Beginner friendly</span><span>Step by step</span></div><a class="ik-more" href="/elearn/">Start learning →</a></article>
+      <article class="ik-card ik-w2" id="ik-etutorials"><h2>eTutorials</h2><p>Hands-on projects from first wiring to a working build.</p><div class="ik-series"><a href="/etutorials/"><b>Automotive Series</b><span>Explore LIN and CAN communication with real-world automotive applications.</span><em>Open series →</em></a><a href="/etutorials/"><b>Motor Control Series</b><span>Control motors and read real-world signals with our DC Motor Driver and ADC boards.</span><em>Open series →</em></a></div></article>
+      <article class="ik-card" id="ik-eblogs"><h2>eBlogs</h2><div></div><a class="ik-more" href="/eblogs/">Read the blog →</a></article>
+    </div></div>
+  </main>
+  <footer class="ik-footer"><div class="ik-wrap"><span><b>Ikainex Technologies</b> · Development boards and engineering resources for makers and teams.</span><span>eBoards · eBlogs · eLearn · eTutorials</span></div></footer>
 </div>
-
-
-<section class="home-products mb-10">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-1">Products</p>
-  <h2 class="text-lg font-medium mb-1">Ikainex eBoards</h2>
-  <p class="text-sm text-neutral-500 mb-4">Hardware you can drop into your project today.</p>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-    
-  </div>
-  <div class="text-right mt-3">
-    
-    <a href="/eboards/" class="text-xs text-neutral-400 hover:text-neutral-700">
-      All products →
-    </a>
-    
-  </div>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
-
-
-<section class="mb-10">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">About</p>
-  <div class="bg-neutral-50 dark:bg-neutral-800 rounded-xl p-5 flex gap-6 flex-wrap">
-    <p class="text-sm text-neutral-500 leading-relaxed flex-1 min-w-48">
-      Ikainex builds open-source add-on boards and shares the process —
-      schematics, firmware, and lessons learned.
-    </p>
-    <div class="flex gap-3">
-      
-      
-      <div class="text-center bg-white dark:bg-neutral-900 rounded-lg
-                  border border-neutral-200 dark:border-neutral-700 px-4 py-3">
-        <p class="text-xl font-medium">0</p>
-        <p class="text-xs text-neutral-400">Boards</p>
-      </div>
-      <div class="text-center bg-white dark:bg-neutral-900 rounded-lg
-                  border border-neutral-200 dark:border-neutral-700 px-4 py-3">
-        <p class="text-xl font-medium">0</p>
-        <p class="text-xs text-neutral-400">Tutorials</p>
-      </div>
-    </div>
-  </div>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
-
-
-<section class="mb-10">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-1">Recent</p>
-  <h2 class="text-lg font-medium mb-4">From the blog</h2>
-  
-  <div class="text-right mt-3">
-    
-    <a href="/eblogs/" class="text-xs text-neutral-400 hover:text-neutral-700">
-      All posts →
-    </a>
-    
-  </div>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
-
-
-
-<section class="mb-4">
-  <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">Now building</p>
-  <a href="http://localhost:1313/now/"
-     class="flex items-center gap-4 border border-neutral-200
-            dark:border-neutral-700 rounded-xl p-4 hover:border-neutral-400 transition-colors">
-    <span class="text-2xl text-neutral-400">⚙</span>
-    <div class="flex-1">
-      <p class="text-sm font-medium mb-0.5">Ethernet</p>
-      <p class="text-xs text-neutral-500">Research in progress.</p>
-    </div>
-    <span class="text-neutral-400 text-sm">→</span>
-  </a>
-</section>
-<hr style="border: none; border-top: 1px solid rgba(128,128,128,0.15); margin: 2.5rem 0;">
 
   
 
@@ -730,14 +682,6 @@
       </p>
     
   </div>
-  
-    <script>
-      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
-        margin: 24,
-        background: "rgba(0,0,0,0.5)",
-        scrollOffset: 0,
-      });
-    </script>
   
   
   

@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ $style := resources.Get "css/parth-ved.css" | minify | fingerprint }}
+  <style>{{ $style.Content | safeCSS }}</style>
+
+  <div class="pv-page">
+    {{ partial "parth-ved/hero.html" . }}
+    {{ partial "parth-ved/topics.html" . }}
+    {{ partial "parth-ved/episodes.html" . }}
+    {{ partial "parth-ved/cta.html" . }}
+  </div>
+{{ end }}

@@ -1,0 +1,31 @@
+{{ $heroImage := resources.Get "img/etutorials/landing-page/Build-with-Parth-and-Ved.png" }}
+
+<section class="ikx-hero">
+  <div class="ikx-hero-copy">
+    <div class="ikx-eyebrow-pill">
+      <span class="ikx-play-icon" aria-hidden="true">▶</span>
+      eTutorials
+    </div>
+
+    <h1>Build Real Projects.<br>Learn by Doing.</h1>
+
+    <p class="ikx-hero-description">
+      Step-by-step hardware tutorials, practical projects and hands-on guides
+      to help you master embedded systems, automotive and motor control applications.
+    </p>
+
+    <div class="ikx-hero-note">
+      <span aria-hidden="true"></span>
+      From setup to working projects
+    </div>
+  </div>
+
+  <div class="ikx-hero-visual">
+    {{ with $heroImage }}
+      <img
+        src="{{ .RelPermalink }}"
+        alt="Parth and Ved working together on an electronics project"
+        loading="eager">
+    {{ end }}
+  </div>
+</section>

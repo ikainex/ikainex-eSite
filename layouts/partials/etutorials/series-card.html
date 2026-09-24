@@ -1,0 +1,53 @@
+{{ $boardImage := resources.Get "img/etutorials/landing-page/boards.png" }}
+
+<article class="ikx-series-card ikx-series-{{ .kind }}">
+  <div class="ikx-series-main">
+    <div class="ikx-series-copy">
+      <div class="ikx-series-title-row">
+        <div class="ikx-series-icon" aria-hidden="true">
+          {{ if eq .kind "automotive" }}🚘{{ else }}▣{{ end }}
+        </div>
+        <div>
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+
+      <div class="ikx-tag-list">
+        {{ range .tags }}<span>{{ . }}</span>{{ end }}
+      </div>
+
+      <a class="ikx-series-button" href="{{ .buttonUrl | relURL }}">
+        Start Learning <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="ikx-series-products">
+      {{ with $boardImage }}
+        <img
+          src="{{ .RelPermalink }}"
+          alt="{{ $.imageAlt }}"
+          loading="lazy">
+      {{ end }}
+      <div class="ikx-product-labels">
+        {{ range .productLabels }}<span>{{ . }}</span>{{ end }}
+      </div>
+    </div>
+  </div>
+
+  <div class="ikx-featured">
+    <h4>Featured Tutorials</h4>
+    <div class="ikx-tutorial-list">
+      {{ range $index, $tutorial := .tutorials }}
+        <a class="ikx-tutorial-item" href="{{ $.buttonUrl | relURL }}">
+          <span class="ikx-tutorial-number">{{ add $index 1 }}</span>
+          <span class="ikx-tutorial-content">
+            <strong>{{ $tutorial.title }}</strong>
+            <small>{{ $tutorial.description }}</small>
+          </span>
+          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</article>

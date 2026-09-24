@@ -1,0 +1,19 @@
+{{ $episodes := where .Site.RegularPages "Params.parthVed" true }}
+<section id="episodes" class="pv-section">
+  <div class="pv-section-heading pv-section-heading-row">
+    <div>
+      <span class="pv-eyebrow">PARTH & VED EPISODES</span>
+      <h2>Explore learning episodes</h2>
+      <p>Short, focused lessons with big ideas and practical examples.</p>
+    </div>
+    <a class="pv-text-link" href="{{ "eLearn/parth-ved/episodes/" | relURL }}">View all →</a>
+  </div>
+
+  <div class="pv-episode-grid">
+    {{ range $episodes.ByWeight }}
+      {{ partial "parth-ved/episode-card.html" . }}
+    {{ else }}
+      <p>No episodes have been published yet. Add content pages under <code>content/eLearn/parth-ved/episodes/</code>.</p>
+    {{ end }}
+  </div>
+</section>

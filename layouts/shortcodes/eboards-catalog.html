@@ -1,0 +1,27 @@
+{{/* Filterable add-on catalog backed by the eBoards section pages. */}}
+{{ $section := .Site.GetPage "/eboards" }}
+{{ $pages := where $section.Pages "Params.group" "eq" "annex" }}
+<section class="eb-page eb-catalog" data-eb-catalog>
+  <div class="eb-wrap">
+    <div class="eb-breadcrumb"><a href="{{ "/eboards/" | relURL }}">eBoards</a><span>/</span><span>Add-on boards</span></div>
+    <div class="eb-catalog-head"><div><p class="eb-eyebrow">SMALL BOARDS. BIG POSSIBILITIES.</p><h1>Add-on boards</h1><p class="eb-lead">Choose a board by the signals you want to explore, the system you are building, or the problem you want to solve.</p></div><div class="eb-count"><strong>{{ len $pages }}</strong><span>boards<br>to explore</span></div></div>
+    <div class="eb-filter-row"><span>FILTER BY APPLICATION</span><div class="eb-filters" role="group" aria-label="Filter add-on boards"><button type="button" data-filter="all" aria-pressed="true">All boards <b>{{ len $pages }}</b></button><button type="button" data-filter="Automotive" aria-pressed="false">Automotive</button><button type="button" data-filter="Motor control" aria-pressed="false">Motor control</button><button type="button" data-filter="Analog" aria-pressed="false">Analog</button></div></div>
+    <div class="eb-cards">
+      {{ range $i, $p := $pages }}
+        {{ $cat := $p.Params.category | default "Hardware" }}
+        {{ $imgPath := $p.Params.image }}
+        <a class="eb-product" href="{{ $p.RelPermalink }}" data-category="{{ $cat }}">
+          <div class="eb-product-art">
+            {{ with resources.Get $imgPath }}<img src="{{ .RelPermalink }}" alt="{{ $p.Title }}" loading="lazy" />{{ else }}<div class="eb-placeholder" aria-hidden="true"><span>{{ if in (lower $p.Title) "lin" }}LIN{{ else if in (lower $p.Title) "can" }}CAN FD{{ else if in (lower $p.Title) "motor" }}DC MOTOR{{ else }}ADC{{ end }}</span><i></i><b></b><em></em></div>{{ end }}
+            <span class="eb-product-number">AOB / {{ printf "%02d" (add $i 1) }}</span><span class="eb-product-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="eb-product-info"><div class="eb-product-title"><h2>{{ $p.Title }}</h2><span>→</span></div><p>{{ $p.Params.description | default $p.Params.tagline }}</p><div class="eb-tags"><span>{{ $cat }}</span>{{ with $p.Params.interface }}<span>{{ . }}</span>{{ end }}</div></div>
+        </a>
+      {{ end }}
+    </div>
+    <div class="eb-series"><div><p class="eb-eyebrow">KEEP BUILDING</p><h2>Learn by making.</h2><p>Explore a guided series and take your hardware further.</p></div><a href="{{ "/etutorials/automotive/" | relURL }}"><span>01 / AUTOMOTIVE</span><strong>Automotive projects</strong><b aria-hidden="true">↗</b></a><a href="{{ "/etutorials/motor-control/" | relURL }}"><span>02 / MOTOR CONTROL</span><strong>Motor control projects</strong><b aria-hidden="true">↗</b></a></div>
+  </div>
+</section>
+<script>
+(function(){var root=document.querySelector('[data-eb-catalog]');if(!root)return;var buttons=root.querySelectorAll('[data-filter]'),cards=root.querySelectorAll('.eb-product');buttons.forEach(function(button){button.addEventListener('click',function(){var filter=button.getAttribute('data-filter');buttons.forEach(function(item){item.setAttribute('aria-pressed',item===button?'true':'false')});cards.forEach(function(card){card.hidden=filter!=='all'&&card.getAttribute('data-category')!==filter})})})})();
+</script>

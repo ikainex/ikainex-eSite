@@ -3,6 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</loc>
+    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</loc>
+    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/adc-fundamentals/</loc>
+    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/first-firmware/</loc>
+    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/</loc>
+    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/parth-ved/</loc>
+    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/eblogs/automotive/10base-t1s/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -13,7 +55,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/eboards/add-on/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/eblogs/automotive/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/etutorials/automotive/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -48,11 +100,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/ecooking/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://localhost:1313/now/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -64,11 +111,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/eblogs/fpgas/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -89,6 +131,11 @@
   </url>
   <url>
     <loc>http://localhost:1313/eblogs/motor-control/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/etutorials/motor-control/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

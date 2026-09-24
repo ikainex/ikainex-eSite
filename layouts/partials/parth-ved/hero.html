@@ -1,0 +1,29 @@
+<section class="pv-hero">
+  <div class="pv-hero-copy">
+    <span class="pv-eyebrow">IKAINEX LEARNING SERIES</span>
+    <h1>Learn engineering.<br>Build with confidence.</h1>
+    <p class="pv-lead">
+      Meet Parth and Ved as they explore electronics, embedded systems, firmware,
+      and real-world engineering ideas designed to help you turn theory into practical skills.
+    </p>
+
+    <div class="pv-hero-actions">
+      <a class="pv-button pv-button-primary" href="#episodes">Start learning <span aria-hidden="true">→</span></a>
+      <a class="pv-button pv-button-secondary" href="#topics">Explore topics</a>
+    </div>
+
+    <div class="pv-feature-pills" aria-label="Learning benefits">
+      <span>Beginner friendly</span>
+      <span>Practical examples</span>
+      <span>Step by step</span>
+      <span>Hardware focus</span>
+    </div>
+  </div>
+
+  <div class="pv-hero-art" aria-label="Learn with Parth and Ved illustration">
+    <div class="pv-character-stage">
+      {{ $heroImage := resources.Get "img/elearn/landing-page/learn-with-parth-ved.svg" }}
+      <img class="pv-hero-main-image nozoom" src="{{ $heroImage.RelPermalink }}" alt="Learn engineering with Parth and Ved">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<section class="ikx-series-section">
+  <div class="ikx-series-grid">
+    {{ partial "eTutorials/series-card.html" (dict
+      "kind" "automotive"
+      "title" "Automotive Series"
+      "description" "Explore LIN and CAN communication with real-world automotive applications."
+      "tags" (slice "LIN" "CAN" "Diagnostics" "Vehicle Networks")
+      "imageAlt" "Ikainex LIN and CAN boards"
+      "productLabels" (slice "LIN" "CAN")
+      "tutorials" (slice
+        (dict "title" "LIN Basics & Setup" "description" "Learn the fundamentals of LIN communication.")
+        (dict "title" "CAN Bus Communication" "description" "Configure and test CAN with real data.")
+        (dict "title" "Automotive Project" "description" "Build a simple vehicle network project.")
+      )
+      "buttonUrl" "etutorials/automotive/"
+    ) }}
+
+    {{ partial "eTutorials/series-card.html" (dict
+      "kind" "motor"
+      "title" "Motor Control Series"
+      "description" "Control motors and read real-world signals with our DC Motor Driver and ADC boards."
+      "tags" (slice "DC Motor Driver" "ADC" "Feedback" "Control")
+      "imageAlt" "Ikainex DC Motor Driver and ADC boards"
+      "productLabels" (slice "DC Motor Driver" "ADC")
+      "tutorials" (slice
+        (dict "title" "DC Motor Driver Setup" "description" "Configure and run your first motor.")
+        (dict "title" "Read Analog Data (ADC)" "description" "Capture sensor data and process it.")
+        (dict "title" "Motor Control Project" "description" "Build a closed-loop speed control project.")
+      )
+      "buttonUrl" "etutorials/motor-control/"
+    ) }}
+  </div>
+</section>

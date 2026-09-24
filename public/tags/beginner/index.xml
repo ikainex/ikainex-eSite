@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beginner on Ikainex Technologies</title>
+    <link>http://localhost:1313/tags/beginner/</link>
+    <description>Recent content in Beginner on Ikainex Technologies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
+    <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
+    
+    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What Is a Microcontroller?</title>
+      <link>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</link>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
