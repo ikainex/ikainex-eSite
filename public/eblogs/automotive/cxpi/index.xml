@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CXPI Protocol on Ikainex Technologies</title>
-    <link>http://localhost:1313/eblogs/automotive/cxpi/</link>
+    <link>https://www.ikainex.com/eblogs/automotive/cxpi/</link>
     <description>Recent content in CXPI Protocol on Ikainex Technologies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
     <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
     
-    <atom:link href="http://localhost:1313/eblogs/automotive/cxpi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ikainex.com/eblogs/automotive/cxpi/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ikainex Technologies</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.ikainex.com/</link>
     <description>Recent content on Ikainex Technologies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
     <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
     
-    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ikainex.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What Is a Microcontroller?</title>
-      <link>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</link>
+      <link>https://www.ikainex.com/elearn/parth-ved/episodes/microcontroller-basics/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</guid>
+      <guid>https://www.ikainex.com/elearn/parth-ved/episodes/microcontroller-basics/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>GPIO — The Digital Hands</title>
-      <link>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</link>
+      <link>https://www.ikainex.com/elearn/parth-ved/episodes/gpio-digital-hands/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</guid>
+      <guid>https://www.ikainex.com/elearn/parth-ved/episodes/gpio-digital-hands/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>From Voltage to Digital Values</title>
-      <link>http://localhost:1313/elearn/parth-ved/episodes/adc-fundamentals/</link>
+      <link>https://www.ikainex.com/elearn/parth-ved/episodes/adc-fundamentals/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/elearn/parth-ved/episodes/adc-fundamentals/</guid>
+      <guid>https://www.ikainex.com/elearn/parth-ved/episodes/adc-fundamentals/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Writing Your First Firmware</title>
-      <link>http://localhost:1313/elearn/parth-ved/episodes/first-firmware/</link>
+      <link>https://www.ikainex.com/elearn/parth-ved/episodes/first-firmware/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/elearn/parth-ved/episodes/first-firmware/</guid>
+      <guid>https://www.ikainex.com/elearn/parth-ved/episodes/first-firmware/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ethernet</title>
-      <link>http://localhost:1313/now/</link>
+      <link>https://www.ikainex.com/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/now/</guid>
+      <guid>https://www.ikainex.com/now/</guid>
       <description></description>
       
     </item>

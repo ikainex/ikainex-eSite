@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Ikainex Technologies</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://www.ikainex.com/categories/</link>
     <description>Recent content in Categories on Ikainex Technologies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
     <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
     
-    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ikainex.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Electronics</title>
-      <link>http://localhost:1313/categories/electronics/</link>
+      <link>https://www.ikainex.com/categories/electronics/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/categories/electronics/</guid>
+      <guid>https://www.ikainex.com/categories/electronics/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Embedded Software</title>
-      <link>http://localhost:1313/categories/embedded-software/</link>
+      <link>https://www.ikainex.com/categories/embedded-software/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/categories/embedded-software/</guid>
+      <guid>https://www.ikainex.com/categories/embedded-software/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Embedded Systems</title>
-      <link>http://localhost:1313/categories/embedded-systems/</link>
+      <link>https://www.ikainex.com/categories/embedded-systems/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/categories/embedded-systems/</guid>
+      <guid>https://www.ikainex.com/categories/embedded-systems/</guid>
       <description></description>
       
     </item>

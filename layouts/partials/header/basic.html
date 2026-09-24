@@ -1,14 +1,14 @@
-<div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+<div class="main-menu ik-navbar flex items-center w-full gap-2 p-1 pl-0">
   {{ $logoLight := resources.Get "img/logo/ikainex_brand_logo_black.svg" }}
   {{ $logoDark := resources.Get "img/logo/ikainex_brand_logo_white.svg" }}
-  <div>
+  <div class="ik-navbar-brand">
     <a href="{{ "" | relLangURL }}" class="ik-navbar-logo flex items-center" aria-label="{{ .Site.Title }} home">
       <span class="sr-only">{{ .Site.Title | markdownify }}</span>
       {{ with $logoLight }}<img src="{{ .RelPermalink }}" width="220" height="66" class="logo ik-navbar-logo-light object-contain object-left nozoom" alt="">{{ end }}
       {{ with $logoDark }}<img src="{{ .RelPermalink }}" width="220" height="66" class="logo ik-navbar-logo-dark object-contain object-left nozoom" alt="">{{ end }}
     </a>
   </div>
-  <div class="flex items-center ms-auto">
+  <div class="ik-navbar-controls flex items-center ms-auto">
     <div class="hidden md:flex">
       {{ partial "header/components/desktop-menu.html" . }}
     </div>

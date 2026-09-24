@@ -634,3 +634,26 @@ html.dark #ik-home .ik-right span { background:#443c20; color:#f5e9b8; }
 @media(max-width:800px){.eb-page{border-radius:1rem}.eb-hero{grid-template-columns:1fr;gap:8px;padding-top:54px}.eb-hero-art{min-height:290px}.eb-board{transform-origin:center}.eb-board-back{transform:translate(-62px,0) rotate(-15deg)}.eb-board-mid{transform:translate(60px,0) rotate(15deg)}.eb-board-front{transform:translateY(6px)}.eb-paths{grid-template-columns:1fr}.eb-path{min-height:230px}.eb-cards{grid-template-columns:1fr}.eb-series{grid-template-columns:1fr 1fr}.eb-series>div{grid-column:1/-1}}
 @media(max-width:520px){.eb-wrap{padding-inline:18px}.eb-hero{padding-top:42px;min-height:initial}.eb-hero h1{font-size:3.7rem}.eb-hero-art{min-height:270px;transform:scale(.88);margin:-10px 0}.eb-path{padding:23px}.eb-how{grid-template-columns:1fr;gap:16px;padding:28px 0 42px}.eb-catalog-head{align-items:flex-start;flex-direction:column}.eb-count{align-self:flex-start}.eb-breadcrumb{padding-bottom:30px}.eb-filter-row{align-items:flex-start;flex-direction:column;gap:12px}.eb-filters button{font-size:.74rem;padding:7px 10px}.eb-product{grid-template-columns:1fr;}.eb-product-art{min-height:205px}.eb-product-art>img{padding:15px}.eb-product-info{min-height:180px;padding:18px}.eb-series{grid-template-columns:1fr}.eb-series>div{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){.eb-page *{scroll-behavior:auto!important;transition:none!important}}
+/* Mobile homepage and navigation refinements. */
+@media (max-width:640px) {
+  body > div.relative > .fixed.inset-x-0.z-100 > .relative.m-auto { padding-left:12px !important; padding-right:12px !important; }
+  .fixed.inset-x-0.bg-neutral .main-menu.ik-navbar { min-height:64px !important; padding:0 !important; gap:0 !important; justify-content:space-between !important; }
+  .ik-navbar-brand { order:1; flex:0 0 auto; margin-left:0; }
+  .ik-navbar-controls { order:2; flex:1 1 auto; margin-left:auto !important; justify-content:flex-end; min-width:0; }
+  .ik-navbar .ik-navbar-logo-light, .ik-navbar .ik-navbar-logo-dark { width:144px !important; height:44px !important; max-width:144px !important; max-height:44px !important; }
+  #ik-home .ik-wrap { padding-left:18px; padding-right:18px; }
+  #ik-home .ik-hero { padding:38px 0 26px; }
+  #ik-home .ik-hero-inner { grid-template-columns:minmax(0,1fr); gap:12px; }
+  #ik-home h1 { max-width:11ch; font-size:clamp(2.35rem,10.5vw,3rem); line-height:.98; letter-spacing:-.05em; margin-bottom:18px; }
+  #ik-home .ik-lead { font-size:18px; line-height:1.55; margin-bottom:22px; }
+  #ik-home .ik-btn { font-size:15px; padding:12px 16px; margin-bottom:8px; }
+  #ik-home .ik-pcb { width:min(100%,360px); margin:0 auto; }
+  #ik-home .ik-card { padding:22px; gap:14px; min-height:260px; }
+  #ik-home .ik-card h2 { font-size:32px; }
+  #ik-home #ik-eboards { min-height:410px; padding-bottom:190px; }
+  #ik-home #ik-eboards .ik-board { width:178px; right:2px; bottom:-24px; opacity:.2; }
+  #ik-home #ik-eboards .ik-chips, #ik-home #ik-eboards .ik-more { position:relative; z-index:1; }
+  #ik-home .ik-series b { font-size:20px; }
+}
+
+@media(max-width:520px){.eb-hero h1{font-size:clamp(2.7rem,12vw,3.4rem)}}
