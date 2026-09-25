@@ -1,35 +1,14 @@
 {{ define "main" }}
-  {{ .Scratch.Set "scope" "list" }}
+  <main class="ik-eblogs-page">
+    {{ partial "eblogs/masthead.html" . }}
 
-  {{/* Header (same as default list header) */}}
-  <header>
-    {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
-      {{ partial "breadcrumbs.html" . }}
-    {{ end }}
-    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
-    <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
-      {{ partial "article-meta/list.html" (dict "context" . "scope" "single") }}
-    </div>
-  </header>
+    {{ partial "eblogs/featured-story.html" . }}
 
-  {{/* Description (markdown content) - only render .Content and skip the automatic .Pages listing */}}
-  {{ $enableToc := .Params.showTableOfContents | default (site.Params.list.showTableOfContents | default false) }}
-  {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
-  {{ $tocMargin := cond $showToc "mt-12" "mt-0" }}
-  {{ $topClass := cond (hasPrefix site.Params.header.layout "fixed") "lg:top-[140px]" "lg:top-10" }}
-  <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]">
-    <section class="{{ $tocMargin }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
-      {{ if $showToc }}
-        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
-          <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
-            {{ partial "toc.html" . }}
-          </div>
-        </div>
-      {{ end }}
-      <div class="eblogs-content min-w-0 min-h-0 flex-1 w-full max-w-none">
-        {{ .Content }}
-      </div>
-    </section>
-  </div>
+    {{ partial "eblogs/series-explorer.html" . }}
+    {{ partial "eblogs/character-feature.html" . }}
 
+    {{ partial "eblogs/latest-stories.html" . }}
+
+    {{ partial "eblogs/ecosystem-links.html" . }}
+  </main>
 {{ end }}

@@ -1,0 +1,42 @@
+{{ $featured := where .Site.RegularPages "Section" "eblogs" }}
+{{ $featured = where $featured "Params.featured" true }}
+{{ $featured = first 1 (sort $featured "Params.featureWeight") }}
+
+<section id="featured" class="ik-featured-section ik-container">
+  {{ with index $featured 0 }}
+    <article class="ik-featured-story">
+      <a class="ik-featured-media" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
+        {{ with .Params.featureImage }}
+          <img src="{{ . | relURL }}" alt="" loading="eager">
+        {{ else }}
+          <div class="ik-image-placeholder ik-placeholder-circuit" aria-hidden="true">
+            <span>FEATURED STORY</span>
+          </div>
+        {{ end }}
+      </a>
+
+      <div class="ik-featured-content">
+        <div class="ik-story-meta">
+          <span class="ik-story-label">{{ .Params.storyType | default "Feature" }}</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+
+        <h2 class="ik-featured-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <p class="ik-story-description">
+          {{ .Description | default .Summary | plainify | truncate 220 }}
+        </p>
+
+        <a class="ik-editorial-link" href="{{ .RelPermalink }}">
+          Read story <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </article>
+  {{ else }}
+    <div class="ik-empty-state">
+      <p>Add a post with <code>featured: true</code> to display it here.</p>
+    </div>
+  {{ end }}
+</section>

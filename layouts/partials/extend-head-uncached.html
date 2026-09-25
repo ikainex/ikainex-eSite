@@ -1,0 +1,6 @@
+{{ if eq .Section "eblogs" }}
+  {{ with resources.Get "css/eblogs.css" }}
+    {{ $style := . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ end }}
+{{ end }}

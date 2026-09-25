@@ -1,0 +1,19 @@
+{{ $parth := resources.Get "img/characters/Parth.svg" }}
+{{ $ved := resources.Get "img/characters/Ved.svg" }}
+
+<section class="ik-character-section ik-container" aria-labelledby="ik-character-title">
+  <div class="ik-character-feature">
+    <div class="ik-character-art" aria-hidden="true">
+      {{ with $parth }}<img class="ik-character-parth" src="{{ .RelPermalink }}" alt="" loading="lazy">{{ end }}
+      {{ with $ved }}<img class="ik-character-ved" src="{{ .RelPermalink }}" alt="" loading="lazy">{{ end }}
+      <span class="ik-character-orbit ik-character-orbit-one"></span>
+      <span class="ik-character-orbit ik-character-orbit-two"></span>
+    </div>
+    <div class="ik-character-copy">
+      <div class="ik-editorial-kicker">A SERIES FOR THE CURIOUS</div>
+      <h2 id="ik-character-title">Meet Parth &amp; Ved</h2>
+      <p>Big engineering questions are easier to explore together. Follow Parth and Ved through electronics, embedded systems, and the ideas behind the hardware.</p>
+      <a class="ik-editorial-link" href="{{ "/elearn/parth-ved/" | relURL }}">Explore the series <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>

@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>eBlogs on Ikainex Technologies</title>
-    <link>https://www.ikainex.com/eblogs/</link>
+    <link>http://localhost:1313/eblogs/</link>
     <description>Recent content in eBlogs on Ikainex Technologies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
     <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
     
-    <atom:link href="https://www.ikainex.com/eblogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate><atom:link href="http://localhost:1313/eblogs/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
