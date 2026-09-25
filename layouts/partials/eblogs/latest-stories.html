@@ -1,0 +1,21 @@
+{{ $stories := where .Site.RegularPages "Section" "eblogs" }}
+{{ $stories = where $stories "Params.featured" "!=" true }}
+{{ $stories = first 6 (sort $stories "Date" "desc") }}
+
+<section id="latest" class="ik-latest-section ik-container">
+  <div class="ik-section-heading">
+    <div>
+      <div class="ik-editorial-kicker">FROM THE LAB</div>
+      <h2>Latest stories</h2>
+    </div>
+    <p class="ik-muted">A considered selection from the journal</p>
+  </div>
+
+  <div class="ik-story-grid">
+    {{ range $stories }}
+      {{ partial "eblogs/story-card.html" . }}
+    {{ else }}
+      <p class="ik-muted">Publish more eBlogs articles to populate this section.</p>
+    {{ end }}
+  </div>
+</section>

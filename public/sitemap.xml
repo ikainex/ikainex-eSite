@@ -3,144 +3,146 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://www.ikainex.com/elearn/parth-ved/episodes/microcontroller-basics/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/elearn/parth-ved/episodes/gpio-digital-hands/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/elearn/parth-ved/episodes/adc-fundamentals/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/adc-fundamentals/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/elearn/parth-ved/episodes/first-firmware/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/episodes/first-firmware/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/elearn/</loc>
+    <loc>http://localhost:1313/eblogs/circuit-stories/</loc>
+    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eblogs/</loc>
+    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eblogs/circuit-stories/adc-board-journey/</loc>
+    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eblogs/signal-and-thought/</loc>
+    <lastmod>2026-09-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eblogs/signal-and-thought/understanding-reference-voltage/</loc>
+    <lastmod>2026-09-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eblogs/experiment-lab/</loc>
+    <lastmod>2026-09-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eblogs/experiment-lab/first-prototype/</loc>
+    <lastmod>2026-09-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/</loc>
+    <loc>http://localhost:1313/elearn/parth-ved/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/elearn/parth-ved/</loc>
-    <lastmod>2026-09-20T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/eboards/adc-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eblogs/automotive/10base-t1s/</loc>
+    <loc>http://localhost:1313/eboards/add-on/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eboards/adc-aob/</loc>
+    <loc>http://localhost:1313/etutorials/automotive/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eboards/add-on/</loc>
+    <loc>http://localhost:1313/eblogs/beyond-the-datasheet/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eblogs/automotive/</loc>
+    <loc>http://localhost:1313/eboards/canfd-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/etutorials/automotive/</loc>
+    <loc>http://localhost:1313/eboards/dc-motor-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eblogs/automotive/canfd/</loc>
+    <loc>http://localhost:1313/eboards/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eboards/canfd-aob/</loc>
+    <loc>http://localhost:1313/now/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eblogs/automotive/cxpi/</loc>
+    <loc>http://localhost:1313/etutorials/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eboards/dc-motor-aob/</loc>
+    <loc>http://localhost:1313/eboards/lin-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eblogs/</loc>
+    <loc>http://localhost:1313/etutorials/motor-control/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ikainex.com/eboards/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/now/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/etutorials/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/eblogs/fpgas/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/eblogs/iot/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/eboards/lin-aob/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/eblogs/automotive/lin/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/eblogs/motor-control/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/etutorials/motor-control/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.ikainex.com/request-quote/</loc>
+    <loc>http://localhost:1313/request-quote/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

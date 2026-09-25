@@ -1,0 +1,36 @@
+{{ $series := .Params.series | default (slice "Engineering") }}
+{{ if not (reflect.IsSlice $series) }}
+  {{ $series = slice $series }}
+{{ else if eq (len $series) 0 }}
+  {{ $series = slice "Engineering" }}
+{{ end }}
+{{ $seriesLabel := index $series 0 }}
+
+<article class="ik-story-card">
+  <a class="ik-story-image" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
+    {{ with .Params.featureImage }}
+      <img src="{{ . | relURL }}" alt="" loading="lazy">
+    {{ else }}
+      <div class="ik-image-placeholder ik-placeholder-grid" aria-hidden="true">
+        <span>IKAINEX</span>
+      </div>
+    {{ end }}
+  </a>
+
+  <div class="ik-story-card-body">
+    <div class="ik-story-meta">
+      <span class="ik-story-label">{{ $seriesLabel }}</span>
+      <span>{{ .ReadingTime }} min</span>
+    </div>
+
+    <h3 class="ik-story-card-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h3>
+
+    <p class="ik-story-description">
+      {{ .Description | default .Summary | plainify | truncate 140 }}
+    </p>
+
+    <a class="ik-text-link" href="{{ .RelPermalink }}">Read article ↗</a>
+  </div>
+</article>
