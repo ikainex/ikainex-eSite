@@ -3,8 +3,8 @@
   <style>{{ $style.Content | safeCSS }}</style>
   <div class="ikx-learning">
     <nav class="ikx-learning-breadcrumb" aria-label="Breadcrumb">
-      <a href="{{ "eLearn/" | relURL }}">eLearn</a><span aria-hidden="true">/</span>
-      {{ if not .Params.cardType }}<span aria-current="page">{{ .Title }}</span>{{ else }}<a href="{{ "eLearn/embedded-systems/" | relURL }}">Embedded Systems</a><span aria-hidden="true">/</span><span aria-current="page">{{ .Title }}</span>{{ end }}
+      <a href="{{ "elearn/" | relURL }}">eLearn</a><span aria-hidden="true">/</span>
+      {{ if not .Params.cardType }}<span aria-current="page">{{ .Title }}</span>{{ else }}<a href="{{ "elearn/embedded-systems/" | relURL }}">Embedded Systems</a><span aria-hidden="true">/</span><span aria-current="page">{{ .Title }}</span>{{ end }}
     </nav>
     <header class="ikx-learning-hero">
       <span class="ikx-learning-kicker">{{ .Params.kicker | default "LEARNING PATHS" }}</span>
@@ -15,7 +15,7 @@
     <section class="ikx-learning-section" aria-label="{{ .Title }} topics">
       <div class="ikx-learning-grid {{ if eq .Params.cardType "protocol" }}ikx-learning-grid-protocols{{ end }}">
         {{ range $index, $card := .Params.cards }}
-          <a class="ikx-learning-card ikx-tone-{{ $card.tone }}" href="{{ $card.url | relURL }}" style="--card-order: {{ $index }}">
+          <a class="ikx-learning-card ikx-tone-{{ $card.tone }}" href="{{ $card.url | lower | relURL }}" style="--card-order: {{ $index }}">
             <div class="ikx-card-topline"><span class="ikx-card-icon" aria-hidden="true">{{ $card.icon }}</span><span class="ikx-card-index">{{ printf "%02d" (add $index 1) }}</span></div>
             <div class="ikx-card-copy"><h2>{{ $card.title }}</h2><p>{{ $card.description }}</p></div>
             <div class="ikx-card-tags" aria-label="Topics">{{ range $card.tags }}<span>{{ . }}</span>{{ end }}</div>
