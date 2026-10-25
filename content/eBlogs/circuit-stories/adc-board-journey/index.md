@@ -33,6 +33,6 @@ Use this section for real observations from prototyping and testing.
 
 ## Continue exploring
 
-- Link to the relevant eBoards product page.
+- Link to the relevant eProducts page.
 - Link to an eLearn concept.
 - Link to a practical eTutorial.

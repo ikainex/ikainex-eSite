@@ -11,8 +11,8 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
- name = "eBoards"
- pageRef = "eBoards"
+ name = "eProducts"
+ pageRef = "eProducts"
  weight = 1
 
 [[main]]

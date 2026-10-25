@@ -1,0 +1,12 @@
+.peripheral-lesson{--lin-blue:var(--lesson-accent);--lin-blue-dark:var(--lesson-accent)}
+.peripheral-lesson .lin-hero{background:radial-gradient(ellipse at 80% 18%,color-mix(in srgb,var(--lesson-accent) 17%,transparent),transparent 36%),radial-gradient(ellipse at 68% 90%,rgba(44,162,128,.1),transparent 34%),linear-gradient(135deg,var(--lin-panel),transparent)}
+.peripheral-lesson .lin-chapter-heading>span,.peripheral-lesson .lin-master{background:var(--lesson-accent);fill:var(--lesson-accent)}
+.peripheral-lesson .lin-wire{stroke:var(--lesson-accent)}
+.peripheral-lesson .lin-outline-nav a[aria-current="location"]{color:var(--lesson-accent)}
+.peripheral-lesson .lin-outline-nav a[aria-current="location"]>span:first-child{border-color:var(--lesson-accent);background:var(--lesson-accent)}
+.peripheral-visual svg .visual-box{fill:color-mix(in srgb,var(--lesson-accent) 12%,white);stroke:var(--lesson-accent);stroke-width:2}
+.peripheral-visual svg .visual-target{fill:rgba(38,165,123,.12);stroke:#269f7c}
+.peripheral-visual svg .visual-wire{stroke:var(--lesson-accent);stroke-width:3;fill:none}
+.peripheral-visual svg .visual-branch{stroke:#269f7c;stroke-width:2}
+.peripheral-visual svg .visual-wire-label{fill:var(--lesson-accent);font-size:10px;letter-spacing:.3px}
+.peripheral-visual svg .lin-master{fill:var(--lesson-accent)}

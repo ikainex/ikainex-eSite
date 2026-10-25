@@ -1,19 +1,20 @@
 {{ $episodes := where .Site.RegularPages "Params.parthVed" true }}
 <section id="episodes" class="pv-section">
-  <div class="pv-section-heading pv-section-heading-row">
-    <div>
-      <span class="pv-eyebrow">PARTH & VED EPISODES</span>
-      <h2>Explore learning episodes</h2>
-      <p>Short, focused lessons with big ideas and practical examples.</p>
+  <div class="pv-episode-intro">
+    <div class="pv-section-heading">
+      <span class="pv-eyebrow">LEARN WITH PARTH &amp; VED</span>
+      <h2>Big ideas, one conversation at a time.</h2>
+      <p>Follow their questions from the first building blocks to real firmware. Pick up where you left off or start at the beginning.</p>
     </div>
-    <a class="pv-text-link" href="{{ "eLearn/parth-ved/episodes/" | relURL }}">View all →</a>
+    <div class="pv-learning-rhythm" aria-label="How each learning episode works"><span><b>01</b> Ask a good question</span><i aria-hidden="true">→</i><span><b>02</b> Unpack the idea</span><i aria-hidden="true">→</i><span><b>03</b> Put it to work</span></div>
   </div>
 
   <div class="pv-episode-grid">
-    {{ range $episodes.ByWeight }}
-      {{ partial "parth-ved/episode-card.html" . }}
+    {{ range $index, $episode := $episodes.ByWeight }}
+      {{ partial "parth-ved/episode-card.html" (dict "page" $episode "index" $index) }}
     {{ else }}
-      <p>No episodes have been published yet. Add content pages under <code>content/eLearn/parth-ved/episodes/</code>.</p>
+      <p class="pv-episodes-empty">New Parth &amp; Ved conversations are on their way. In the meantime, choose a topic above to start exploring.</p>
     {{ end }}
   </div>
+  <div class="pv-episodes-footer"><span>Prefer to browse?</span><a href="{{ "eLearn/parth-ved/episodes/" | relURL }}">See all Parth &amp; Ved episodes <span aria-hidden="true">↗</span></a></div>
 </section>

@@ -1,21 +1,19 @@
-<article class="pv-episode-card">
-  <div class="pv-episode-art">
-    {{ if eq .Params.lessonType "Practical" }}
-      <img src="{{ "images/parth-ved/Parth.svg" | relURL }}" alt="" loading="lazy">
-      <span class="pv-episode-badge">Practical</span>
-    {{ else }}
-      <img src="{{ "images/parth-ved/Ved.svg" | relURL }}" alt="" loading="lazy">
-      <span class="pv-episode-badge">Concept</span>
-    {{ end }}
-  </div>
-
+{{ $page := .page }}
+{{ $index := .index }}
+<article class="pv-episode-card {{ if eq $index 0 }}pv-episode-first{{ end }}">
+  <a class="pv-episode-cover" href="{{ $page.RelPermalink }}" aria-label="Start episode: {{ $page.Title }}">
+    <span class="pv-episode-step">EPISODE {{ printf "%02d" (add $index 1) }}</span>
+    <span class="pv-episode-symbol" aria-hidden="true">
+      {{ if in $page.Params.tags "MCU" }}▦{{ else if in $page.Params.tags "GPIO" }}⦿{{ else if in $page.Params.tags "ADC" }}⌁{{ else }}&lt;/&gt;{{ end }}
+    </span>
+    <span class="pv-episode-type">{{ $page.Params.lessonType | default "Lesson" }}</span>
+    <span class="pv-episode-cover-line" aria-hidden="true"></span>
+  </a>
   <div class="pv-episode-body">
-    <div class="pv-meta">
-      <span>{{ .Params.difficulty | default "All levels" }}</span>
-      <span>{{ .Params.lessonType | default "Lesson" }}</span>
-    </div>
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    <p>{{ .Description | default .Summary | plainify | truncate 120 }}</p>
-    <a class="pv-card-link" href="{{ .RelPermalink }}">Read lesson →</a>
+    <div class="pv-episode-meta"><span>{{ $page.Params.difficulty | default "All levels" }}</span><span>Parth &amp; Ved</span></div>
+    <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+    <p>{{ $page.Description | default $page.Summary | plainify | truncate 120 }}</p>
+    <div class="pv-episode-tags" aria-label="Episode topics">{{ range first 3 $page.Params.tags }}<span>{{ . }}</span>{{ end }}</div>
+    <a class="pv-episode-link" href="{{ $page.RelPermalink }}">{{ if eq $index 0 }}Start this episode{{ else }}Open episode{{ end }} <span aria-hidden="true">↗</span></a>
   </div>
 </article>
