@@ -553,13 +553,14 @@ html.dark .fixed.inset-x-0.bg-neutral .main-menu nav a.active span.text-base {
 html.dark .ik-navbar-logo-light { display:none !important; }
 html.dark .ik-navbar-logo-dark { display:block !important; }
 #ik-home {
-  --ik-bg:#f4f7fa; --ik-card:#fff; --ik-ink:#14233b; --ik-mut:#5b6b80; --ik-line:#d9e3ed;
+  --ik-bg:#f7fafc; --ik-card:#fff; --ik-ink:#14233b; --ik-mut:#5b6b80; --ik-line:#d9e3ed; --ik-grid-line:rgba(14,116,144,.025);
   --ik-brand:#3f7397; --ik-red:#e5322d; --ik-navy:#14243d; --ik-tint1:#eaf1fb; --ik-tint2:#e6f5ee;
   position:relative; z-index:1; min-height:100vh; background:var(--ik-bg); color:var(--ik-ink);
   font-family:"Bricolage Grotesque", "Space Grotesk", system-ui, sans-serif; line-height:1.5;
   background-image:linear-gradient(var(--ik-line) 1px,transparent 1px),linear-gradient(90deg,var(--ik-line) 1px,transparent 1px);
-  background-size:44px 44px; background-position:-1px -1px;
+  background-size:36px 36px; background-position:-1px -1px;
 }
+#ik-home { background-image:linear-gradient(var(--ik-grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--ik-grid-line) 1px,transparent 1px); }
 #ik-home::before { content:""; position:fixed; inset:0; background:radial-gradient(ellipse at 70% 10%,transparent 0,var(--ik-bg) 75%); pointer-events:none; z-index:0; }
 #ik-home > * { position:relative; z-index:1; }
 #ik-home a { color:inherit; text-decoration:none; }
@@ -616,9 +617,10 @@ html.dark .ik-navbar-logo-dark { display:block !important; }
 #ik-home .ik-strip div { display:inline-block; padding:14px 0; animation:ik-mq 34s linear infinite; font-weight:600; color:var(--ik-mut); }
 #ik-home .ik-strip span { margin:0 22px; } #ik-home .ik-strip span::before { content:""; display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--ik-red); margin-right:22px; vertical-align:middle; }
 @keyframes ik-mq { to { transform:translateX(-50%); } }
-#ik-home .ik-footer { padding:36px 0 50px; color:var(--ik-mut); font-size:14px; }
-#ik-home .ik-footer .ik-wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
-html.dark #ik-home { --ik-bg:#0c1420; --ik-card:#131e2e; --ik-ink:#e8eef6; --ik-mut:#9aabc0; --ik-line:#24344a; --ik-brand:#6aa5cc; --ik-navy:#08101a; --ik-tint1:#152238; --ik-tint2:#12261f; }
+#ik-home .ik-footer { padding:0 0 28px; color:var(--ik-mut); font-size:12px; }
+#ik-home .ik-footer .ik-wrap { display:block; }
+#ik-home .ik-footer p { margin:0; padding:20px 0 0; border-top:1px solid var(--ik-line); text-align:center; }
+html.dark #ik-home { --ik-bg:#101820; --ik-card:#131e2e; --ik-ink:#e8eef6; --ik-mut:#9aabc0; --ik-line:#24344a; --ik-grid-line:rgba(56,189,248,.025); --ik-brand:#6aa5cc; --ik-navy:#08101a; --ik-tint1:#152238; --ik-tint2:#12261f; }
 html.dark #ik-home .ik-right span { background:#443c20; color:#f5e9b8; }
 @media(max-width:900px) { #ik-home .ik-hero-inner { grid-template-columns:1fr; } #ik-home .ik-grid { grid-template-columns:1fr; } #ik-home .ik-w2 { grid-column:auto; } #ik-home .ik-series { grid-template-columns:1fr; } }
 @media(max-width:640px) { .fixed.inset-x-0.bg-neutral .main-menu { min-height:76px !important; } .fixed.inset-x-0.bg-neutral .main-menu a.text-base { font-size:1.55rem !important; } .ik-navbar-logo-light,.ik-navbar-logo-dark { width:180px !important; height:54px !important; } #ik-home .ik-wrap { padding:0 18px; } #ik-home .ik-card { padding:24px; } #ik-home .ik-board { opacity:.35; } }
@@ -657,3 +659,30 @@ html.dark #ik-home .ik-right span { background:#443c20; color:#f5e9b8; }
 }
 
 @media(max-width:520px){.eb-hero h1{font-size:clamp(2.7rem,12vw,3.4rem)}}
+
+/* Keep mobile pages feeling compact without shrinking text or changing browser zoom. */
+@media (max-width: 640px) {
+  html { font-size: 15px; }
+
+  body > div.relative > .fixed.inset-x-0.z-100 { top: .5rem; left: .5rem; right: .5rem; }
+  body > div.relative > .fixed.inset-x-0.z-100 > .relative.m-auto { padding-left: 10px; padding-right: 10px; }
+  .fixed.inset-x-0.bg-neutral .main-menu.ik-navbar { min-height: 58px !important; }
+  .ik-navbar .ik-navbar-logo-light,
+  .ik-navbar .ik-navbar-logo-dark { width: 128px !important; height: 40px !important; max-width: 128px !important; max-height: 40px !important; }
+  #main-content { padding-inline: 12px; }
+
+  #ik-home .ik-wrap { padding-inline: 16px; }
+  #ik-home .ik-hero { padding: 28px 0 20px; }
+  #ik-home h1 { font-size: clamp(2.1rem, 9vw, 2.65rem); margin-bottom: 14px; }
+  #ik-home .ik-lead { font-size: 16px; line-height: 1.5; margin-bottom: 18px; }
+  #ik-home .ik-grid { gap: 14px; padding: 24px 0 48px; }
+  #ik-home .ik-card { padding: 18px; gap: 12px; min-height: 220px; font-size: 15px; border-radius: 18px; }
+  #ik-home .ik-card h2 { font-size: 27px; }
+  #ik-home #ik-eproducts { min-height: 350px; padding-bottom: 150px; }
+
+  .ikx-learning { padding-inline: 0; }
+  .ikx-learning-hero { padding: 1.25rem; }
+  .ikx-learning-section { padding: 1.15rem 0; }
+  .ikx-learning-card,
+  .ikx-learning-grid-protocols .ikx-learning-card { min-height: 220px; padding: 1.1rem; }
+}

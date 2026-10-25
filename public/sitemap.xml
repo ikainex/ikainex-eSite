@@ -3,196 +3,196 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/elearn/parth-ved/episodes/microcontroller-basics/</loc>
+    <loc>http://192.168.1.5:1313/elearn/parth-ved/episodes/microcontroller-basics/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</loc>
+    <loc>http://192.168.1.5:1313/elearn/parth-ved/episodes/gpio-digital-hands/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/parth-ved/episodes/adc-fundamentals/</loc>
+    <loc>http://192.168.1.5:1313/elearn/parth-ved/episodes/adc-fundamentals/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/parth-ved/episodes/first-firmware/</loc>
+    <loc>http://192.168.1.5:1313/elearn/parth-ved/episodes/first-firmware/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/circuit-stories/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/circuit-stories/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://192.168.1.5:1313/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/circuit-stories/adc-board-journey/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/circuit-stories/adc-board-journey/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/signal-and-thought/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/signal-and-thought/</loc>
     <lastmod>2026-09-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/signal-and-thought/understanding-reference-voltage/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/signal-and-thought/understanding-reference-voltage/</loc>
     <lastmod>2026-09-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/experiment-lab/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/experiment-lab/</loc>
     <lastmod>2026-09-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/experiment-lab/first-prototype/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/experiment-lab/first-prototype/</loc>
     <lastmod>2026-09-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/</loc>
+    <loc>http://192.168.1.5:1313/elearn/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/parth-ved/</loc>
+    <loc>http://192.168.1.5:1313/elearn/parth-ved/</loc>
     <lastmod>2026-09-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eproducts/adc-aob/</loc>
+    <loc>http://192.168.1.5:1313/eproducts/adc-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eproducts/add-on/</loc>
+    <loc>http://192.168.1.5:1313/eproducts/add-on/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/automotive-peripherals/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/etutorials/automotive/</loc>
+    <loc>http://192.168.1.5:1313/etutorials/automotive/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eblogs/beyond-the-datasheet/</loc>
+    <loc>http://192.168.1.5:1313/eblogs/beyond-the-datasheet/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eproducts/canfd-aob/</loc>
+    <loc>http://192.168.1.5:1313/eproducts/canfd-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eproducts/dc-motor-aob/</loc>
+    <loc>http://192.168.1.5:1313/eproducts/dc-motor-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eproducts/</loc>
+    <loc>http://192.168.1.5:1313/eproducts/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/now/</loc>
+    <loc>http://192.168.1.5:1313/now/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/etutorials/</loc>
+    <loc>http://192.168.1.5:1313/etutorials/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/general-purpose-peripherals/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/can/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/automotive-peripherals/can/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/cxpi/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/automotive-peripherals/cxpi/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/gpio/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/general-purpose-peripherals/gpio/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/i2c/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/general-purpose-peripherals/i2c/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/lin/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/automotive-peripherals/lin/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/spi/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/general-purpose-peripherals/spi/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/uart/</loc>
+    <loc>http://192.168.1.5:1313/elearn/embedded-systems/general-purpose-peripherals/uart/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eproducts/lin-aob/</loc>
+    <loc>http://192.168.1.5:1313/eproducts/lin-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/etutorials/motor-control/</loc>
+    <loc>http://192.168.1.5:1313/etutorials/motor-control/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/request-quote/</loc>
+    <loc>http://192.168.1.5:1313/request-quote/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -28,5 +28,5 @@
       {{ with site.GetPage "/eBlogs" }}<article class="ik-card" id="ik-eblogs"><h2>eBlogs</h2><div>{{ range first 3 (where site.RegularPages "Section" "eBlogs") }}<a class="ik-post" href="{{ .RelPermalink }}"><b>{{ .Title }}</b><time>{{ .Date.Format "Jan 2006" }}</time></a>{{ end }}</div><a class="ik-more" href="{{ .RelPermalink }}">Read the blog →</a></article>{{ end }}
     </div></div>
   </main>
-  <footer class="ik-footer"><div class="ik-wrap"><span><b>Ikainex Technologies</b> · Engineering products and resources for makers and teams.</span><span>eProducts · eBlogs · eLearn · eTutorials</span></div></footer>
+  <footer class="ik-footer"><div class="ik-wrap"><p>Ikainex&trade; is a trademark of Ikainex Technologies. &copy; 2026 Ikainex Technologies. All rights reserved.</p></div></footer>
 </div>
