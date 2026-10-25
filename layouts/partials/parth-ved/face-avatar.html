@@ -1,0 +1,9 @@
+{{- $person := .person -}}
+{{- $emotion := .emotion | default "curious" -}}
+{{- $isParth := eq $person "Parth" -}}
+{{- $asset := resources.Get (cond $isParth "img/characters/Parth.svg" "img/characters/Ved.svg") -}}
+<span class="pv-face pv-face-{{ lower $person }} pv-emotion-{{ $emotion }}" role="img" aria-label="{{ $person }}, {{ $emotion }}">
+  {{ if $isParth }}<svg viewBox="68 18 168 174" aria-hidden="true"><image href="{{ $asset.RelPermalink }}" width="303.47" height="937" preserveAspectRatio="none"/></svg>
+  {{ else }}<svg viewBox="32 0 122 124" aria-hidden="true"><image href="{{ $asset.RelPermalink }}" width="183.05" height="528.12" preserveAspectRatio="none"/></svg>{{ end }}
+  <span class="pv-emotion-mark" aria-hidden="true">{{ if eq $emotion "thinking" }}…{{ else if eq $emotion "confused" }}?{{ else if eq $emotion "surprised" }}!{{ else if eq $emotion "understanding" }}✦{{ else if eq $emotion "excited" }}✦{{ else if eq $emotion "encouraging" }}♥{{ else if eq $emotion "happy" }}✦{{ else if eq $emotion "demonstrating" }}↗{{ else if eq $emotion "confident" }}✓{{ else }}{{ if eq $person "Parth" }}✧{{ else }}?{{ end }}{{ end }}</span>
+</span>

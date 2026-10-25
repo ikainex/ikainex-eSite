@@ -1,0 +1,5 @@
+{{- $speaker := .speaker -}}
+<article class="lin-chat lin-chat-{{ lower $speaker }}">
+  {{ partial "parth-ved/face-avatar.html" (dict "person" $speaker "emotion" .emotion) }}
+  <div class="lin-chat-body"><div class="lin-chat-meta"><strong>{{ $speaker }}</strong><span>{{ .label | default (title .emotion) }}</span></div><div class="lin-chat-bubble">{{ .text | markdownify }}</div></div>
+</article>

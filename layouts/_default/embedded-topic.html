@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ $style := resources.Get "css/embedded-learning.css" | minify | fingerprint }}
+  {{ $topicStyle := resources.Get "css/embedded-topic.css" | minify | fingerprint }}
+  <style>{{ $style.Content | safeCSS }}</style>
+  <style>{{ $topicStyle.Content | safeCSS }}</style>
+  <article class="ikx-learning ikx-topic-page ikx-tone-{{ .Params.tone }}">
+    <nav class="ikx-learning-breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ "eLearn/" | relURL }}">eLearn</a><span aria-hidden="true">/</span>
+      <a href="{{ "eLearn/embedded-systems/" | relURL }}">Embedded Systems</a><span aria-hidden="true">/</span>
+      <a href="{{ .Params.parentUrl | relURL }}">{{ .Params.parentTitle }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ .Title }}</span>
+    </nav>
+    <header class="ikx-learning-hero ikx-topic-hero">
+      <span class="ikx-learning-kicker">{{ .Params.kicker }}</span>
+      <div class="ikx-topic-title-row"><span class="ikx-card-icon" aria-hidden="true">{{ .Params.icon }}</span><h1>{{ .Title }}</h1></div>
+      <p>{{ .Description }}</p>
+      <div class="ikx-card-tags" aria-label="Topics">{{ range .Params.tags }}<span>{{ . }}</span>{{ end }}</div>
+    </header>
+    <div class="ikx-topic-content">
+      <section class="ikx-topic-overview"><span class="ikx-learning-kicker">THE BIG IDEA</span><h2>{{ .Params.overviewTitle }}</h2><p>{{ .Params.overview }}</p></section>
+      <div class="ikx-topic-panels">
+        <section class="ikx-topic-panel"><span class="ikx-panel-icon" aria-hidden="true">✳</span><h2>Key ideas</h2><ul>{{ range .Params.concepts }}<li>{{ . }}</li>{{ end }}</ul></section>
+        <section class="ikx-topic-panel"><span class="ikx-panel-icon" aria-hidden="true">⌁</span><h2>Where you’ll see it</h2><ul>{{ range .Params.applications }}<li>{{ . }}</li>{{ end }}</ul></section>
+      </div>
+      <section class="ikx-topic-next"><div><span class="ikx-learning-kicker">KEEP EXPLORING</span><h2>Ready for the next step?</h2><p>{{ .Params.nextDescription }}</p></div><a class="ikx-series-button" href="{{ .Params.parentUrl | relURL }}">Back to {{ .Params.parentTitle }} <span aria-hidden="true">→</span></a></section>
+    </div>
+  </article>
+{{ end }}

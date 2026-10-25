@@ -87,12 +87,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eboards/adc-aob/</loc>
+    <loc>http://localhost:1313/eproducts/adc-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eboards/add-on/</loc>
+    <loc>http://localhost:1313/eproducts/add-on/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -107,17 +112,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eboards/canfd-aob/</loc>
+    <loc>http://localhost:1313/eproducts/canfd-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eboards/dc-motor-aob/</loc>
+    <loc>http://localhost:1313/eproducts/dc-motor-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eboards/</loc>
+    <loc>http://localhost:1313/elearn/embedded-systems/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eproducts/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -132,7 +142,47 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/eboards/lin-aob/</loc>
+    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/can/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/cxpi/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/gpio/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/i2c/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/automotive-peripherals/lin/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/spi/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/elearn/embedded-systems/general-purpose-peripherals/uart/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/eproducts/lin-aob/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -1,0 +1,29 @@
+{{ define "main" }}
+  {{ $style := resources.Get "css/embedded-learning.css" | minify | fingerprint }}
+  <style>{{ $style.Content | safeCSS }}</style>
+  <div class="ikx-learning">
+    <nav class="ikx-learning-breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ "eLearn/" | relURL }}">eLearn</a><span aria-hidden="true">/</span>
+      {{ if not .Params.cardType }}<span aria-current="page">{{ .Title }}</span>{{ else }}<a href="{{ "eLearn/embedded-systems/" | relURL }}">Embedded Systems</a><span aria-hidden="true">/</span><span aria-current="page">{{ .Title }}</span>{{ end }}
+    </nav>
+    <header class="ikx-learning-hero">
+      <span class="ikx-learning-kicker">{{ .Params.kicker | default "LEARNING PATHS" }}</span>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
+      <div class="ikx-learning-stats"><span><b>{{ len .Params.cards }}</b> {{ if eq .Params.cardType "protocol" }}protocols to explore{{ else }}learning paths{{ end }}</span><span><i></i> Beginner friendly</span></div>
+    </header>
+    <section class="ikx-learning-section" aria-label="{{ .Title }} topics">
+      <div class="ikx-learning-grid {{ if eq .Params.cardType "protocol" }}ikx-learning-grid-protocols{{ end }}">
+        {{ range $index, $card := .Params.cards }}
+          <a class="ikx-learning-card ikx-tone-{{ $card.tone }}" href="{{ $card.url | relURL }}" style="--card-order: {{ $index }}">
+            <div class="ikx-card-topline"><span class="ikx-card-icon" aria-hidden="true">{{ $card.icon }}</span><span class="ikx-card-index">{{ printf "%02d" (add $index 1) }}</span></div>
+            <div class="ikx-card-copy"><h2>{{ $card.title }}</h2><p>{{ $card.description }}</p></div>
+            <div class="ikx-card-tags" aria-label="Topics">{{ range $card.tags }}<span>{{ . }}</span>{{ end }}</div>
+            <span class="ikx-card-action">{{ $card.action | default "Explore topics" }} <span aria-hidden="true">↗</span></span>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+    <aside class="ikx-learning-note"><span aria-hidden="true">✦</span><p>Build your understanding one concept at a time. Pick a path to see the ideas and interfaces that bring embedded products to life.</p></aside>
+  </div>
+{{ end }}
