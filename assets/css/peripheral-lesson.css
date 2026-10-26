@@ -10,3 +10,17 @@
 .peripheral-visual svg .visual-branch{stroke:#269f7c;stroke-width:2}
 .peripheral-visual svg .visual-wire-label{fill:var(--lesson-accent);font-size:10px;letter-spacing:.3px}
 .peripheral-visual svg .lin-master{fill:var(--lesson-accent)}
+.lin-story-intro,.lin-lesson-feature{margin:1.2rem 0;padding:1.2rem 1.35rem;border:1px solid var(--lin-line);border-radius:1rem;background:var(--lin-panel)}
+.lin-story-intro p{margin:.55rem 0 0;color:var(--lin-ink);font-size:1rem;line-height:1.7;font-weight:650}
+.lin-lesson-feature h2{margin:.45rem 0;color:var(--lin-ink);font-size:1.3rem;letter-spacing:-.03em}
+.lin-lesson-feature>p,.lin-lesson-feature li,.lin-lesson-feature details{color:var(--lin-muted);font-size:.88rem;line-height:1.65}
+.lin-lesson-feature ol{display:grid;gap:.45rem;margin:.75rem 0;padding-left:1.2rem}
+.lin-lesson-feature details{margin-top:.7rem;padding:.75rem;border-radius:.7rem;background:rgba(20,120,189,.07)}
+.lin-lesson-feature summary{color:var(--lin-blue);font-weight:800;cursor:pointer}
+.lin-debug-feature{border-color:rgba(219,139,53,.3)}
+.lin-lab-feature{border-color:rgba(31,152,116,.3)}
+.lin-flow-diagram{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.45rem;padding:1rem .3rem}
+.lin-flow-step{display:grid;min-height:3.3rem;min-width:6rem;max-width:12rem;flex:1 1 auto;place-items:center;padding:.65rem .8rem;border:1px solid color-mix(in srgb,var(--lesson-accent) 35%,transparent);border-radius:.75rem;background:color-mix(in srgb,var(--lesson-accent) 9%,white);color:var(--lin-ink);font-size:.78rem;font-weight:800;text-align:center}
+.dark .lin-flow-step{background:color-mix(in srgb,var(--lesson-accent) 18%,#102235);color:var(--lin-ink)}
+.lin-flow-arrow{color:var(--lesson-accent);font-size:1.15rem;font-weight:900}
+@media(max-width:620px){.lin-flow-diagram{align-items:stretch;flex-direction:column}.lin-flow-step{max-width:none;min-height:2.6rem}.lin-flow-arrow{transform:rotate(90deg);text-align:center}}

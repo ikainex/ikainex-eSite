@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedded Software on Ikainex Technologies</title>
+    <link>http://localhost:1313/elearn/embedded-software/</link>
+    <description>Recent content in Embedded Software on Ikainex Technologies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
+    <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
+    
+    <atom:link href="http://localhost:1313/elearn/embedded-software/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ARM Cortex-M4 Boot Flow</title>
+      <link>http://localhost:1313/elearn/embedded-software/arm-cortex-m4-boot-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/embedded-software/arm-cortex-m4-boot-flow/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CMSIS (Cortex Microcontroller Software Interface Standard)</title>
+      <link>http://localhost:1313/elearn/embedded-software/cmsis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/embedded-software/cmsis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GCC / GNU Toolchain</title>
+      <link>http://localhost:1313/elearn/embedded-software/gcc-gnu-toolchain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/embedded-software/gcc-gnu-toolchain/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linker Script (.ld)</title>
+      <link>http://localhost:1313/elearn/embedded-software/linker-script/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/embedded-software/linker-script/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linking Fundamentals</title>
+      <link>http://localhost:1313/elearn/embedded-software/linking-fundamentals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/embedded-software/linking-fundamentals/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Object Files (.o Files)</title>
+      <link>http://localhost:1313/elearn/embedded-software/object-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/embedded-software/object-files/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Symbols and Symbol Resolution</title>
+      <link>http://localhost:1313/elearn/embedded-software/symbols-and-symbol-resolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/elearn/embedded-software/symbols-and-symbol-resolution/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

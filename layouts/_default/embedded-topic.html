@@ -6,7 +6,7 @@
   <article class="ikx-learning ikx-topic-page ikx-tone-{{ .Params.tone }}">
     <nav class="ikx-learning-breadcrumb" aria-label="Breadcrumb">
       <a href="{{ "elearn/" | relURL }}">eLearn</a><span aria-hidden="true">/</span>
-      <a href="{{ "elearn/embedded-systems/" | relURL }}">Embedded Systems</a><span aria-hidden="true">/</span>
+      <a href="{{ .Params.rootUrl | default "elearn/embedded-systems/" | lower | relURL }}">{{ .Params.rootTitle | default "Embedded Systems" }}</a><span aria-hidden="true">/</span>
       <a href="{{ .Params.parentUrl | lower | relURL }}">{{ .Params.parentTitle }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ .Title }}</span>
     </nav>
     <header class="ikx-learning-hero ikx-topic-hero">
@@ -14,13 +14,17 @@
       <div class="ikx-topic-title-row"><span class="ikx-card-icon" aria-hidden="true">{{ .Params.icon }}</span><h1>{{ .Title }}</h1></div>
       <p>{{ .Description }}</p>
       <div class="ikx-card-tags" aria-label="Topics">{{ range .Params.tags }}<span>{{ . }}</span>{{ end }}</div>
+      {{ if or .Params.level .Params.duration }}<div class="ikx-topic-meta">{{ with .Params.level }}<span><b>Level</b>{{ . }}</span>{{ end }}{{ with .Params.duration }}<span><b>Duration</b>{{ . }}</span>{{ end }}</div>{{ end }}
     </header>
     <div class="ikx-topic-content">
       <section class="ikx-topic-overview"><span class="ikx-learning-kicker">THE BIG IDEA</span><h2>{{ .Params.overviewTitle }}</h2><p>{{ .Params.overview }}</p></section>
+      {{ with .Params.timeline }}<section class="ikx-topic-timeline"><span class="ikx-learning-kicker">RESET TO APPLICATION</span><h2>Boot flow at a glance</h2><ol>{{ range . }}<li><b>{{ .title }}</b><p>{{ .description }}</p></li>{{ end }}</ol></section>{{ end }}
       <div class="ikx-topic-panels">
+        {{ with .Params.objectives }}<section class="ikx-topic-panel"><span class="ikx-panel-icon" aria-hidden="true">✓</span><h2>Learning objectives</h2><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></section>{{ end }}
         <section class="ikx-topic-panel"><span class="ikx-panel-icon" aria-hidden="true">✳</span><h2>Key ideas</h2><ul>{{ range .Params.concepts }}<li>{{ . }}</li>{{ end }}</ul></section>
         <section class="ikx-topic-panel"><span class="ikx-panel-icon" aria-hidden="true">⌁</span><h2>Where you’ll see it</h2><ul>{{ range .Params.applications }}<li>{{ . }}</li>{{ end }}</ul></section>
       </div>
+      {{ with .Params.learningPath }}<section class="ikx-topic-path"><div><span class="ikx-learning-kicker">BUILT TO GROW</span><h2>Continue learning</h2><p>Each module is designed to grow into focused, hands-on learning experiences.</p></div><div class="ikx-topic-path-items">{{ range . }}<div><b>{{ .title }}</b><span>{{ .status }}</span><p>{{ .description }}</p></div>{{ end }}</div></section>{{ end }}
       <section class="ikx-topic-next"><div><span class="ikx-learning-kicker">KEEP EXPLORING</span><h2>Ready for the next step?</h2><p>{{ .Params.nextDescription }}</p></div><a class="ikx-series-button" href="{{ .Params.parentUrl | lower | relURL }}">Back to {{ .Params.parentTitle }} <span aria-hidden="true">→</span></a></section>
     </div>
   </article>

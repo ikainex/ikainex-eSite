@@ -19,6 +19,7 @@
             <div class="ikx-card-topline"><span class="ikx-card-icon" aria-hidden="true">{{ $card.icon }}</span><span class="ikx-card-index">{{ printf "%02d" (add $index 1) }}</span></div>
             <div class="ikx-card-copy"><h2>{{ $card.title }}</h2><p>{{ $card.description }}</p></div>
             <div class="ikx-card-tags" aria-label="Topics">{{ range $card.tags }}<span>{{ . }}</span>{{ end }}</div>
+            {{ with or $card.level $card.duration }}<div class="ikx-card-meta">{{ with $card.level }}<span>{{ . }}</span>{{ end }}{{ with $card.duration }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
             <span class="ikx-card-action">{{ $card.action | default "Explore topics" }} <span aria-hidden="true">↗</span></span>
           </a>
         {{ end }}
