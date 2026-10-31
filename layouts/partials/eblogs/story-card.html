@@ -1,36 +1,21 @@
-{{ $series := .Params.series | default (slice "Engineering") }}
-{{ if not (reflect.IsSlice $series) }}
-  {{ $series = slice $series }}
-{{ else if eq (len $series) 0 }}
-  {{ $series = slice "Engineering" }}
-{{ end }}
+{{ $page := .Page }}
+{{ $series := $page.Params.series | default (slice "Embedded systems") }}
 {{ $seriesLabel := index $series 0 }}
-
-<article class="ik-story-card">
-  <a class="ik-story-image" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
-    {{ with .Params.featureImage }}
-      <img src="{{ . | relURL }}" alt="" loading="lazy">
-    {{ else }}
-      <div class="ik-image-placeholder ik-placeholder-grid" aria-hidden="true">
-        <span>IKAINEX</span>
-      </div>
-    {{ end }}
-  </a>
-
-  <div class="ik-story-card-body">
-    <div class="ik-story-meta">
-      <span class="ik-story-label">{{ $seriesLabel }}</span>
-      <span>{{ .ReadingTime }} min</span>
-    </div>
-
-    <h3 class="ik-story-card-title">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h3>
-
-    <p class="ik-story-description">
-      {{ .Description | default .Summary | plainify | truncate 140 }}
-    </p>
-
-    <a class="ik-text-link" href="{{ .RelPermalink }}">Read article ↗</a>
+<a class="ikx-blog-card ikx-tone-{{ $page.Params.tone | default "blue" }}" href="{{ $page.RelPermalink }}">
+  <div class="ikx-blog-card-top">
+    <span class="ikx-blog-card-icon" aria-hidden="true">{{ $page.Params.icon | default "⌁" }}</span>
+    <span class="ikx-blog-card-index">{{ printf "%02d" (add .Index 1) }}</span>
   </div>
-</article>
+  <div class="ikx-blog-card-copy">
+    <span class="ikx-blog-card-category">{{ $seriesLabel }}</span>
+    <h3>{{ $page.Title }}</h3>
+    <p>{{ $page.Description | default $page.Summary | plainify | truncate 140 }}</p>
+    <div class="ikx-blog-card-tags" aria-label="Topics">
+      {{ range first 2 $page.Params.tags }}<span>{{ . }}</span>{{ end }}
+    </div>
+  </div>
+  <div class="ikx-blog-card-bottom">
+    <span>{{ $page.ReadingTime }} min read</span>
+    <span class="ikx-blog-card-arrow" aria-hidden="true">↗</span>
+  </div>
+</a>

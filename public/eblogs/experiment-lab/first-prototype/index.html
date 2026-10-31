@@ -31,7 +31,7 @@
     
   
   
-    <meta name="description" content="A sample experiment-log article for documenting prototypes and lessons learned.">
+    <meta name="description" content="A first hardware prototype is a learning tool. Here is how to turn an early build into useful engineering evidence.">
   
   
     <meta name="keywords" content="Prototyping,Engineering Process,">
@@ -52,7 +52,7 @@
   <meta property="og:url" content="http://localhost:1313/eblogs/experiment-lab/first-prototype/">
   <meta property="og:site_name" content="Ikainex Technologies">
   <meta property="og:title" content="The First Prototype: What We Learned">
-  <meta property="og:description" content="A sample experiment-log article for documenting prototypes and lessons learned.">
+  <meta property="og:description" content="A first hardware prototype is a learning tool. Here is how to turn an early build into useful engineering evidence.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="eblogs">
@@ -64,7 +64,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="The First Prototype: What We Learned">
-  <meta name="twitter:description" content="A sample experiment-log article for documenting prototypes and lessons learned.">
+  <meta name="twitter:description" content="A first hardware prototype is a learning tool. Here is how to turn an early build into useful engineering evidence.">
 
   
   
@@ -216,7 +216,7 @@
     "articleSection": "eBlogs",
     "name": "The First Prototype: What We Learned",
     "headline": "The First Prototype: What We Learned",
-    "description": "A sample experiment-log article for documenting prototypes and lessons learned.",
+    "description": "A first hardware prototype is a learning tool. Here is how to turn an early build into useful engineering evidence.",
     "inLanguage": "en",
     "url" : "http://localhost:1313/eblogs/experiment-lab/first-prototype/",
     "author" : {
@@ -232,7 +232,7 @@
     "keywords": ["Prototyping","Engineering Process"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "72"
+    "wordCount": "371"
   }]
   </script>
 
@@ -249,7 +249,7 @@
     
   
     
-    <link rel="stylesheet" href="/css/eblogs.min.fb8ba3a2928662356b2c1a05d4ebdd81ae996f4375683197d9e8f8992a463fc8.css" integrity="sha256-&#43;4ujopKGYjVrLBoF1Ovdga6Zb0N1aDGX2ej4mSpGP8g=">
+    <link rel="stylesheet" href="/css/eblogs.min.4bdf620fadaa63a9a480f9f63ef325c40f82d94587f519e813aecbc3743b7fdf.css" integrity="sha256-S99iD62qY6mkgPn2PvMlxA&#43;C2UWH9RnoE67Lw3Q7f98=">
   
 
 
@@ -660,7 +660,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-09-22T00:00:00&#43;00:00">22 September 2026</time><span class="px-2 text-primary-500">&middot;</span><span>72 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2026-09-22T00:00:00&#43;00:00">22 September 2026</time><span class="px-2 text-primary-500">&middot;</span><span>371 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -757,27 +757,6 @@
     
 <div class="flex author">
   
-    
-    
-      
-    
-    
-      
-      
-      
-        
-        
-        
-      
-      <img
-        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
-        width="96"
-        height="96"
-        alt="Ikainex&amp;trade;"
-        src="/img/ikai-name-logo_hu_bbe3ca39b46a034d.png"
-        data-zoom-src="/img/ikai-name-logo_hu_9c0ed0309b67333.png">
-    
-  
   <div class="place-self-center">
     
       <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
@@ -827,9 +806,9 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#start-with-a-measurable-question">Start with a measurable question</a></li>
-    <li><a href="#record-what-actually-happened">Record what actually happened</a></li>
-    <li><a href="#the-takeaway">The takeaway</a></li>
+    <li><a href="#build-to-answer-a-question">Build to answer a question</a></li>
+    <li><a href="#make-the-result-useful">Make the result useful</a></li>
+    <li><a href="#close-the-loop">Close the loop</a></li>
   </ul>
 </nav>
   </div>
@@ -843,9 +822,9 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#start-with-a-measurable-question">Start with a measurable question</a></li>
-    <li><a href="#record-what-actually-happened">Record what actually happened</a></li>
-    <li><a href="#the-takeaway">The takeaway</a></li>
+    <li><a href="#build-to-answer-a-question">Build to answer a question</a></li>
+    <li><a href="#make-the-result-useful">Make the result useful</a></li>
+    <li><a href="#close-the-loop">Close the loop</a></li>
   </ul>
 </nav>
   </div>
@@ -986,38 +965,42 @@
 
         <div class="article-content max-w-prose mb-20">
           
-<h2 class="relative group">Start with a measurable question
-    <div id="start-with-a-measurable-question" class="anchor"></div>
+<h2 class="relative group">Build to answer a question
+    <div id="build-to-answer-a-question" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#start-with-a-measurable-question" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#build-to-answer-a-question" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>A good experiment begins with a question that can be tested. Document the expected behavior, test setup, instruments, and conditions.</p>
+<p>The first prototype is not a miniature version of a finished product. It is a fast way to answer a question. Can the sensor detect the event? Does the chosen interface work at the required cable length? Does the power supply stay within its limits when the radio starts transmitting? A focused question makes an early build more valuable than a polished board with no clear test.</p>
+<p>Write down what success looks like before the test. Include a measurable expectation, such as a sensor updating at least ten times per second or a device staying below a particular temperature during a workload. Record the setup too: board revision, firmware version, supply voltage, connected equipment, and environmental conditions. These details make a result repeatable instead of anecdotal.</p>
 
-<h2 class="relative group">Record what actually happened
-    <div id="record-what-actually-happened" class="anchor"></div>
+<h2 class="relative group">Make the result useful
+    <div id="make-the-result-useful" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#record-what-actually-happened" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#make-the-result-useful" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>Include measurements, observations, unexpected behavior, and changes made during the experiment.</p>
-
-<h2 class="relative group">The takeaway
-    <div id="the-takeaway" class="anchor"></div>
+<p>During a test, note observations even when they seem unimportant. A microcontroller that resets only when a motor starts may point to a supply dip, grounding problem, or electromagnetic interference. Capture the timing, what was connected, and what changed between a successful and failed run. A quick phone photo of the wiring can save an hour of recreating the setup later.</p>
+<p>Change one thing at a time when practical. If you swap the cable, power source, firmware, and sensor all at once, a better result does not tell you which change helped. When several changes are unavoidable, label the build and keep a short list of exactly what changed.</p>
+<blockquote><p><strong>Fun fact:</strong> A microcontroller&rsquo;s reset pin can act like a tiny black-box recorder&rsquo;s reset button—an unexpected reset is a clue worth logging, not just an inconvenience to clear.</p>
+</blockquote>
+<h2 class="relative group">Close the loop
+    <div id="close-the-loop" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-takeaway" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#close-the-loop" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>The goal of an experiment log is not to make every prototype look successful. It is to preserve useful engineering knowledge that can inform the next iteration.</p>
+<p>After testing, write down three things: what happened, what it means, and what you will try next. Separate measured results from guesses. For example, “the rail fell to 3.0 V when the motor started” is an observation; “the regulator is undersized” is a hypothesis to test.</p>
+<p>A prototype has done its job when it reduces uncertainty. It may uncover a limitation, disprove an assumption, or reveal a more useful question. Keeping that record prevents the next iteration from repeating the same experiment and helps the team make decisions from evidence rather than memory.</p>
 
           
           

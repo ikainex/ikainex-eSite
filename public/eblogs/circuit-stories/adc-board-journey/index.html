@@ -15,8 +15,8 @@
 
   
   
-    <title>The Journey Behind Our ADC Board &middot; Ikainex Technologies</title>
-    <meta name="title" content="The Journey Behind Our ADC Board &middot; Ikainex Technologies">
+    <title>Designing an ADC Add-on Board &middot; Ikainex Technologies</title>
+    <meta name="title" content="Designing an ADC Add-on Board &middot; Ikainex Technologies">
   
 
   
@@ -31,7 +31,7 @@
     
   
   
-    <meta name="description" content="A sample feature story about the design thinking behind an add-on board.">
+    <meta name="description" content="A practical look at the questions that shape an ADC add-on board, from signal range and connectors to the first bench test.">
   
   
     <meta name="keywords" content="Hardware Design,ADC,Embedded Systems,">
@@ -51,8 +51,8 @@
   
   <meta property="og:url" content="http://localhost:1313/eblogs/circuit-stories/adc-board-journey/">
   <meta property="og:site_name" content="Ikainex Technologies">
-  <meta property="og:title" content="The Journey Behind Our ADC Board">
-  <meta property="og:description" content="A sample feature story about the design thinking behind an add-on board.">
+  <meta property="og:title" content="Designing an ADC Add-on Board">
+  <meta property="og:description" content="A practical look at the questions that shape an ADC add-on board, from signal range and connectors to the first bench test.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="eblogs">
@@ -64,8 +64,8 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="The Journey Behind Our ADC Board">
-  <meta name="twitter:description" content="A sample feature story about the design thinking behind an add-on board.">
+  <meta name="twitter:title" content="Designing an ADC Add-on Board">
+  <meta name="twitter:description" content="A practical look at the questions that shape an ADC add-on board, from signal range and connectors to the first bench test.">
 
   
   
@@ -215,9 +215,9 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "eBlogs",
-    "name": "The Journey Behind Our ADC Board",
-    "headline": "The Journey Behind Our ADC Board",
-    "description": "A sample feature story about the design thinking behind an add-on board.",
+    "name": "Designing an ADC Add-on Board",
+    "headline": "Designing an ADC Add-on Board",
+    "description": "A practical look at the questions that shape an ADC add-on board, from signal range and connectors to the first bench test.",
     "inLanguage": "en",
     "url" : "http://localhost:1313/eblogs/circuit-stories/adc-board-journey/",
     "author" : {
@@ -233,7 +233,7 @@
     "keywords": ["Hardware Design","ADC","Embedded Systems"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "116"
+    "wordCount": "369"
   }]
   </script>
 
@@ -250,7 +250,7 @@
     
   
     
-    <link rel="stylesheet" href="/css/eblogs.min.fb8ba3a2928662356b2c1a05d4ebdd81ae996f4375683197d9e8f8992a463fc8.css" integrity="sha256-&#43;4ujopKGYjVrLBoF1Ovdga6Zb0N1aDGX2ej4mSpGP8g=">
+    <link rel="stylesheet" href="/css/eblogs.min.4bdf620fadaa63a9a480f9f63ef325c40f82d94587f519e813aecbc3743b7fdf.css" integrity="sha256-S99iD62qY6mkgPn2PvMlxA&#43;C2UWH9RnoE67Lw3Q7f98=">
   
 
 
@@ -609,7 +609,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        The Journey Behind Our ADC Board
+        Designing an ADC Add-on Board
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -661,7 +661,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-09-24T00:00:00&#43;00:00">24 September 2026</time><span class="px-2 text-primary-500">&middot;</span><span>116 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2026-09-24T00:00:00&#43;00:00">24 September 2026</time><span class="px-2 text-primary-500">&middot;</span><span>369 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -780,27 +780,6 @@
     
 <div class="flex author">
   
-    
-    
-      
-    
-    
-      
-      
-      
-        
-        
-        
-      
-      <img
-        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
-        width="96"
-        height="96"
-        alt="Ikainex&amp;trade;"
-        src="/img/ikai-name-logo_hu_bbe3ca39b46a034d.png"
-        data-zoom-src="/img/ikai-name-logo_hu_9c0ed0309b67333.png">
-    
-  
   <div class="place-self-center">
     
       <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
@@ -850,10 +829,9 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-question-that-started-it-all">The question that started it all</a></li>
-    <li><a href="#from-requirements-to-architecture">From requirements to architecture</a></li>
-    <li><a href="#what-we-learned">What we learned</a></li>
-    <li><a href="#continue-exploring">Continue exploring</a></li>
+    <li><a href="#begin-with-the-signal">Begin with the signal</a></li>
+    <li><a href="#turn-requirements-into-choices">Turn requirements into choices</a></li>
+    <li><a href="#what-the-first-test-should-prove">What the first test should prove</a></li>
   </ul>
 </nav>
   </div>
@@ -867,10 +845,9 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-question-that-started-it-all">The question that started it all</a></li>
-    <li><a href="#from-requirements-to-architecture">From requirements to architecture</a></li>
-    <li><a href="#what-we-learned">What we learned</a></li>
-    <li><a href="#continue-exploring">Continue exploring</a></li>
+    <li><a href="#begin-with-the-signal">Begin with the signal</a></li>
+    <li><a href="#turn-requirements-into-choices">Turn requirements into choices</a></li>
+    <li><a href="#what-the-first-test-should-prove">What the first test should prove</a></li>
   </ul>
 </nav>
   </div>
@@ -1011,55 +988,42 @@
 
         <div class="article-content max-w-prose mb-20">
           
-<h2 class="relative group">The question that started it all
-    <div id="the-question-that-started-it-all" class="anchor"></div>
+<h2 class="relative group">Begin with the signal
+    <div id="begin-with-the-signal" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-question-that-started-it-all" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#begin-with-the-signal" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>Every useful board begins with a practical question. What should the board make easier, more reliable, or more accessible?</p>
-<p>This sample article is a placeholder for your real engineering story. Replace it with the actual decisions, constraints, experiments, and lessons from your product development process.</p>
+<p>An add-on board starts with a job, not a connector. Before choosing an ADC or drawing a schematic, define the signal it should measure. Is it a slow temperature sensor, a changing audio waveform, or a voltage from another circuit? The source determines the expected range, bandwidth, input impedance, and how much noise the design can tolerate.</p>
+<p>The next question is how the board will connect to its host. The connector must carry the signals the application needs, but it also shapes the layout, mechanical fit, and user experience. A tidy pinout can help users connect the board correctly; clear labels can prevent a swapped supply and ground from ruining a first test.</p>
 
-<h2 class="relative group">From requirements to architecture
-    <div id="from-requirements-to-architecture" class="anchor"></div>
+<h2 class="relative group">Turn requirements into choices
+    <div id="turn-requirements-into-choices" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#from-requirements-to-architecture" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#turn-requirements-into-choices" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>Explain the application, expected operating conditions, interfaces, power requirements, and design trade-offs.</p>
-
-<h2 class="relative group">What we learned
-    <div id="what-we-learned" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#what-we-learned" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>Use this section for real observations from prototyping and testing.</p>
-<blockquote><p>Replace this sample content with a verified engineering insight from your own development process.</p>
+<p>A design brief can stay short: input range, resolution, sample rate, power source, interface, and intended environment. These requirements expose trade-offs. A higher-resolution converter is not automatically better if the signal conditioning is noisy or the reference is unstable. A faster sample rate may require more data bandwidth and a careful firmware plan.</p>
+<p>Protection is part of the design too. Users may connect a signal outside the expected range, or handle the board in a way that exposes it to static discharge. Input resistors, clamps, filtering, and clear operating limits can make a design more forgiving. Each part should be chosen with its effect on accuracy and signal range in mind.</p>
+<blockquote><p><strong>Fun fact:</strong> A 16-bit ADC can represent 65,536 different codes, but the board only delivers 16-bit accuracy if noise, reference stability, and the analog front end let those codes mean something.</p>
 </blockquote>
-<h2 class="relative group">Continue exploring
-    <div id="continue-exploring" class="anchor"></div>
+<h2 class="relative group">What the first test should prove
+    <div id="what-the-first-test-should-prove" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#continue-exploring" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#what-the-first-test-should-prove" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<ul>
-<li>Link to the relevant eProducts page.</li>
-<li>Link to an eLearn concept.</li>
-<li>Link to a practical eTutorial.</li>
-</ul>
+<p>Bring-up should follow a sequence. First verify power and check for shorts. Then confirm the digital interface responds, configure the converter, and read a stable known input. Only after that should you connect the real sensor or test the full signal range. This narrows the cause of failures and keeps simple wiring issues from looking like complex firmware problems.</p>
+<p>Good board design is a series of deliberate choices with clear reasons. A short list of requirements, a readable schematic, and a repeatable first test make those choices easier to review—and make the next revision much more informed.</p>
 
           
           

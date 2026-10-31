@@ -1,6 +1,6 @@
 ---
-title: "The Journey Behind Our ADC Board"
-description: "A sample feature story about the design thinking behind an add-on board."
+title: "Designing an ADC Add-on Board"
+description: "A practical look at the questions that shape an ADC add-on board, from signal range and connectors to the first bench test."
 date: 2026-09-24
 draft: false
 featured: true
@@ -13,26 +13,26 @@ tags:
   - "ADC"
   - "Embedded Systems"
 showHero: false
+tone: "mint"
+icon: "▦"
 ---
 
-## The question that started it all
+## Begin with the signal
 
-Every useful board begins with a practical question. What should the board make easier, more reliable, or more accessible?
+An add-on board starts with a job, not a connector. Before choosing an ADC or drawing a schematic, define the signal it should measure. Is it a slow temperature sensor, a changing audio waveform, or a voltage from another circuit? The source determines the expected range, bandwidth, input impedance, and how much noise the design can tolerate.
 
-This sample article is a placeholder for your real engineering story. Replace it with the actual decisions, constraints, experiments, and lessons from your product development process.
+The next question is how the board will connect to its host. The connector must carry the signals the application needs, but it also shapes the layout, mechanical fit, and user experience. A tidy pinout can help users connect the board correctly; clear labels can prevent a swapped supply and ground from ruining a first test.
 
-## From requirements to architecture
+## Turn requirements into choices
 
-Explain the application, expected operating conditions, interfaces, power requirements, and design trade-offs.
+A design brief can stay short: input range, resolution, sample rate, power source, interface, and intended environment. These requirements expose trade-offs. A higher-resolution converter is not automatically better if the signal conditioning is noisy or the reference is unstable. A faster sample rate may require more data bandwidth and a careful firmware plan.
 
-## What we learned
+Protection is part of the design too. Users may connect a signal outside the expected range, or handle the board in a way that exposes it to static discharge. Input resistors, clamps, filtering, and clear operating limits can make a design more forgiving. Each part should be chosen with its effect on accuracy and signal range in mind.
 
-Use this section for real observations from prototyping and testing.
+> **Fun fact:** A 16-bit ADC can represent 65,536 different codes, but the board only delivers 16-bit accuracy if noise, reference stability, and the analog front end let those codes mean something.
 
-> Replace this sample content with a verified engineering insight from your own development process.
+## What the first test should prove
 
-## Continue exploring
+Bring-up should follow a sequence. First verify power and check for shorts. Then confirm the digital interface responds, configure the converter, and read a stable known input. Only after that should you connect the real sensor or test the full signal range. This narrows the cause of failures and keeps simple wiring issues from looking like complex firmware problems.
 
-- Link to the relevant eProducts page.
-- Link to an eLearn concept.
-- Link to a practical eTutorial.
+Good board design is a series of deliberate choices with clear reasons. A short list of requirements, a readable schematic, and a repeatable first test make those choices easier to review—and make the next revision much more informed.

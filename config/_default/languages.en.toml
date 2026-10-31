@@ -17,7 +17,6 @@ title = "Ikainex Technologies"
 [params.author]
   name = "Ikainex&trade;"
   email = "support@ikai.com"
-  image = "img/ikai-name-logo.png"
   imageQuality = 96
   headline = "I'm only human"
   bio = "A little bit about you"

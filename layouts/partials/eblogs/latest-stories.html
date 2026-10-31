@@ -1,21 +1,21 @@
 {{ $stories := where .Site.RegularPages "Section" "eblogs" }}
-{{ $stories = where $stories "Params.featured" "!=" true }}
-{{ $stories = first 6 (sort $stories "Date" "desc") }}
+{{ $stories = first 4 (sort $stories "Date" "desc") }}
 
-<section id="latest" class="ik-latest-section ik-container">
+<section id="latest" class="ikx-blog-stories ik-container" aria-labelledby="ikx-blog-stories-title">
   <div class="ik-section-heading">
     <div>
-      <div class="ik-editorial-kicker">FROM THE LAB</div>
-      <h2>Latest stories</h2>
+      <div class="ikx-blog-kicker">THE STARTING LINE</div>
+      <h2 id="ikx-blog-stories-title">Embedded, in a few minutes</h2>
     </div>
-    <p class="ik-muted">A considered selection from the journal</p>
+    <p>Four approachable reads to get you started. Each one takes about 2–3 minutes.</p>
   </div>
 
-  <div class="ik-story-grid">
-    {{ range $stories }}
-      {{ partial "eblogs/story-card.html" . }}
+  <div class="ikx-blog-grid">
+    {{ range $index, $story := $stories }}
+      {{ partial "eblogs/story-card.html" (dict "Page" $story "Index" $index) }}
     {{ else }}
-      <p class="ik-muted">Publish more eBlogs articles to populate this section.</p>
+      <p class="ik-muted">New embedded-systems stories are on the way.</p>
     {{ end }}
   </div>
+  <p class="ikx-blog-note">Curious to go deeper? <a href="{{ "/elearn/embedded-systems/" | relURL }}">Continue learning with eLearn <span aria-hidden="true">↗</span></a></p>
 </section>

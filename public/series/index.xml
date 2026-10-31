@@ -9,7 +9,17 @@
     <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
     <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
     
-    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Signal &amp; Thought</title>
+      <link>http://localhost:1313/series/signal--thought/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/series/signal--thought/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Circuit Stories</title>
@@ -17,16 +27,6 @@
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
       <guid>http://localhost:1313/series/circuit-stories/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Signal &amp; Thought</title>
-      <link>http://localhost:1313/series/signal--thought/</link>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
-      <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>http://localhost:1313/series/signal--thought/</guid>
       <description></description>
       
     </item>
