@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Legals on Ikainex Technologies</title>
+    <link>https://www.ikainex.com/legal/</link>
+    <description>Recent content in Legals on Ikainex Technologies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
+    <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
+    
+    <atom:link href="https://www.ikainex.com/legal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Third-party notices</title>
+      <link>https://www.ikainex.com/legal/third-party-notices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>https://www.ikainex.com/legal/third-party-notices/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -214,11 +214,12 @@ Videos will be published here soon.
     TLV9054IDR Datasheet
   </h3>
   <p class="text-sm text-neutral-600 dark:text-neutral-300 mb-3">
-    Datasheet for the TLV9054 quad rail-to-rail input/output operational amplifier, including electrical characteristics, specifications, pin configuration, applications, and device information.
+    View the official Texas Instruments product page and datasheet for the TLV9054 quad rail-to-rail input/output operational amplifier.
   </p>
-  <a href="/downloads/documents/datasheets/TLV9054-Datasheet.pdf"
+  <a href="https://www.ti.com/product/TLV9054"
+     target="_blank" rel="noopener noreferrer"
      class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline">
-    Download Datasheet (PDF) →
+    View at Texas Instruments →
   </a>
 </div>
 
@@ -227,11 +228,12 @@ Videos will be published here soon.
     MCP1541 Datasheet
   </h3>
   <p class="text-sm text-neutral-600 dark:text-neutral-300 mb-3">
-    Datasheet for the MCP1541 precision voltage reference, including reference-voltage specifications, electrical characteristics, pin configuration, and application information.
+    View the official Microchip product page and datasheet for the MCP1541 precision voltage reference.
   </p>
-  <a href="/downloads/documents/datasheets/MCP1541-Datasheet.pdf"
+  <a href="https://www.microchip.com/en-us/product/MCP1541"
+     target="_blank" rel="noopener noreferrer"
      class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline">
-    Download Datasheet (PDF) →
+    View at Microchip →
   </a>
 </div>
 
@@ -240,11 +242,12 @@ Videos will be published here soon.
     MCP3204 Datasheet
   </h3>
   <p class="text-sm text-neutral-600 dark:text-neutral-300 mb-3">
-    Datasheet for the MCP3204 12-bit, 4-channel analog-to-digital converter with SPI interface, including electrical characteristics, timing specifications, pin configuration, and application information.
+    View the official Microchip product page and datasheet for the MCP3204 12-bit, 4-channel analog-to-digital converter.
   </p>
-  <a href="/downloads/documents/datasheets/MCP3204-Datasheet.pdf"
+  <a href="https://www.microchip.com/en-us/product/MCP3204"
+     target="_blank" rel="noopener noreferrer"
      class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline">
-    Download Datasheet (PDF) →
+    View at Microchip →
   </a>
 </div>
 
@@ -271,4 +274,3 @@ before processing your order.
 Request a quote for the ADC Add-on Board
 </a>
 </p>
-
