@@ -2,421 +2,421 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ikainex Technologies</title>
-    <link>https://www.ikainex.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Ikainex Technologies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>support@ikai.com (Ikainex&amp;trade;)</managingEditor>
     <webMaster>support@ikai.com (Ikainex&amp;trade;)</webMaster>
     
-    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ikainex.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Embedded Systems</title>
-      <link>https://www.ikainex.com/tags/embedded-systems/</link>
+      <link>http://localhost:1313/tags/embedded-systems/</link>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/embedded-systems/</guid>
+      <guid>http://localhost:1313/tags/embedded-systems/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Microcontrollers</title>
-      <link>https://www.ikainex.com/tags/microcontrollers/</link>
+      <link>http://localhost:1313/tags/microcontrollers/</link>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/microcontrollers/</guid>
+      <guid>http://localhost:1313/tags/microcontrollers/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ADC</title>
-      <link>https://www.ikainex.com/tags/adc/</link>
+      <link>http://localhost:1313/tags/adc/</link>
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/adc/</guid>
+      <guid>http://localhost:1313/tags/adc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Hardware Design</title>
-      <link>https://www.ikainex.com/tags/hardware-design/</link>
+      <link>http://localhost:1313/tags/hardware-design/</link>
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/hardware-design/</guid>
+      <guid>http://localhost:1313/tags/hardware-design/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Analog Electronics</title>
-      <link>https://www.ikainex.com/tags/analog-electronics/</link>
+      <link>http://localhost:1313/tags/analog-electronics/</link>
       <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/analog-electronics/</guid>
+      <guid>http://localhost:1313/tags/analog-electronics/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Engineering Process</title>
-      <link>https://www.ikainex.com/tags/engineering-process/</link>
+      <link>http://localhost:1313/tags/engineering-process/</link>
       <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/engineering-process/</guid>
+      <guid>http://localhost:1313/tags/engineering-process/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Prototyping</title>
-      <link>https://www.ikainex.com/tags/prototyping/</link>
+      <link>http://localhost:1313/tags/prototyping/</link>
       <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/prototyping/</guid>
+      <guid>http://localhost:1313/tags/prototyping/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Analog</title>
-      <link>https://www.ikainex.com/tags/analog/</link>
+      <link>http://localhost:1313/tags/analog/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/analog/</guid>
+      <guid>http://localhost:1313/tags/analog/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Beginner</title>
-      <link>https://www.ikainex.com/tags/beginner/</link>
+      <link>http://localhost:1313/tags/beginner/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/beginner/</guid>
+      <guid>http://localhost:1313/tags/beginner/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>C</title>
-      <link>https://www.ikainex.com/tags/c/</link>
+      <link>http://localhost:1313/tags/c/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/c/</guid>
+      <guid>http://localhost:1313/tags/c/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Firmware</title>
-      <link>https://www.ikainex.com/tags/firmware/</link>
+      <link>http://localhost:1313/tags/firmware/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/firmware/</guid>
+      <guid>http://localhost:1313/tags/firmware/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>GPIO</title>
-      <link>https://www.ikainex.com/tags/gpio/</link>
+      <link>http://localhost:1313/tags/gpio/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/gpio/</guid>
+      <guid>http://localhost:1313/tags/gpio/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MCU</title>
-      <link>https://www.ikainex.com/tags/mcu/</link>
+      <link>http://localhost:1313/tags/mcu/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/mcu/</guid>
+      <guid>http://localhost:1313/tags/mcu/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>STM32</title>
-      <link>https://www.ikainex.com/tags/stm32/</link>
+      <link>http://localhost:1313/tags/stm32/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/stm32/</guid>
+      <guid>http://localhost:1313/tags/stm32/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>.O Files</title>
-      <link>https://www.ikainex.com/tags/.o-files/</link>
+      <link>http://localhost:1313/tags/.o-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/.o-files/</guid>
+      <guid>http://localhost:1313/tags/.o-files/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Binutils</title>
-      <link>https://www.ikainex.com/tags/binutils/</link>
+      <link>http://localhost:1313/tags/binutils/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/binutils/</guid>
+      <guid>http://localhost:1313/tags/binutils/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CMSIS-Core</title>
-      <link>https://www.ikainex.com/tags/cmsis-core/</link>
+      <link>http://localhost:1313/tags/cmsis-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/cmsis-core/</guid>
+      <guid>http://localhost:1313/tags/cmsis-core/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CMSIS-Device</title>
-      <link>https://www.ikainex.com/tags/cmsis-device/</link>
+      <link>http://localhost:1313/tags/cmsis-device/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/cmsis-device/</guid>
+      <guid>http://localhost:1313/tags/cmsis-device/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CMSIS-DSP</title>
-      <link>https://www.ikainex.com/tags/cmsis-dsp/</link>
+      <link>http://localhost:1313/tags/cmsis-dsp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/cmsis-dsp/</guid>
+      <guid>http://localhost:1313/tags/cmsis-dsp/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CMSIS-RTOS</title>
-      <link>https://www.ikainex.com/tags/cmsis-rtos/</link>
+      <link>http://localhost:1313/tags/cmsis-rtos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/cmsis-rtos/</guid>
+      <guid>http://localhost:1313/tags/cmsis-rtos/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Cortex-M4</title>
-      <link>https://www.ikainex.com/tags/cortex-m4/</link>
+      <link>http://localhost:1313/tags/cortex-m4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/cortex-m4/</guid>
+      <guid>http://localhost:1313/tags/cortex-m4/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Dynamic Linking</title>
-      <link>https://www.ikainex.com/tags/dynamic-linking/</link>
+      <link>http://localhost:1313/tags/dynamic-linking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/dynamic-linking/</guid>
+      <guid>http://localhost:1313/tags/dynamic-linking/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ELF</title>
-      <link>https://www.ikainex.com/tags/elf/</link>
+      <link>http://localhost:1313/tags/elf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/elf/</guid>
+      <guid>http://localhost:1313/tags/elf/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>FLASH</title>
-      <link>https://www.ikainex.com/tags/flash/</link>
+      <link>http://localhost:1313/tags/flash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/flash/</guid>
+      <guid>http://localhost:1313/tags/flash/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>GCC</title>
-      <link>https://www.ikainex.com/tags/gcc/</link>
+      <link>http://localhost:1313/tags/gcc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/gcc/</guid>
+      <guid>http://localhost:1313/tags/gcc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Global</title>
-      <link>https://www.ikainex.com/tags/global/</link>
+      <link>http://localhost:1313/tags/global/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/global/</guid>
+      <guid>http://localhost:1313/tags/global/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>GNU As</title>
-      <link>https://www.ikainex.com/tags/gnu-as/</link>
+      <link>http://localhost:1313/tags/gnu-as/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/gnu-as/</guid>
+      <guid>http://localhost:1313/tags/gnu-as/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>GNU Ld</title>
-      <link>https://www.ikainex.com/tags/gnu-ld/</link>
+      <link>http://localhost:1313/tags/gnu-ld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/gnu-ld/</guid>
+      <guid>http://localhost:1313/tags/gnu-ld/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Libraries</title>
-      <link>https://www.ikainex.com/tags/libraries/</link>
+      <link>http://localhost:1313/tags/libraries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/libraries/</guid>
+      <guid>http://localhost:1313/tags/libraries/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Local</title>
-      <link>https://www.ikainex.com/tags/local/</link>
+      <link>http://localhost:1313/tags/local/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/local/</guid>
+      <guid>http://localhost:1313/tags/local/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MEMORY</title>
-      <link>https://www.ikainex.com/tags/memory/</link>
+      <link>http://localhost:1313/tags/memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/memory/</guid>
+      <guid>http://localhost:1313/tags/memory/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>RAM</title>
-      <link>https://www.ikainex.com/tags/ram/</link>
+      <link>http://localhost:1313/tags/ram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/ram/</guid>
+      <guid>http://localhost:1313/tags/ram/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Relocation</title>
-      <link>https://www.ikainex.com/tags/relocation/</link>
+      <link>http://localhost:1313/tags/relocation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/relocation/</guid>
+      <guid>http://localhost:1313/tags/relocation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Reset</title>
-      <link>https://www.ikainex.com/tags/reset/</link>
+      <link>http://localhost:1313/tags/reset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/reset/</guid>
+      <guid>http://localhost:1313/tags/reset/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SECTIONS</title>
-      <link>https://www.ikainex.com/tags/sections/</link>
+      <link>http://localhost:1313/tags/sections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/sections/</guid>
+      <guid>http://localhost:1313/tags/sections/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Startup</title>
-      <link>https://www.ikainex.com/tags/startup/</link>
+      <link>http://localhost:1313/tags/startup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/startup/</guid>
+      <guid>http://localhost:1313/tags/startup/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Static Linking</title>
-      <link>https://www.ikainex.com/tags/static-linking/</link>
+      <link>http://localhost:1313/tags/static-linking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/static-linking/</guid>
+      <guid>http://localhost:1313/tags/static-linking/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Symbols</title>
-      <link>https://www.ikainex.com/tags/symbols/</link>
+      <link>http://localhost:1313/tags/symbols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/symbols/</guid>
+      <guid>http://localhost:1313/tags/symbols/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vector Table</title>
-      <link>https://www.ikainex.com/tags/vector-table/</link>
+      <link>http://localhost:1313/tags/vector-table/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/vector-table/</guid>
+      <guid>http://localhost:1313/tags/vector-table/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Visibility</title>
-      <link>https://www.ikainex.com/tags/visibility/</link>
+      <link>http://localhost:1313/tags/visibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/visibility/</guid>
+      <guid>http://localhost:1313/tags/visibility/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Weak</title>
-      <link>https://www.ikainex.com/tags/weak/</link>
+      <link>http://localhost:1313/tags/weak/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
-      <guid>https://www.ikainex.com/tags/weak/</guid>
+      <guid>http://localhost:1313/tags/weak/</guid>
       <description></description>
       
     </item>

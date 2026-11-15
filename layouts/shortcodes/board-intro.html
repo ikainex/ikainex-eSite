@@ -1,0 +1,17 @@
+{{ $quoteURL := printf "%s?product=%s" ("/request-quote/" | relURL) (replace (urlquery .Page.Title) "+" "%20") }}
+<div class="not-prose board-intro">
+  <div class="board-intro-media">
+    <div class="board-image-panel">
+      {{ with resources.Get (strings.TrimPrefix "/" .Page.Params.image) }}
+        <img class="board-hero-image" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Page.Title }}">
+      {{ else }}
+        <span class="board-illustration" aria-hidden="true">{{ .Get "label" }}</span>
+      {{ end }}
+    </div>
+  </div>
+  <div class="board-intro-copy">
+    <h1 class="text-4xl md:text-5xl font-light tracking-tight text-neutral-900 dark:text-neutral-100 mb-4">{{ .Page.Title }}</h1>
+    <a class="board-quote-button" href="{{ $quoteURL }}">Request a quote</a>
+    <p class="text-lg leading-8 text-neutral-600 dark:text-neutral-300">{{ .Page.Description }}</p>
+  </div>
+</div>

@@ -19,27 +19,27 @@ or
 static/images/adc-aob.jpg
 -->
 
-<div class="not-prose w-full max-w-none flex flex-col lg:flex-row gap-10 lg:gap-24 items-start mb-16">
+<div class="not-prose board-intro">
 
 <!-- Hero Image -->
-<div class="w-full lg:w-[38%] lg:sticky lg:top-24 lg:shrink-0">
-<div class="flex items-center justify-center overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 shadow-sm p-6">
+<div class="board-intro-media">
+<div class="board-image-panel">
 <img
 src="/img/eboards/addon-boards/adc-aob.png"
 alt="ADC add-on board"
-class="adc-hero-image w-full h-auto object-contain"
+class="board-hero-image w-full h-auto object-contain"
 />
 </div>
 </div>
 
 <!-- Hero Content -->
-<div class="w-full lg:flex-1 lg:min-w-0 lg:pl-2">
+<div class="board-intro-copy">
 
 <h1 class="text-4xl md:text-5xl font-light tracking-tight text-neutral-900 dark:text-neutral-100 mb-4">
 ADC Add-on Board
 </h1>
 
-<a href="/request-quote/?product=ADC%20Add-on%20Board" style="display: inline-flex; align-items: center; margin-bottom: 1.5rem; border-radius: 0.5rem; background: #0284c7; padding: 0.75rem 1.25rem; color: #ffffff; font-weight: 600; text-decoration: none;">
+<a href="/request-quote/?product=ADC%20Add-on%20Board" class="board-quote-button">
 Request a quote
 </a>
 
@@ -48,7 +48,7 @@ The Ikainex&trade; ADC add-on board is designed for precision analog-to-digital 
 </p>
 
 <!-- Quick Specs -->
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 py-5 border-y border-neutral-200 dark:border-neutral-700">
+<div class="board-specs">
 
 <div>
 <div class="text-xs uppercase tracking-wide text-neutral-400 dark:text-neutral-500 mb-1">Resolution</div>
@@ -265,12 +265,12 @@ To order the ADC Add-on Board, send us your required quantity and delivery
 details. We will confirm availability, lead time, shipping, and the final price
 before processing your order.
 
-1. Submit your contact details and requirements using the quote request form.
+1. Enter your quantity and delivery location in the prefilled quote form, then send the prepared request by email or WhatsApp.
 2. Review the quotation and delivery information we send you.
 3. Confirm the order with our team.
 
 <p class="not-prose my-6">
-<a href="/request-quote/?product=ADC%20Add-on%20Board" style="display: inline-flex; align-items: center; border-radius: 0.5rem; background: #0284c7; padding: 0.75rem 1.25rem; color: #ffffff; font-weight: 600; text-decoration: none;">
+<a href="/request-quote/?product=ADC%20Add-on%20Board" class="board-quote-button">
 Request a quote for the ADC Add-on Board
 </a>
 </p>

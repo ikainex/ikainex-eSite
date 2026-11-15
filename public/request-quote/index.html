@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="light"
-  data-auto-appearance="true"><head>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="en">
@@ -36,7 +36,7 @@
   
   
   
-  <link rel="canonical" href="https://www.ikainex.com/request-quote/">
+  <link rel="canonical" href="http://localhost:1313/request-quote/">
   
   
     
@@ -50,7 +50,7 @@
   
 
   
-  <meta property="og:url" content="https://www.ikainex.com/request-quote/">
+  <meta property="og:url" content="http://localhost:1313/request-quote/">
   <meta property="og:site_name" content="Ikainex Technologies">
   <meta property="og:title" content="Request a quote">
   <meta property="og:description" content="Send a quote request to Ikainex™.">
@@ -105,8 +105,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.36259530650a36a2fd6abad6c21b17499350b35426833acf751a0c8d33d453bb014231bb2cc1bbeab2fe46a2696032eef4c19cd817b25819cc480458ecd87d84.css"
-    integrity="sha512-NiWVMGUKNqL9arrWwhsXSZNQs1QmgzrPdRoMjTPUU7sBQjG7LMG76rL&#43;RqJpYDLu9MGc2BeyWBnMSARY7Nh9hA==">
+    href="/css/main.bundle.min.6a3046a7fc61627244cf6ce7c52a0de226059a21e02303fe6ec9a78afb2b3d5ab3b367ee77847d4bbea7e87130aa49d519a201fb109d364662cc7b7d432c586a.css"
+    integrity="sha512-ajBGp/xhYnJEz2znxSoN4iYFmiHgIwP&#43;bsmnivsrPVqzs2fud4R9S76n6HEwqknVGaIB&#43;xCdNkZizHt9QyxYag==">
 
   
   
@@ -198,10 +198,9 @@
 
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    
+  <link rel="icon" type="image/png" href="/img/logo.png">
+
   
 
   
@@ -214,7 +213,7 @@
     "headline": "Request a quote",
     "description": "Send a quote request to Ikainex\u0026trade;.",
     "inLanguage": "en",
-    "url" : "https://www.ikainex.com/request-quote/",
+    "url" : "http://localhost:1313/request-quote/",
     "author" : {
       "@type": "Person",
       "name": "Ikainex\u0026trade;"
@@ -228,19 +227,13 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "14"
+    "wordCount": "41"
   }]
   </script>
 
 
 
   
-  
-    
-
-
-
-
   
 
   
@@ -668,6 +661,7 @@
     
     <div class="min-w-0 min-h-0 max-w-prose w-full">
       <div class="quote-form not-prose mx-auto w-full max-w-3xl">
+  <p class="mb-6 text-neutral-600 dark:text-neutral-300">Enter your quantity and delivery location, then review your request and send it by email or WhatsApp.</p>
   <form id="quote-request-form" class="space-y-6" novalidate>
     <div>
       <label for="quote-name" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Name</label>
@@ -688,18 +682,51 @@
     <div>
       <label for="quote-product" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Product</label>
       <input id="quote-product" name="product" type="text" readonly class="w-full rounded-lg border border-neutral-300 bg-neutral-100 px-4 py-3 text-base text-neutral-700 outline-none dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200" />
+      <p id="quote-product-details" class="mt-2 text-sm text-neutral-600 dark:text-neutral-300" hidden></p>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div>
+        <label for="quote-quantity" class="mb-2 block text-sm font-semibold">Quantity</label>
+        <input id="quote-quantity" name="quantity" type="number" min="1" step="1" value="1" required class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 dark:border-neutral-600 dark:bg-neutral-900">
+      </div>
+      <div>
+        <label for="quote-delivery" class="mb-2 block text-sm font-semibold">Delivery city and postal code</label>
+        <input id="quote-delivery" name="delivery" type="text" required class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 dark:border-neutral-600 dark:bg-neutral-900">
+      </div>
     </div>
 
     <div>
-      <label for="quote-description" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Description</label>
-      <textarea id="quote-description" name="description" rows="6" required class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/30 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"></textarea>
+      <label for="quote-description" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Additional notes (optional)</label>
+      <textarea id="quote-description" name="description" rows="3" class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/30 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"></textarea>
     </div>
 
-    <button type="submit" class="rounded-lg bg-sky-600 px-5 py-3 text-base font-semibold text-white transition hover:bg-sky-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">Prepare message</button>
+    <button type="submit" class="quote-prepare-button">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2zM8 8h8m-8 4h5"/>
+      </svg>
+      Prepare message
+    </button>
     <p id="quote-status" class="hidden text-sm text-neutral-600 dark:text-neutral-300" role="status"></p>
     <div id="quote-actions" class="hidden flex flex-wrap gap-3">
-      <a id="quote-email-link" class="rounded-lg bg-slate-700 px-5 py-3 text-base font-semibold text-white hover:bg-slate-800" target="_blank" rel="noopener">Send by email</a>
-      <a id="quote-whatsapp-link" class="rounded-lg bg-green-600 px-5 py-3 text-base font-semibold text-white hover:bg-green-700" target="_blank" rel="noopener">Send by WhatsApp</a>
+      <div class="w-full">
+        <label for="quote-preview" class="mb-2 block text-sm font-semibold">Message preview</label>
+        <textarea id="quote-preview" rows="12" readonly class="w-full rounded-lg border border-neutral-300 bg-neutral-100 px-4 py-3 dark:border-neutral-600 dark:bg-neutral-800"></textarea>
+      </div>
+      <a id="quote-email-link" class="quote-send-button quote-send-email" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m3 7 9 6 9-6"/>
+        </svg>
+        Send by email
+      </a>
+      <a id="quote-whatsapp-link" class="quote-send-button quote-send-whatsapp" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3.5 20l1.1-4.2a8.5 8.5 0 1 1 15.9-4.3Z"/>
+          <path d="M9 8.2c-.7.4-.9.9-.8 1.6.3 2.1 2.8 4.6 4.9 5 .7.1 1.3-.2 1.7-.8l.3-.7-1.9-1-.7.8c-1.3-.5-2.2-1.4-2.7-2.6l.7-.7-.8-1.8Z"/>
+        </svg>
+        <span id="quote-whatsapp-label">Send by WhatsApp</span>
+      </a>
     </div>
   </form>
 </div>
@@ -711,14 +738,27 @@
 
     const query = new URLSearchParams(window.location.search);
     const product = document.getElementById('quote-product');
+    const productDetails = document.getElementById('quote-product-details');
+    const preview = document.getElementById('quote-preview');
     const status = document.getElementById('quote-status');
     const actions = document.getElementById('quote-actions');
     const emailLink = document.getElementById('quote-email-link');
     const whatsappLink = document.getElementById('quote-whatsapp-link');
-    const quoteEmail = 'support@ikai.com';
-    const quoteWhatsApp = '';
+    const quoteEmail = "team@ikainex.com";
+    const quoteWhatsApp = "919876543210";
+    const contactPhone = "9876543210";
 
     product.value = query.get('product') || 'General quote request';
+    const adcDetails = product.value === 'ADC Add-on Board'
+      ? 'MCP3204 · 12-bit · 4 single-ended channels · SPI · up to 100 kSPS'
+      : '';
+    productDetails.textContent = adcDetails;
+    productDetails.hidden = !adcDetails;
+
+    form.addEventListener('input', function () {
+      actions.classList.add('hidden');
+      status.classList.add('hidden');
+    });
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
@@ -726,26 +766,27 @@
 
       const values = new FormData(form);
       const message = [
-        'Quote request',
+        'Hello Ikainex, I would like to request a quote for an order.',
         'Product: ' + values.get('product'),
+        adcDetails && 'Board details: ' + adcDetails,
+        'Quantity: ' + values.get('quantity'),
+        'Delivery location: ' + values.get('delivery'),
         'Name: ' + values.get('name'),
         'Phone: ' + values.get('phone'),
         'Email: ' + values.get('email'),
-        'Description: ' + values.get('description')
-      ].join('\n');
+        values.get('description').trim() && 'Notes: ' + values.get('description').trim(),
+        'Please confirm availability, pricing, shipping costs, and lead time.'
+      ].filter(Boolean).join('\n');
 
       emailLink.href = 'mailto:' + quoteEmail + '?subject=' + encodeURIComponent('Quote request: ' + values.get('product')) + '&body=' + encodeURIComponent(message);
-      if (quoteWhatsApp) {
-        whatsappLink.href = 'https://wa.me/' + quoteWhatsApp.replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(message);
-        whatsappLink.classList.remove('hidden');
-      } else {
-        whatsappLink.classList.add('hidden');
-      }
+      preview.value = message;
+      whatsappLink.href = 'https://wa.me/' + quoteWhatsApp.replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(message);
+      document.getElementById('quote-whatsapp-label').textContent = quoteWhatsApp ? 'Send by WhatsApp' : 'Open in WhatsApp';
 
       actions.classList.remove('hidden');
       status.textContent = quoteWhatsApp
-        ? 'Your message is ready. Send it by email and WhatsApp using the buttons below.'
-        : 'Your email message is ready. Add the WhatsApp number in params.toml to enable WhatsApp delivery.';
+        ? 'Review your message, then choose email or WhatsApp.'
+        : 'Review your message. If you use WhatsApp, select the Ikainex contact (' + contactPhone + ') before sending.';
       status.classList.remove('hidden');
     });
   })();
@@ -789,7 +830,15 @@
 </div>
 
       </main>
-      <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]"><footer id="site-footer" class="py-10 print:hidden">
+      <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]"><details class="ik-contact">
+  <summary>Contact us <span aria-hidden="true"></span></summary>
+  <ul>
+    <li><span>General enquiries and quotes</span><a href="mailto:team@ikainex.com">team@ikainex.com</a></li>
+    <li><span>Product support</span><a href="mailto:support@ikainex.com">support@ikainex.com</a></li>
+    <li><span>Phone</span><a href="tel:9876543210">9876543210</a></li>
+  </ul>
+</details>
+<footer id="site-footer" class="py-10 print:hidden">
   
   
     
@@ -847,7 +896,7 @@
       <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
-  data-url="https://www.ikainex.com/">
+  data-url="http://localhost:1313/">
   <div
     id="search-modal"
     class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">

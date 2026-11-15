@@ -1,11 +1,12 @@
 {{ define "main" }}
+  {{ $isBoard := eq .Params.group "annex" }}
   {{ .Scratch.Set "scope" "list" }}
   {{ if ne .Params.showTitle false }}
   <header>
     {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
-    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    {{ if not $isBoard }}<h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>{{ end }}
     <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       {{ partial "article-meta/list.html" (dict "context" . "scope" "single") }}
     </div>
@@ -20,7 +21,7 @@
       {{ if $showToc }}
         <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs"><div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">{{ partial "toc.html" . }}</div></div>
       {{ end }}
-      <div class="eproducts-content min-w-0 min-h-0 flex-1 w-full max-w-none">{{ .Content }}</div>
+      <div class="eproducts-content min-w-0 min-h-0 flex-1 w-full max-w-none{{ if $isBoard }} board-page{{ end }}">{{ .Content }}</div>
     </section>
   </div>
 {{ end }}
