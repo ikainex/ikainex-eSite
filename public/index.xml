@@ -22,11 +22,41 @@
     </item>
     
     <item>
+      <title>ADC AOB Monitor</title>
+      <link>http://localhost:1313/etutorials/analog/adc-monitor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/etutorials/analog/adc-monitor/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LIN Master Transmit</title>
+      <link>http://localhost:1313/etutorials/automotive/lin-master-transmit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/etutorials/automotive/lin-master-transmit/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>GPIO — The Digital Hands</title>
       <link>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</link>
       <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
       <author>support@ikai.com (Ikainex&amp;trade;)</author>
       <guid>http://localhost:1313/elearn/parth-ved/episodes/gpio-digital-hands/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CAN FD Echo</title>
+      <link>http://localhost:1313/etutorials/automotive/can-fd-echo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>support@ikai.com (Ikainex&amp;trade;)</author>
+      <guid>http://localhost:1313/etutorials/automotive/can-fd-echo/</guid>
       <description></description>
       
     </item>

@@ -1,0 +1,5 @@
+<nav class="ikx-learning-breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ "etutorials/" | relURL }}">eTutorials</a><span aria-hidden="true">/</span>
+  {{ if .IsPage }}<a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a><span aria-hidden="true">/</span>{{ end }}
+  <span aria-current="page">{{ .Title }}</span>
+</nav>

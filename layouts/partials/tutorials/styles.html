@@ -1,0 +1,4 @@
+{{ range slice "css/embedded-learning.css" "css/embedded-topic.css" "css/tutorials.css" }}
+  {{ $style := resources.Get . | minify | fingerprint }}
+  <style>{{ $style.Content | safeCSS }}</style>
+{{ end }}

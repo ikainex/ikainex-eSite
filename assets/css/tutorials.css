@@ -1,0 +1,167 @@
+.ikx-tutorial-heading {
+  margin: 0 0 1rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  font-weight: 820;
+  letter-spacing: -.035em;
+}
+
+.ikx-tutorial-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ikx-tutorial-grid .ikx-card-copy h3 {
+  margin: 0 0 .5rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+
+.ikx-tutorial-path {
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid var(--el-line);
+  border-radius: 1.1rem;
+  background: var(--el-surface);
+}
+
+.ikx-tutorial-path ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: decimal;
+}
+
+.ikx-tutorial-path li::marker {
+  font-weight: 800;
+}
+
+.ikx-tutorial-sidebar {
+  color: var(--el-muted);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.ikx-tutorial-sidebar > a, .ikx-tutorial-prose a {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+
+.ikx-tutorial-lab {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) minmax(0, 3fr);
+  align-items: start;
+  gap: clamp(1rem, 4vw, 3rem);
+  margin: 1.5rem auto 0;
+  max-width: 1130px;
+}
+
+.ikx-tutorial-sidebar {
+  padding: 1rem;
+  border: 1px solid var(--el-line);
+  border-radius: 1rem;
+  background: var(--el-surface);
+}
+
+.ikx-tutorial-sidebar p {
+  margin-bottom: .45rem;
+  color: var(--el-ink);
+  font-weight: 800;
+}
+
+.ikx-tutorial-sidebar li + li {
+  margin-top: .3rem;
+}
+
+.ikx-tutorial-sidebar a:hover, .ikx-tutorial-sidebar a:focus-visible {
+  text-decoration: underline;
+}
+
+.ikx-tutorial-sidebar > a {
+  display: block;
+  margin-top: .75rem;
+}
+
+.ikx-tutorial-prose {
+  min-width: 0;
+}
+
+.ikx-tutorial-prose h2:first-child {
+  margin-top: 0;
+}
+
+.ikx-tutorial-prose h2 {
+  scroll-margin-top: 6rem;
+}
+
+.ikx-tutorial-prose td {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .ikx-tutorial-lab, .ikx-tutorial-path ol {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .ikx-tutorial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ikx-tutorial-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem;
+  margin-top: 1.2rem;
+}
+
+.ikx-sdk-link, .ikx-browse-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  min-height: 2.75rem;
+  padding: .55rem .85rem;
+  border: 1px solid var(--el-line);
+  border-radius: .65rem;
+  font-size: .85rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.ikx-sdk-link {
+  background: var(--el-card);
+  color: var(--el-ink);
+}
+
+.ikx-sdk-link:hover, .ikx-sdk-link:focus-visible {
+  border-color: currentColor;
+  background: var(--el-surface);
+}
+
+.ikx-sdk-icon, .ikx-sdk-icon svg {
+  display: block;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.ikx-sdk-arrow { color: var(--el-muted); }
+
+.ikx-learning :is(.ikx-sdk-link, .ikx-browse-link, .ikx-series-link, .ikx-series-labs a):focus-visible {
+  outline: 2px solid var(--el-ink);
+  outline-offset: 2px;
+}
+
+.ikx-tutorial-path {
+  margin-top: 1rem;
+}
+
+.ikx-tutorial-path .ikx-tutorial-prose > :last-child { margin-bottom: 0; }
+
+@media (max-width: 760px) {
+  .ikx-learning-breadcrumb { flex-wrap: wrap; }
+}

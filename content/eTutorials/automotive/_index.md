@@ -1,17 +1,11 @@
 ---
-title: "Automotive Tutorials"
-description: "LIN, CAN, and vehicle network guides for hands-on automotive learning."
+title: "Automotive Series"
+description: "Send your first LIN frame and build a CAN FD echo node using STM32 Nucleo boards and Ikainex add-on boards."
+layout: "tutorial-series"
 ---
 
-# Automotive Tutorials
+## Learning path
 
-Explore practical automotive topics built around embedded communication, diagnostics, and real-world vehicle networking.
-
-## Included topics
-
-- LIN basics and setup
-- CAN bus communication
-- Automotive diagnostics
-- Board-based lab exercises
-
-Explore the tutorials from the eTutorials landing page to continue with hands-on project learning.
+1. **Learn the bus.** Start with eLearn’s [LIN lesson]({{< relref "/eLearn/embedded-systems/automotive-peripherals/lin" >}}) or [CAN lesson]({{< relref "/eLearn/embedded-systems/automotive-peripherals/can" >}}) to understand what you’ll see on the wire.
+2. **Set up the bench.** Use the lab’s wiring table and quick start to connect the transceiver, build the firmware, and open the console.
+3. **Capture and compare.** Check the frame ID and payload against the example trace, then try the lab exercise.

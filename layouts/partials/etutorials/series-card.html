@@ -1,53 +1,24 @@
-{{ $boardImage := resources.Get "img/etutorials/landing-page/boards.png" }}
-
-<article class="ikx-series-card ikx-series-{{ .kind }}">
-  <div class="ikx-series-main">
-    <div class="ikx-series-copy">
-      <div class="ikx-series-title-row">
-        <div class="ikx-series-icon" aria-hidden="true">
-          {{ if eq .kind "automotive" }}🚘{{ else }}▣{{ end }}
-        </div>
-        <div>
-          <h3>{{ .title }}</h3>
-          <p>{{ .description }}</p>
-        </div>
-      </div>
-
-      <div class="ikx-tag-list">
-        {{ range .tags }}<span>{{ . }}</span>{{ end }}
-      </div>
-
-      <a class="ikx-series-button" href="{{ .buttonUrl | relURL }}">
-        Start Learning <span aria-hidden="true">→</span>
-      </a>
-    </div>
-
-    <div class="ikx-series-products">
-      {{ with $boardImage }}
-        <img
-          src="{{ .RelPermalink }}"
-          alt="{{ $.imageAlt }}"
-          loading="lazy">
-      {{ end }}
-      <div class="ikx-product-labels">
-        {{ range .productLabels }}<span>{{ . }}</span>{{ end }}
-      </div>
-    </div>
+{{ $series := .series }}
+{{ $config := .config }}
+{{ $labs := $series.RegularPages.ByWeight }}
+<article class="ikx-series-card ikx-tone-{{ $config.tone }}">
+  <div class="ikx-series-header">
+    <span class="ikx-card-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="{{ $config.icon }}"/></svg>
+    </span>
+    <span class="ikx-series-count">{{ with $labs }}{{ len . }} bench {{ cond (eq (len .) 1) "lab" "labs" }}{{ else }}In planning{{ end }}</span>
   </div>
-
-  <div class="ikx-featured">
-    <h4>Featured Tutorials</h4>
-    <div class="ikx-tutorial-list">
-      {{ range $index, $tutorial := .tutorials }}
-        <a class="ikx-tutorial-item" href="{{ $.buttonUrl | relURL }}">
-          <span class="ikx-tutorial-number">{{ add $index 1 }}</span>
-          <span class="ikx-tutorial-content">
-            <strong>{{ $tutorial.title }}</strong>
-            <small>{{ $tutorial.description }}</small>
-          </span>
-          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
-        </a>
+  <h3>{{ $series.Title }}</h3>
+  <p>{{ $series.Description }}</p>
+  {{ with resources.Get $config.image }}
+    <img class="ikx-series-board" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $config.imageAlt }}" loading="lazy">
+  {{ end }}
+  {{ with $labs }}
+    <ul class="ikx-series-labs" aria-label="{{ $series.Title }} labs">
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><span aria-hidden="true">↗</span></a></li>
       {{ end }}
-    </div>
-  </div>
+    </ul>
+  {{ end }}
+  <a class="ikx-series-link" href="{{ $series.RelPermalink }}" aria-label="Explore {{ $series.Title }}">Explore series <span aria-hidden="true">→</span></a>
 </article>

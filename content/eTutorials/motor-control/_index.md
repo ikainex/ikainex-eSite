@@ -1,17 +1,12 @@
 ---
-title: "Motor Control Tutorials"
-description: "Motor driver and control tutorials for embedded system projects."
+title: "Motor Control Series"
+description: "Explore DC motor driver setup, feedback, and closed-loop speed control."
+layout: "tutorial-series"
 ---
 
-# Motor Control Tutorials
+## Planned tutorials
 
-Learn the fundamentals of motor control, sensing, ADC-based feedback, and practical driver setup for embedded applications.
+- Set up and run a DC motor with the add-on board.
+- Use feedback to build a closed-loop speed control project.
 
-## Included topics
-
-- DC motor setup and driver basics
-- ADC reading and signal processing
-- Closed-loop control workflows
-- Embedded project labs
-
-Use the tutorials from the eTutorials landing page to follow a structured learning path from setup to working control systems.
+For pinouts and hardware details, see the [DC Motor Driver Add-on Board]({{< relref "/eProducts/dc-motor-aob" >}}).

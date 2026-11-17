@@ -227,7 +227,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "19"
+    "wordCount": "17"
   }]
   </script>
 
@@ -237,6 +237,18 @@
   
 
   
+  
+    <style>
+  @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+    html { zoom: 0.8; }
+  }
+</style>
+<script>
+  if (Math.min(screen.width, screen.height) < 768 && matchMedia("(any-pointer: coarse)").matches) {
+    document.querySelector('meta[name="viewport"]').content = "width=device-width, initial-scale=0.5";
+  }
+</script>
+
   
 
   
@@ -590,201 +602,121 @@
         <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]">
           
   
-  <style>.ikx-etutorials{--ikx-navy:#0b2338;--ikx-blue:#1ca3f2;--ikx-blue-deep:#1a87d9;--ikx-green:#2abf8d;--ikx-gray:#dfeaf7;--ikx-ink:#122b4d;--ikx-muted:#64748b;--ikx-accent:#2563eb;--ikx-accent-soft:#e7f0ff;--ikx-border:rgba(100, 116, 139, 0.22);--ikx-surface:rgba(148, 163, 184, 0.08);--ikx-card:rgba(255, 255, 255, 0.38);--ikx-text:var(--ikx-ink);--ikx-font:inherit;color:var(--ikx-text);background:0 0;font-family:var(--ikx-font);margin:0 auto;max-width:1600px}.dark .ikx-etutorials{--ikx-ink:#e7eefb;--ikx-muted:#a6b4c9;--ikx-accent:#76a9ff;--ikx-accent-soft:rgba(59, 130, 246, 0.16);--ikx-border:rgba(148, 163, 184, 0.25);--ikx-surface:rgba(148, 163, 184, 0.08);--ikx-card:rgba(15, 23, 42, 0.5);--ikx-text:var(--ikx-ink)}.ikx-etutorials *{box-sizing:border-box}.ikx-etutorials a{text-decoration:none}.ikx-etutorials img{max-width:100%;display:block}.ikx-hero{display:grid;grid-template-columns:minmax(0,.96fr)minmax(0,1.35fr);align-items:center;min-height:500px;padding:0 clamp(1rem,4vw,3.5rem);background:radial-gradient(circle at 80% 20%,rgba(96,165,250,.18),transparent 35%),linear-gradient(135deg,var(--ikx-surface),transparent);border:1px solid var(--ikx-border);border-radius:1rem}.ikx-hero-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:1.5rem 0 2rem}.ikx-eyebrow-pill{display:inline-flex;align-items:center;gap:.7rem;padding:.45rem 1rem .5rem;border-radius:999px;background:linear-gradient(135deg,var(--ikx-accent),var(--ikx-blue-deep));color:#fff;font-size:.85rem;font-weight:800;letter-spacing:-.02em}.ikx-play-icon{display:grid;place-items:center;width:1.1rem;height:1.1rem;border-radius:50%;background:#fff;color:#1079db;font-size:.56rem}.ikx-hero h1{margin:1.15rem 0 1.1rem;max-width:560px;color:var(--ikx-ink);font-size:clamp(2.7rem,4vw,5.2rem);line-height:.96;letter-spacing:-.06em;font-weight:800}.ikx-hero-description{max-width:720px;margin:0;color:var(--ikx-muted);font-size:clamp(1rem,1.2vw,1.2rem);line-height:1.55}.ikx-hero-note{display:flex;align-items:center;gap:.8rem;margin-top:1.2rem;color:var(--ikx-muted);font-size:1.05rem;font-style:italic;font-weight:600}.ikx-hero-note>span{width:2.5rem;height:4px;border-radius:999px;background:#7fd3ff}.ikx-hero-visual{display:flex;align-items:center;justify-content:center;min-height:440px;padding:1rem 0 1.5rem}.ikx-hero-visual img{width:min(100%,870px);height:auto;object-fit:contain}.ikx-series-section{padding:1.8rem 0 1.2rem;background:0 0}.ikx-section-heading{margin-bottom:1.5rem}.ikx-heading-line,.ikx-section-heading h2,.ikx-section-heading p{display:none}.ikx-series-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}.ikx-series-card{border:1px solid var(--ikx-border);border-radius:1.15rem;padding:1.2rem 1.2rem .9rem;overflow:hidden}.ikx-series-automotive{background:linear-gradient(135deg,#f0faff 0%,#edf6ff 100%)}.ikx-series-motor{background:linear-gradient(135deg,#f1fcf9 0%,#edfaf5 100%)}.ikx-series-main{display:grid;grid-template-columns:minmax(0,1.16fr)minmax(180px,.84fr);align-items:center;gap:.7rem}.ikx-series-title-row{display:flex;align-items:flex-start;gap:.9rem}.ikx-series-icon{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--ikx-blue);color:#fff;font-size:1.65rem;flex-shrink:0}.ikx-series-motor .ikx-series-icon{background:var(--ikx-green)}.ikx-series-copy h3{margin:0 0 .35rem;color:#104a7b;font-size:clamp(1.8rem,2.1vw,2.8rem);line-height:1;letter-spacing:-.05em;font-weight:800}.ikx-series-copy p{margin:0;color:#285a8d;font-size:.96rem;line-height:1.5}.ikx-tag-list{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.1rem}.ikx-tag-list span{display:inline-flex;align-items:center;padding:.38rem .7rem;border-radius:999px;background:rgba(71,158,234,.12);color:#117bd5;font-size:.72rem;font-weight:700}.ikx-series-motor .ikx-tag-list span{background:rgba(69,190,131,.12);color:#188f63}.ikx-series-button{display:inline-flex;align-items:center;gap:.8rem;padding:.72rem 1.2rem;border-radius:999px;background:var(--ikx-blue);color:#fff!important;font-size:.82rem;font-weight:800}.ikx-series-motor .ikx-series-button{background:var(--ikx-green)}.ikx-series-products{display:flex;align-items:center;justify-content:center;flex-direction:column;min-width:0}.ikx-series-products img{width:100%;max-width:320px;height:135px;object-fit:contain}.ikx-product-labels{display:flex;align-items:center;justify-content:center;gap:1.2rem;width:100%;margin-top:.1rem;color:#0d7ad9;font-size:.68rem;font-weight:800}.ikx-series-motor .ikx-product-labels{color:#169364}.ikx-featured{padding-top:.9rem;margin-top:1.1rem;border-top:1px solid rgba(129,169,203,.24)}.ikx-featured h4{margin:0 0 .7rem;color:#0f2e4d;font-size:1rem;font-weight:800;font-style:italic}.ikx-tutorial-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}.ikx-tutorial-item{display:flex;align-items:flex-start;gap:.7rem;padding:.45rem .5rem .55rem;border-right:1px solid rgba(113,161,206,.26);color:inherit}.ikx-tutorial-item:last-child{border-right:0}.ikx-tutorial-number{display:grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--ikx-blue);color:#fff;font-size:.7rem;font-weight:800;flex-shrink:0}.ikx-series-motor .ikx-tutorial-number{background:var(--ikx-green)}.ikx-tutorial-content{display:flex;flex-direction:column;gap:.2rem;min-width:0}.ikx-tutorial-content strong{color:#0f2e4d;font-size:.72rem;line-height:1.35;font-weight:800}.ikx-tutorial-content small{color:#4e6d8b;font-size:.6rem;line-height:1.45}.ikx-tutorial-arrow{margin-left:auto;color:var(--ikx-blue);font-size:1.3rem;line-height:1}.ikx-series-motor .ikx-tutorial-arrow{color:var(--ikx-green)}.ikx-footer-strip{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.8rem;padding:1.1rem 1rem 1.5rem;color:#6d7f98;font-size:.78rem}.ikx-footer-strip a{color:#5d7190}.ikx-footer-strip i{display:block;width:1px;height:1rem;background:rgba(113,135,162,.4)}.ikx-footer-strip b{color:#6d7f98;font-weight:500}@media(max-width:980px){.ikx-brand{font-size:1.7rem}.ikx-hero{grid-template-columns:1fr;padding-bottom:2rem}.ikx-series-grid{grid-template-columns:1fr}.ikx-series-main{grid-template-columns:1fr}.ikx-tutorial-list{grid-template-columns:1fr}.ikx-tutorial-item{border-right:none;border-bottom:1px solid rgba(113,161,206,.26);padding-bottom:.7rem}.ikx-tutorial-item:last-child{border-bottom:none}}@media(max-width:700px){.ikx-nav{flex-wrap:wrap;gap:.6rem;padding:.8rem 1rem}.ikx-nav-links{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:.3rem}.ikx-hero{min-height:400px}.ikx-hero-copy{padding-top:1.2rem}.ikx-hero h1{font-size:2.5rem}.ikx-section-heading h2{font-size:2.3rem}.ikx-series-card{padding:.9rem}}</style>
+  
+  <style>.ikx-learning{--el-ink:#122b4d;--el-muted:#61738b;--el-line:rgba(100,116,139,.2);--el-surface:rgba(148,163,184,.08);--el-card:#fff;color:var(--el-ink);max-width:1320px;margin:0 auto;padding:1.1rem clamp(.2rem,2vw,1.5rem)2.5rem}.dark .ikx-learning{--el-ink:#e7eefb;--el-muted:#a6b4c9;--el-line:rgba(148,163,184,.22);--el-surface:rgba(148,163,184,.07);--el-card:#121e30}.ikx-learning *{box-sizing:border-box}.ikx-learning a{text-decoration:none}.ikx-learning-breadcrumb{display:flex;gap:.65rem;align-items:center;color:var(--el-muted);font-size:.82rem;margin:0 0 1rem}.ikx-learning-breadcrumb a{color:var(--el-muted);transition:color .2s}.ikx-learning-breadcrumb a:hover{color:#1686db}.ikx-learning-hero{position:relative;overflow:hidden;padding:clamp(1.6rem,5vw,4rem);border:1px solid var(--el-line);border-radius:1.35rem;background:radial-gradient(ellipse at 85% 5%,rgba(38,161,241,.16),transparent 38%),radial-gradient(ellipse at 9% 110%,rgba(67,201,164,.13),transparent 35%),linear-gradient(130deg,var(--el-surface),transparent)}.ikx-learning-kicker{color:#1686db;font-size:.73rem;font-weight:850;letter-spacing:.12em}.ikx-learning-hero h1{margin:.65rem 0 .7rem;color:var(--el-ink);font-size:clamp(2.25rem,5vw,4rem);letter-spacing:-.055em;line-height:1.03;font-weight:850}.ikx-learning-hero>p{max-width:720px;margin:0;color:var(--el-muted);font-size:clamp(.98rem,1.4vw,1.12rem);line-height:1.65}.ikx-learning-stats{display:flex;flex-wrap:wrap;gap:1.3rem;margin-top:1.4rem;color:var(--el-muted);font-size:.8rem}.ikx-learning-stats b{color:var(--el-ink);font-size:1rem}.ikx-learning-stats span:last-child{display:flex;align-items:center;gap:.45rem}.ikx-learning-stats i{width:.48rem;height:.48rem;border-radius:50%;background:#32b886;box-shadow:0 0 0 4px rgba(50,184,134,.13)}.ikx-learning-section{padding:1.6rem 0}.ikx-learning-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}.ikx-learning-grid-protocols{grid-template-columns:repeat(4,minmax(0,1fr))}.ikx-learning-card{--tone:#208fdf;--tone-bg:linear-gradient(145deg,#f1f9ff,#fff);position:relative;isolation:isolate;display:flex;min-height:300px;flex-direction:column;align-items:flex-start;padding:1.35rem;border:1px solid var(--el-line);border-radius:1.1rem;overflow:hidden;color:var(--el-ink);background:var(--tone-bg);box-shadow:0 4px 16px rgba(17,45,77,.045);transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;animation:el-rise .42s both;animation-delay:calc(var(--card-order)*65ms)}.ikx-learning-grid-protocols .ikx-learning-card{min-height:280px}.ikx-learning-card::after{position:absolute;z-index:-1;right:-50px;top:-58px;width:170px;height:170px;border-radius:50%;background:var(--tone);opacity:.07;content:"";transition:transform .35s,opacity .35s}.ikx-learning-card:hover,.ikx-learning-card:focus-visible{transform:translateY(-5px);border-color:color-mix(in srgb,var(--tone) 40%,transparent);box-shadow:0 16px 32px rgba(17,45,77,.12);outline:none}.ikx-learning-card:hover::after,.ikx-learning-card:focus-visible::after{transform:scale(1.35);opacity:.12}.ikx-tone-blue{--tone:#1688df;--tone-bg:linear-gradient(145deg,#eff8ff,#fff)}.ikx-tone-mint{--tone:#18a87d;--tone-bg:linear-gradient(145deg,#effaf6,#fff)}.ikx-tone-amber{--tone:#d78525;--tone-bg:linear-gradient(145deg,#fff8ed,#fff)}.ikx-tone-violet{--tone:#7954d8;--tone-bg:linear-gradient(145deg,#f6f2ff,#fff)}.dark .ikx-learning-card{--tone-bg:linear-gradient(145deg,rgba(30,50,75,.92),var(--el-card));box-shadow:0 5px 18px rgba(0,0,0,.15)}.dark .ikx-tone-mint{--tone-bg:linear-gradient(145deg,rgba(22,75,63,.55),var(--el-card))}.dark .ikx-tone-amber{--tone-bg:linear-gradient(145deg,rgba(95,60,24,.5),var(--el-card))}.dark .ikx-tone-violet{--tone-bg:linear-gradient(145deg,rgba(65,48,105,.52),var(--el-card))}.ikx-card-topline{display:flex;width:100%;justify-content:space-between;align-items:center}.ikx-card-icon{display:grid;width:3.35rem;height:3.35rem;place-items:center;border-radius:1rem;background:var(--tone);color:#fff;font-size:1.65rem;font-weight:750;box-shadow:0 7px 16px color-mix(in srgb,var(--tone) 24%,transparent)}.ikx-card-index{color:var(--tone);font-size:.76rem;font-weight:850;letter-spacing:.1em;opacity:.68}.ikx-card-copy{margin-top:1.25rem}.ikx-card-copy h2{margin:0 0 .55rem;color:var(--el-ink);font-size:clamp(1.25rem,1.8vw,1.65rem);line-height:1.15;letter-spacing:-.035em;font-weight:800}.ikx-learning-grid-protocols .ikx-card-copy h2{font-size:1.48rem}.ikx-card-copy p{margin:0;color:var(--el-muted);font-size:.9rem;line-height:1.55}.ikx-card-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}.ikx-card-tags span{padding:.31rem .58rem;border:1px solid color-mix(in srgb,var(--tone) 18%,transparent);border-radius:999px;background:color-mix(in srgb,var(--tone) 8%,transparent);color:var(--tone);font-size:.68rem;font-weight:750;letter-spacing:.01em}.ikx-card-action{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:auto;padding-top:1.15rem;color:var(--tone);font-size:.82rem;font-weight:800}.ikx-card-action span{display:grid;width:1.8rem;height:1.8rem;place-items:center;border:1px solid color-mix(in srgb,var(--tone) 25%,transparent);border-radius:50%;transition:transform .2s,background .2s,color .2s}.ikx-learning-card:hover .ikx-card-action span,.ikx-learning-card:focus-visible .ikx-card-action span{transform:translate(2px,-2px);background:var(--tone);color:#fff}.ikx-learning-note{display:flex;align-items:flex-start;gap:.75rem;padding:1rem 1.1rem;border:1px solid var(--el-line);border-radius:.9rem;background:var(--el-surface);color:var(--el-muted)}.ikx-learning-note>span{color:#208fdf}.ikx-learning-note p{margin:0;font-size:.85rem;line-height:1.55}@keyframes el-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@media(max-width:1000px){.ikx-learning-grid-protocols{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.ikx-learning-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ikx-learning-card,.ikx-learning-grid-protocols .ikx-learning-card{min-height:280px}}@media(max-width:520px){.ikx-learning{padding-inline:0}.ikx-learning-grid,.ikx-learning-grid-protocols{grid-template-columns:1fr}.ikx-learning-card,.ikx-learning-grid-protocols .ikx-learning-card{min-height:250px}.ikx-learning-hero{border-radius:1rem}.ikx-learning-note{font-size:.8rem}}@media(prefers-reduced-motion:reduce){.ikx-learning-card{animation:none;transition:none}.ikx-learning-card:hover{transform:none}}.ikx-learning-breadcrumb>*{flex:none;white-space:nowrap}.ikx-learning-breadcrumb::-webkit-scrollbar{display:none}@media(max-width:640px),(pointer:coarse){.ikx-learning-breadcrumb{max-width:100%;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.3rem}}.ikx-card-meta{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.7rem}.ikx-card-meta span{padding:.28rem .55rem;border:1px solid var(--el-line);border-radius:999px;color:var(--el-muted);font-size:.68rem;font-weight:700}</style>
 
-  <div class="ikx-etutorials">
-    
+  
+  <style>.ikx-topic-page .ikx-topic-hero{background:radial-gradient(ellipse at 88% 5%,color-mix(in srgb,var(--tone) 18%,transparent),transparent 40%),linear-gradient(135deg,var(--el-surface),transparent)}.ikx-topic-title-row{display:flex;align-items:center;gap:1rem;margin:.75rem 0}.ikx-topic-title-row h1{margin:0}.ikx-topic-page.ikx-tone-blue{--tone:#1688df}.ikx-topic-page.ikx-tone-mint{--tone:#18a87d}.ikx-topic-page.ikx-tone-amber{--tone:#d78525}.ikx-topic-page.ikx-tone-violet{--tone:#7954d8}.ikx-topic-hero .ikx-card-icon{flex:none;background:var(--tone)}.ikx-topic-hero .ikx-learning-kicker,.ikx-topic-hero .ikx-card-tags span{color:var(--tone)}.ikx-topic-hero .ikx-card-tags span{border-color:color-mix(in srgb,var(--tone) 18%,transparent);background:color-mix(in srgb,var(--tone) 8%,transparent)}.ikx-topic-content{max-width:1e3px;margin:2rem auto 0}.ikx-topic-overview{padding:1.7rem 0 1.8rem;border-bottom:1px solid var(--el-line)}.ikx-topic-overview h2,.ikx-topic-panel h2,.ikx-topic-next h2{margin:.5rem 0;color:var(--el-ink);font-size:clamp(1.35rem,2vw,1.8rem);letter-spacing:-.035em;font-weight:820}.ikx-topic-overview p,.ikx-topic-next p{max-width:780px;margin:0;color:var(--el-muted);font-size:1rem;line-height:1.75}.ikx-topic-panel .ikx-panel-icon{display:grid;width:2.5rem;height:2.5rem;place-items:center;border-radius:.75rem;background:color-mix(in srgb,var(--tone) 11%,transparent);color:var(--tone);font-size:1.2rem}.ikx-topic-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0}.ikx-topic-panel{padding:1.25rem;border:1px solid var(--el-line);border-radius:1rem;background:var(--el-surface)}.ikx-topic-panel h2{font-size:1.15rem}.ikx-topic-panel ul{display:grid;gap:.75rem;margin:1rem 0 0;padding:0;list-style:none}.ikx-topic-panel li{position:relative;padding-left:1.25rem;color:var(--el-muted);font-size:.9rem;line-height:1.5}.ikx-topic-panel li::before{position:absolute;left:0;color:var(--tone);content:"↗"}.ikx-topic-next{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:1.5rem;padding:1.4rem;border:1px solid var(--el-line);border-radius:1rem;background:var(--el-surface)}.ikx-topic-next .ikx-series-button{flex:none;background:var(--tone)}@media(max-width:650px){.ikx-topic-panels{grid-template-columns:1fr}.ikx-topic-next{align-items:flex-start;flex-direction:column}.ikx-topic-title-row .ikx-card-icon{width:2.8rem;height:2.8rem}}.ikx-topic-meta{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1rem}.ikx-topic-meta>span{display:flex;align-items:center;gap:.4rem;padding:.45rem .7rem;border:1px solid var(--el-line);border-radius:.7rem;color:var(--el-muted);font-size:.78rem}.ikx-topic-meta b{color:var(--el-ink)}.ikx-topic-path{margin:1.5rem 0;padding:1.35rem;border:1px solid var(--el-line);border-radius:1rem;background:var(--el-surface)}.ikx-topic-path h2{margin:.5rem 0;color:var(--el-ink);font-size:1.35rem;letter-spacing:-.03em}.ikx-topic-path>div:first-child>p,.ikx-topic-path-items p{margin:0;color:var(--el-muted);font-size:.88rem;line-height:1.55}.ikx-topic-path-items{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem;margin-top:1rem}.ikx-topic-path-items>div{padding:.85rem;border:1px solid var(--el-line);border-radius:.75rem;background:var(--el-card)}.ikx-topic-path-items b{display:block;color:var(--el-ink);font-size:.86rem}.ikx-topic-path-items span{display:inline-block;margin:.35rem 0;color:var(--tone);font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.ikx-topic-path-items p{font-size:.78rem}@media(max-width:800px){.ikx-topic-path-items{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.ikx-topic-path-items{grid-template-columns:1fr}}.ikx-topic-timeline{margin:1.5rem 0;padding:1.35rem;border:1px solid var(--el-line);border-radius:1rem;background:var(--el-surface)}.ikx-topic-timeline h2{margin:.5rem 0 1rem;color:var(--el-ink);font-size:1.35rem;letter-spacing:-.03em}.ikx-topic-timeline ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:0;padding:0;list-style:none;counter-reset:boot-step}.ikx-topic-timeline li{position:relative;padding:.85rem;border:1px solid var(--el-line);border-radius:.75rem;background:var(--el-card);counter-increment:boot-step}.ikx-topic-timeline li::before{display:grid;width:1.6rem;height:1.6rem;margin-bottom:.55rem;place-items:center;border-radius:50%;background:var(--tone);color:#fff;font-size:.72rem;font-weight:800;content:counter(boot-step)}.ikx-topic-timeline li b{color:var(--el-ink);font-size:.86rem}.ikx-topic-timeline li p{margin:.35rem 0 0;color:var(--el-muted);font-size:.78rem;line-height:1.5}@media(max-width:700px){.ikx-topic-timeline ol{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.ikx-topic-timeline ol{grid-template-columns:1fr}}</style>
 
-<section class="ikx-hero">
+  
+  <style>.ikx-tutorial-heading{margin:0 0 1rem;font-size:clamp(1.35rem,2.5vw,1.8rem);font-weight:820;letter-spacing:-.035em}.ikx-tutorial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ikx-tutorial-grid .ikx-card-copy h3{margin:0 0 .5rem;font-size:clamp(1.25rem,2.5vw,1.65rem);font-weight:800;line-height:1.2;letter-spacing:-.035em}.ikx-tutorial-path{padding:clamp(1rem,3vw,1.6rem);border:1px solid var(--el-line);border-radius:1.1rem;background:var(--el-surface)}.ikx-tutorial-path ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:0;padding-left:1.25rem;list-style:decimal}.ikx-tutorial-path li::marker{font-weight:800}.ikx-tutorial-sidebar{color:var(--el-muted);font-size:.9rem;line-height:1.6}.ikx-tutorial-sidebar>a,.ikx-tutorial-prose a{text-decoration:underline;text-underline-offset:.18em}.ikx-tutorial-lab{display:grid;grid-template-columns:minmax(12rem,1fr)minmax(0,3fr);align-items:start;gap:clamp(1rem,4vw,3rem);margin:1.5rem auto 0;max-width:1130px}.ikx-tutorial-sidebar{padding:1rem;border:1px solid var(--el-line);border-radius:1rem;background:var(--el-surface)}.ikx-tutorial-sidebar p{margin-bottom:.45rem;color:var(--el-ink);font-weight:800}.ikx-tutorial-sidebar li+li{margin-top:.3rem}.ikx-tutorial-sidebar a:hover,.ikx-tutorial-sidebar a:focus-visible{text-decoration:underline}.ikx-tutorial-sidebar>a{display:block;margin-top:.75rem}.ikx-tutorial-prose{min-width:0}.ikx-tutorial-prose h2:first-child{margin-top:0}.ikx-tutorial-prose h2{scroll-margin-top:6rem}.ikx-tutorial-prose td{overflow-wrap:anywhere}@media(max-width:760px){.ikx-tutorial-lab,.ikx-tutorial-path ol{grid-template-columns:1fr}}@media(max-width:520px){.ikx-tutorial-grid{grid-template-columns:1fr}}.ikx-tutorial-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem;margin-top:1.2rem}.ikx-sdk-link,.ikx-browse-link{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:2.75rem;padding:.55rem .85rem;border:1px solid var(--el-line);border-radius:.65rem;font-size:.85rem;font-weight:750;line-height:1.4}.ikx-sdk-link{background:var(--el-card);color:var(--el-ink)}.ikx-sdk-link:hover,.ikx-sdk-link:focus-visible{border-color:initial;background:var(--el-surface)}.ikx-sdk-icon,.ikx-sdk-icon svg{display:block;width:1.15rem;height:1.15rem}.ikx-sdk-arrow{color:var(--el-muted)}.ikx-learning :is(.ikx-sdk-link,.ikx-browse-link,.ikx-series-link,.ikx-series-labs a):focus-visible{outline:2px solid var(--el-ink);outline-offset:2px}.ikx-tutorial-path{margin-top:1rem}.ikx-tutorial-path .ikx-tutorial-prose>:last-child{margin-bottom:0}@media(max-width:760px){.ikx-learning-breadcrumb{flex-wrap:wrap}}</style>
+
+
+  
+  <style>.ikx-hero{display:grid;grid-template-columns:minmax(0,1fr)minmax(0,1fr);align-items:center;gap:clamp(1.25rem,4vw,3rem)}.ikx-hero img{width:100%;height:auto}.ikx-hero-copy>p{color:var(--el-muted);line-height:1.65}.ikx-etutorials .ikx-browse-link{--browse-fill:#075985;--browse-fill-active:#0c4a6e;--browse-text:#fff;background-color:var(--browse-fill);border-color:var(--browse-fill);font-size:.95rem;font-weight:800}.dark .ikx-etutorials .ikx-browse-link{--browse-fill:#7dd3fc;--browse-fill-active:#bae6fd;--browse-text:#082f49}#main-content .ikx-etutorials .ikx-tutorial-actions a.ikx-browse-link:any-link{color:var(--browse-text)}.ikx-etutorials .ikx-browse-link:is(:hover,:focus-visible){background-color:var(--browse-fill-active);border-color:var(--browse-fill-active)}#tutorial-series{scroll-margin-top:6rem}.ikx-series-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}.ikx-series-card{display:flex;flex-direction:column;padding:clamp(1rem,2.4vw,1.4rem);border:1px solid var(--el-line);border-radius:1.1rem;background:var(--tone-bg)}.ikx-series-header{display:flex;align-items:center;justify-content:space-between;gap:.6rem}.ikx-series-header svg{width:1.65rem;height:1.65rem}.ikx-series-count{padding:.25rem .6rem;border:1px solid var(--el-line);border-radius:999px;background:var(--el-card);color:var(--el-muted);font-size:.75rem;font-weight:750}.ikx-series-card h3{margin:1rem 0 .45rem;font-size:clamp(1.25rem,2vw,1.65rem);font-weight:800;line-height:1.15;letter-spacing:-.035em}.ikx-series-card p{color:var(--el-muted);font-size:.9rem;line-height:1.55}.ikx-series-board{width:100%;height:8rem;margin:1rem auto;object-fit:contain}.ikx-series-labs{margin:0 0 .75rem}.ikx-series-labs a,.ikx-series-link{display:flex;justify-content:space-between;align-items:center;gap:.5rem;min-height:2.75rem;border-radius:.5rem;padding:.45rem .6rem;font-size:.85rem;font-weight:750}.ikx-series-labs a:hover,.ikx-series-labs a:focus-visible,.ikx-series-link:hover,.ikx-series-link:focus-visible{background:var(--el-surface);text-decoration:underline}.ikx-series-link{margin-top:auto;border:1px solid var(--el-line)}@media(max-width:880px){.ikx-series-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.ikx-hero,.ikx-series-grid{grid-template-columns:1fr}.ikx-hero img{max-width:26rem;margin-inline:auto}}.dark .ikx-series-card.ikx-tone-blue{--tone-bg:linear-gradient(145deg, rgba(30, 50, 75, .92), var(--el-card))}</style>
+
+  <div class="ikx-learning ikx-etutorials">
+    <header class="ikx-learning-hero ikx-hero">
   <div class="ikx-hero-copy">
-    <div class="ikx-eyebrow-pill">
-      <span class="ikx-play-icon" aria-hidden="true">▶</span>
-      eTutorials
-    </div>
+    <span class="ikx-learning-kicker">eTutorials</span>
+    <h1>Build real projects. Learn by doing.</h1>
+    <p>Work through hands-on embedded labs in automotive communication and analog measurement with STM32 and Ikainex add-on boards.</p>
+    <div class="ikx-tutorial-actions">
+      <a class="ikx-browse-link" href="#tutorial-series">Browse tutorial series <span aria-hidden="true">↓</span></a>
+      <a class="ikx-sdk-link" href="https://github.com/ikainex/ikainex-aob-sdk/tree/main">
+  <span class="ikx-sdk-icon" aria-hidden="true"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span>
+  <span>AOB SDK on GitHub</span>
+  <span class="ikx-sdk-arrow" aria-hidden="true">↗</span>
+</a>
 
-    <h1>Build Real Projects.<br>Learn by Doing.</h1>
-
-    <p class="ikx-hero-description">
-      Step-by-step hardware tutorials, practical projects and hands-on guides
-      to help you master embedded systems, automotive and motor control applications.
-    </p>
-
-    <div class="ikx-hero-note">
-      <span aria-hidden="true"></span>
-      From setup to working projects
     </div>
   </div>
-
-  <div class="ikx-hero-visual">
-    
-      <img
-        src="/img/etutorials/landing-page/Build-with-Parth-and-Ved.png"
-        alt="Parth and Ved working together on an electronics project"
-        loading="eager">
-    
-  </div>
-</section>
-
-    <section class="ikx-series-section">
+  
+    <img src="/img/etutorials/landing-page/Build-with-Parth-and-Ved.png" width="1536" height="1024"
+      alt="Parth and Ved working together on an electronics project">
+  
+</header>
+    <section id="tutorial-series" class="ikx-learning-section" aria-labelledby="tutorial-series-heading">
+  <h2 id="tutorial-series-heading" class="ikx-tutorial-heading">Choose a tutorial series</h2>
   <div class="ikx-series-grid">
     
-
-<article class="ikx-series-card ikx-series-automotive">
-  <div class="ikx-series-main">
-    <div class="ikx-series-copy">
-      <div class="ikx-series-title-row">
-        <div class="ikx-series-icon" aria-hidden="true">
-          🚘
-        </div>
-        <div>
-          <h3>Automotive Series</h3>
-          <p>Explore LIN and CAN communication with real-world automotive applications.</p>
-        </div>
-      </div>
-
-      <div class="ikx-tag-list">
-        <span>LIN</span><span>CAN</span><span>Diagnostics</span><span>Vehicle Networks</span>
-      </div>
-
-      <a class="ikx-series-button" href="/etutorials/automotive/">
-        Start Learning <span aria-hidden="true">→</span>
-      </a>
-    </div>
-
-    <div class="ikx-series-products">
       
-        <img
-          src="/img/etutorials/landing-page/boards.png"
-          alt="Ikainex LIN and CAN boards"
-          loading="lazy">
       
-      <div class="ikx-product-labels">
-        <span>LIN</span><span>CAN</span>
-      </div>
-    </div>
+
+
+<article class="ikx-series-card ikx-tone-blue">
+  <div class="ikx-series-header">
+    <span class="ikx-card-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15V11L5 6h14l2 5v4M3 15h18M5 15v3m14-3v3M3 11h18m-15 2h2m8 0h2"/></svg>
+    </span>
+    <span class="ikx-series-count">2 bench labs</span>
   </div>
-
-  <div class="ikx-featured">
-    <h4>Featured Tutorials</h4>
-    <div class="ikx-tutorial-list">
+  <h3>Automotive Series</h3>
+  <p>Send your first LIN frame and build a CAN FD echo node using STM32 Nucleo boards and Ikainex add-on boards.</p>
+  
+    <img class="ikx-series-board" src="/img/etutorials/landing-page/boards.png" width="430" height="645" alt="Ikainex LIN and CAN FD add-on boards" loading="lazy">
+  
+  
+    <ul class="ikx-series-labs" aria-label="Automotive Series labs">
       
-        <a class="ikx-tutorial-item" href="/etutorials/automotive/">
-          <span class="ikx-tutorial-number">1</span>
-          <span class="ikx-tutorial-content">
-            <strong>LIN Basics &amp; Setup</strong>
-            <small>Learn the fundamentals of LIN communication.</small>
-          </span>
-          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
-        </a>
+        <li><a href="/etutorials/automotive/lin-master-transmit/"><span>LIN Master Transmit</span><span aria-hidden="true">↗</span></a></li>
       
-        <a class="ikx-tutorial-item" href="/etutorials/automotive/">
-          <span class="ikx-tutorial-number">2</span>
-          <span class="ikx-tutorial-content">
-            <strong>CAN Bus Communication</strong>
-            <small>Configure and test CAN with real data.</small>
-          </span>
-          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
-        </a>
+        <li><a href="/etutorials/automotive/can-fd-echo/"><span>CAN FD Echo</span><span aria-hidden="true">↗</span></a></li>
       
-        <a class="ikx-tutorial-item" href="/etutorials/automotive/">
-          <span class="ikx-tutorial-number">3</span>
-          <span class="ikx-tutorial-content">
-            <strong>Automotive Project</strong>
-            <small>Build a simple vehicle network project.</small>
-          </span>
-          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
-        </a>
-      
-    </div>
-  </div>
+    </ul>
+  
+  <a class="ikx-series-link" href="/etutorials/automotive/" aria-label="Explore Automotive Series">Explore series <span aria-hidden="true">→</span></a>
 </article>
-
-
     
-
-<article class="ikx-series-card ikx-series-motor">
-  <div class="ikx-series-main">
-    <div class="ikx-series-copy">
-      <div class="ikx-series-title-row">
-        <div class="ikx-series-icon" aria-hidden="true">
-          ▣
-        </div>
-        <div>
-          <h3>Motor Control Series</h3>
-          <p>Control motors and read real-world signals with our DC Motor Driver and ADC boards.</p>
-        </div>
-      </div>
-
-      <div class="ikx-tag-list">
-        <span>DC Motor Driver</span><span>ADC</span><span>Feedback</span><span>Control</span>
-      </div>
-
-      <a class="ikx-series-button" href="/etutorials/motor-control/">
-        Start Learning <span aria-hidden="true">→</span>
-      </a>
-    </div>
-
-    <div class="ikx-series-products">
       
-        <img
-          src="/img/etutorials/landing-page/boards.png"
-          alt="Ikainex DC Motor Driver and ADC boards"
-          loading="lazy">
       
-      <div class="ikx-product-labels">
-        <span>DC Motor Driver</span><span>ADC</span>
-      </div>
-    </div>
+
+
+<article class="ikx-series-card ikx-tone-violet">
+  <div class="ikx-series-header">
+    <span class="ikx-card-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3 0 3-7 6-7s5 14 8 14 3-7 6-7"/></svg>
+    </span>
+    <span class="ikx-series-count">1 bench lab</span>
   </div>
-
-  <div class="ikx-featured">
-    <h4>Featured Tutorials</h4>
-    <div class="ikx-tutorial-list">
+  <h3>Analog Series</h3>
+  <p>Measure analog signals with Ikainex add-on boards and STM32 Nucleo boards.</p>
+  
+    <img class="ikx-series-board" src="/img/eboards/addon-boards/adc-aob.png" width="430" height="645" alt="Ikainex ADC add-on board" loading="lazy">
+  
+  
+    <ul class="ikx-series-labs" aria-label="Analog Series labs">
       
-        <a class="ikx-tutorial-item" href="/etutorials/motor-control/">
-          <span class="ikx-tutorial-number">1</span>
-          <span class="ikx-tutorial-content">
-            <strong>DC Motor Driver Setup</strong>
-            <small>Configure and run your first motor.</small>
-          </span>
-          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
-        </a>
+        <li><a href="/etutorials/analog/adc-monitor/"><span>ADC AOB Monitor</span><span aria-hidden="true">↗</span></a></li>
       
-        <a class="ikx-tutorial-item" href="/etutorials/motor-control/">
-          <span class="ikx-tutorial-number">2</span>
-          <span class="ikx-tutorial-content">
-            <strong>Read Analog Data (ADC)</strong>
-            <small>Capture sensor data and process it.</small>
-          </span>
-          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
-        </a>
-      
-        <a class="ikx-tutorial-item" href="/etutorials/motor-control/">
-          <span class="ikx-tutorial-number">3</span>
-          <span class="ikx-tutorial-content">
-            <strong>Motor Control Project</strong>
-            <small>Build a closed-loop speed control project.</small>
-          </span>
-          <span class="ikx-tutorial-arrow" aria-hidden="true">›</span>
-        </a>
-      
-    </div>
-  </div>
+    </ul>
+  
+  <a class="ikx-series-link" href="/etutorials/analog/" aria-label="Explore Analog Series">Explore series <span aria-hidden="true">→</span></a>
 </article>
+    
+      
+      
 
+
+<article class="ikx-series-card ikx-tone-mint">
+  <div class="ikx-series-header">
+    <span class="ikx-card-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8z"/></svg>
+    </span>
+    <span class="ikx-series-count">In planning</span>
+  </div>
+  <h3>Motor Control Series</h3>
+  <p>Explore DC motor driver setup, feedback, and closed-loop speed control.</p>
+  
+    <img class="ikx-series-board" src="/img/eboards/addon-boards/dc-motor-aob.png" width="486" height="745" alt="Ikainex DC Motor Driver add-on board" loading="lazy">
+  
+  
+  <a class="ikx-series-link" href="/etutorials/motor-control/" aria-label="Explore Motor Control Series">Explore series <span aria-hidden="true">→</span></a>
+</article>
+    
   </div>
 </section>
-
-    <footer class="ikx-footer-strip">
-  <span>Ikainex™</span>
-  <i aria-hidden="true"></i>
-  <a href="/learn/">Learn</a>
-  <b aria-hidden="true">•</b>
-  <a href="/etutorials/">Build</a>
-  <b aria-hidden="true">•</b>
-  <a href="/posts/">Innovate</a>
-</footer>
-
   </div>
 
         </div>

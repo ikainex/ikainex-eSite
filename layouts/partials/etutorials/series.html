@@ -1,33 +1,13 @@
-<section class="ikx-series-section">
+<section id="tutorial-series" class="ikx-learning-section" aria-labelledby="tutorial-series-heading">
+  <h2 id="tutorial-series-heading" class="ikx-tutorial-heading">Choose a tutorial series</h2>
   <div class="ikx-series-grid">
-    {{ partial "eTutorials/series-card.html" (dict
-      "kind" "automotive"
-      "title" "Automotive Series"
-      "description" "Explore LIN and CAN communication with real-world automotive applications."
-      "tags" (slice "LIN" "CAN" "Diagnostics" "Vehicle Networks")
-      "imageAlt" "Ikainex LIN and CAN boards"
-      "productLabels" (slice "LIN" "CAN")
-      "tutorials" (slice
-        (dict "title" "LIN Basics & Setup" "description" "Learn the fundamentals of LIN communication.")
-        (dict "title" "CAN Bus Communication" "description" "Configure and test CAN with real data.")
-        (dict "title" "Automotive Project" "description" "Build a simple vehicle network project.")
-      )
-      "buttonUrl" "etutorials/automotive/"
-    ) }}
-
-    {{ partial "eTutorials/series-card.html" (dict
-      "kind" "motor"
-      "title" "Motor Control Series"
-      "description" "Control motors and read real-world signals with our DC Motor Driver and ADC boards."
-      "tags" (slice "DC Motor Driver" "ADC" "Feedback" "Control")
-      "imageAlt" "Ikainex DC Motor Driver and ADC boards"
-      "productLabels" (slice "DC Motor Driver" "ADC")
-      "tutorials" (slice
-        (dict "title" "DC Motor Driver Setup" "description" "Configure and run your first motor.")
-        (dict "title" "Read Analog Data (ADC)" "description" "Capture sensor data and process it.")
-        (dict "title" "Motor Control Project" "description" "Build a closed-loop speed control project.")
-      )
-      "buttonUrl" "etutorials/motor-control/"
-    ) }}
+    {{ range slice
+      (dict "name" "automotive" "tone" "blue" "icon" "M3 15V11L5 6h14l2 5v4M3 15h18M5 15v3m14-3v3M3 11h18m-15 2h2m8 0h2" "image" "img/etutorials/landing-page/boards.png" "imageAlt" "Ikainex LIN and CAN FD add-on boards")
+      (dict "name" "analog" "tone" "violet" "icon" "M2 12c3 0 3-7 6-7s5 14 8 14 3-7 6-7" "image" "img/eboards/addon-boards/adc-aob.png" "imageAlt" "Ikainex ADC add-on board")
+      (dict "name" "motor-control" "tone" "mint" "icon" "m13 2-9 12h7l-1 8 10-12h-7l1-8z" "image" "img/eboards/addon-boards/dc-motor-aob.png" "imageAlt" "Ikainex DC Motor Driver add-on board")
+    }}
+      {{ $series := $.GetPage .name }}
+      {{ partial "etutorials/series-card.html" (dict "config" . "series" $series) }}
+    {{ end }}
   </div>
 </section>

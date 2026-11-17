@@ -1,0 +1,37 @@
+{{ define "main" }}
+  {{ partial "tutorials/styles.html" . }}
+  <div class="ikx-learning">
+    {{ partial "tutorials/breadcrumb.html" . }}
+    <header class="ikx-learning-hero">
+      <span class="ikx-learning-kicker">HANDS-ON TUTORIALS</span>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
+      {{ $labCount := len .RegularPages }}
+      {{ if $labCount }}
+        <div class="ikx-learning-stats"><span><b>{{ $labCount }}</b> bench {{ cond (eq $labCount 1) "lab" "labs" }}</span><span><i></i> STM32CubeIDE projects</span></div>
+      {{ end }}
+      <div class="ikx-tutorial-actions">{{ partial "tutorials/sdk-link.html" . }}</div>
+    </header>
+    {{ if .RegularPages }}
+    <section class="ikx-learning-section" aria-labelledby="tutorial-labs">
+      <h2 id="tutorial-labs" class="ikx-tutorial-heading">Choose a lab</h2>
+      <div class="ikx-learning-grid ikx-tutorial-grid">
+        {{ range $index, $lab := .RegularPages.ByWeight }}
+          <a class="ikx-learning-card ikx-tone-{{ .Params.tone }}" href="{{ .RelPermalink }}" style="--card-order: {{ $index }}">
+            <span class="ikx-card-icon" aria-hidden="true">{{ .Params.icon }}</span>
+            <div class="ikx-card-copy"><h3>{{ .Title }}</h3><p>{{ .Description }}</p></div>
+            <div class="ikx-card-tags" aria-label="Lab details">{{ range .Params.details }}<span>{{ . }}</span>{{ end }}</div>
+            <div class="ikx-card-meta"><span>{{ .Params.level }}</span></div>
+            <span class="ikx-card-action">Open tutorial <span aria-hidden="true">↗</span></span>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+    {{ with .Content }}
+      <section class="ikx-tutorial-path">
+        <div class="ikx-tutorial-prose prose dark:prose-invert max-w-none">{{ . }}</div>
+      </section>
+    {{ end }}
+  </div>
+{{ end }}

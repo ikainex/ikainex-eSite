@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{ partial "tutorials/styles.html" . }}
+  <article class="ikx-learning ikx-topic-page ikx-tone-{{ .Params.tone }}">
+    {{ partial "tutorials/breadcrumb.html" . }}
+    <header class="ikx-learning-hero ikx-topic-hero">
+      <span class="ikx-learning-kicker">{{ .Params.level }} bench lab</span>
+      <div class="ikx-topic-title-row"><span class="ikx-card-icon" aria-hidden="true">{{ .Params.icon }}</span><h1>{{ .Title }}</h1></div>
+      <p>{{ .Description }}</p>
+      <div class="ikx-card-tags" aria-label="Lab details">{{ range .Params.details }}<span>{{ . }}</span>{{ end }}</div>
+      <div class="ikx-tutorial-actions">{{ partial "tutorials/sdk-link.html" . }}</div>
+    </header>
+    <div class="ikx-tutorial-lab">
+      <aside class="ikx-tutorial-sidebar">
+        <p id="tutorial-lab-contents">On this page</p>
+        <div aria-labelledby="tutorial-lab-contents">{{ .TableOfContents }}</div>
+        {{ with .Params.conceptUrl }}<a href="{{ . | relURL }}">eLearn concepts <span aria-hidden="true">↗</span></a>{{ end }}
+        {{ with .Params.boardUrl }}<a href="{{ . | relURL }}">Add-on board documentation <span aria-hidden="true">↗</span></a>{{ end }}
+      </aside>
+      <div class="ikx-tutorial-prose prose dark:prose-invert max-w-none">
+        {{ .Content }}
+      </div>
+    </div>
+  </article>
+{{ end }}
