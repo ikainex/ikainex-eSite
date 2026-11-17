@@ -1,5 +1,10 @@
+{{ $custom := eq (.Get 0) "custom" }}
 <div class="quote-form not-prose mx-auto w-full max-w-3xl">
+  {{ if $custom }}
+  <p class="mb-6 text-neutral-600 dark:text-neutral-300">Share what your board needs to do, then review your request and send it by email or WhatsApp. Our team will review it and get back to you.</p>
+  {{ else }}
   <p class="mb-6 text-neutral-600 dark:text-neutral-300">Enter your quantity and delivery location, then review your request and send it by email or WhatsApp.</p>
+  {{ end }}
   <form id="quote-request-form" class="space-y-6" novalidate>
     <div>
       <label for="quote-name" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Name</label>
@@ -17,26 +22,31 @@
       </div>
     </div>
 
+    {{ if not $custom }}
     <div>
       <label for="quote-product" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Product</label>
       <input id="quote-product" name="product" type="text" readonly class="w-full rounded-lg border border-neutral-300 bg-neutral-100 px-4 py-3 text-base text-neutral-700 outline-none dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200" />
       <p id="quote-product-details" class="mt-2 text-sm text-neutral-600 dark:text-neutral-300" hidden></p>
     </div>
+    {{ end }}
 
     <div class="grid gap-6 sm:grid-cols-2">
       <div>
-        <label for="quote-quantity" class="mb-2 block text-sm font-semibold">Quantity</label>
-        <input id="quote-quantity" name="quantity" type="number" min="1" step="1" value="1" required class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 dark:border-neutral-600 dark:bg-neutral-900">
+        <label for="quote-quantity" class="mb-2 block text-sm font-semibold">{{ if $custom }}Estimated quantity (optional){{ else }}Quantity{{ end }}</label>
+        <input id="quote-quantity" name="quantity" type="number" min="1" step="1" {{ if not $custom }}value="1" required{{ end }} class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 dark:border-neutral-600 dark:bg-neutral-900">
       </div>
       <div>
-        <label for="quote-delivery" class="mb-2 block text-sm font-semibold">Delivery city and postal code</label>
-        <input id="quote-delivery" name="delivery" type="text" required class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 dark:border-neutral-600 dark:bg-neutral-900">
+        <label for="quote-delivery" class="mb-2 block text-sm font-semibold">Delivery city and postal code{{ if $custom }} (optional){{ end }}</label>
+        <input id="quote-delivery" name="delivery" type="text" {{ if not $custom }}required{{ end }} class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 dark:border-neutral-600 dark:bg-neutral-900">
       </div>
     </div>
 
     <div>
-      <label for="quote-description" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Additional notes (optional)</label>
-      <textarea id="quote-description" name="description" rows="3" class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/30 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"></textarea>
+      <label for="quote-description" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">{{ if $custom }}Board requirements{{ else }}Additional notes (optional){{ end }}</label>
+      {{ if $custom }}
+      <p id="quote-description-help" class="mb-2 text-sm">Describe the application and, if known, the host board, interfaces, power supply, size constraints, and target timeline.</p>
+      {{ end }}
+      <textarea id="quote-description" name="description" rows="{{ if $custom }}6{{ else }}3{{ end }}" {{ if $custom }}required aria-describedby="quote-description-help"{{ end }} class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/30 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"></textarea>
     </div>
 
     <button type="submit" class="quote-prepare-button">
@@ -86,12 +96,16 @@
     const quoteWhatsApp = {{ site.Params.quoteWhatsApp | default "" }};
     const contactPhone = {{ site.Params.contact.phone }};
 
-    product.value = query.get('product') || 'General quote request';
-    const adcDetails = product.value === 'ADC Add-on Board'
+    const isCustom = {{ $custom }};
+    const description = form.elements.description;
+    if (product) product.value = query.get('product') || 'General quote request';
+    const adcDetails = product?.value === 'ADC Add-on Board'
       ? 'MCP3204 · 12-bit · 4 single-ended channels · SPI · up to 100 kSPS'
       : '';
-    productDetails.textContent = adcDetails;
-    productDetails.hidden = !adcDetails;
+    if (productDetails) {
+      productDetails.textContent = adcDetails;
+      productDetails.hidden = !adcDetails;
+    }
 
     form.addEventListener('input', function () {
       actions.classList.add('hidden');
@@ -100,23 +114,28 @@
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
+      if (isCustom) {
+        description.setCustomValidity(description.value.trim() ? '' : 'Describe what your board needs to do.');
+      }
       if (!form.reportValidity()) return;
 
       const values = new FormData(form);
+      const subject = isCustom ? 'Custom add-on board request' : 'Quote request: ' + values.get('product');
+      const notes = values.get('description').trim();
       const message = [
-        'Hello Ikainex, I would like to request a quote for an order.',
-        'Product: ' + values.get('product'),
+        isCustom ? 'Hello Ikainex, I would like to request a custom add-on board.' : 'Hello Ikainex, I would like to request a quote for an order.',
+        product && 'Product: ' + product.value,
         adcDetails && 'Board details: ' + adcDetails,
-        'Quantity: ' + values.get('quantity'),
-        'Delivery location: ' + values.get('delivery'),
+        values.get('quantity') && (isCustom ? 'Estimated quantity: ' : 'Quantity: ') + values.get('quantity'),
+        values.get('delivery') && 'Delivery location: ' + values.get('delivery'),
         'Name: ' + values.get('name'),
         'Phone: ' + values.get('phone'),
         'Email: ' + values.get('email'),
-        values.get('description').trim() && 'Notes: ' + values.get('description').trim(),
-        'Please confirm availability, pricing, shipping costs, and lead time.'
+        notes && (isCustom ? 'Board requirements: ' : 'Notes: ') + notes,
+        isCustom ? 'Please review the requirements and let me know the next steps.' : 'Please confirm availability, pricing, shipping costs, and lead time.'
       ].filter(Boolean).join('\n');
 
-      emailLink.href = 'mailto:' + quoteEmail + '?subject=' + encodeURIComponent('Quote request: ' + values.get('product')) + '&body=' + encodeURIComponent(message);
+      emailLink.href = 'mailto:' + quoteEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
       preview.value = message;
       whatsappLink.href = 'https://wa.me/' + quoteWhatsApp.replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(message);
       document.getElementById('quote-whatsapp-label').textContent = quoteWhatsApp ? 'Send by WhatsApp' : 'Open in WhatsApp';

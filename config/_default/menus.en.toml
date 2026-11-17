@@ -59,6 +59,7 @@
 
 [[footer]]
   name = "Github"
+  identifier = "github"
   url = "https://github.com/ikainex"
   weight = 1
 

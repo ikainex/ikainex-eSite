@@ -804,6 +804,89 @@ html:not(.dark) #ik-home .ik-hero-art img { filter: drop-shadow(0 12px 14px #244
   #ik-home .ik-duo { grid-template-columns: minmax(0, 1fr); }
 }
 
+#ik-home .ik-home-contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-block-start: 20px;
+}
+
+#ik-home .ik-home-contact-panel {
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid var(--ik-line);
+  border-radius: 16px;
+  background: var(--ik-card);
+}
+
+#ik-home .ik-home-contact-panel dl,
+#ik-home .ik-home-contact-panel address {
+  margin-block: 16px 0;
+  line-height: 1.65;
+}
+
+#ik-home .ik-home-contact-panel dt {
+  color: var(--ik-muted);
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+#ik-home .ik-home-contact-panel dd + dt {
+  margin-block-start: 12px;
+}
+
+#ik-home .ik-home-contact-panel address {
+  font-style: normal;
+}
+
+#ik-home .ik-home-contact-panel a {
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+
+@media (max-width: 640px) {
+  #ik-home .ik-home-contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+#ik-home #follow-us {
+  padding-block-start: 0;
+}
+
+#ik-home .ik-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#ik-home .ik-social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--ik-line);
+  border-radius: 12px;
+  background: var(--ik-card);
+  color: var(--ik-ink);
+  font-weight: 700;
+}
+
+#ik-home .ik-social-links a:hover {
+  border-color: var(--ik-accent);
+  color: var(--ik-accent);
+}
+
+#ik-home .ik-social-links .icon {
+  color: var(--ik-accent);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
 .ik-contact {
   margin-block-start: 24px;
 }
@@ -889,6 +972,62 @@ html:not(.dark) #ik-home .ik-hero-art img { filter: drop-shadow(0 12px 14px #244
 .dark #main-content .board-page a.board-quote-button:hover { background: #c7e8ff; }
 .board-quote-button:focus-visible { outline: 2px solid #235d82; outline-offset: 3px; }
 .dark .board-quote-button:focus-visible { outline-color: #a0d4f6; }
+
+.eb-custom-request {
+  margin-bottom: 24px;
+}
+#main-content :is(.eb-custom-request, .eb-custom-prompt) a[href] {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #164c73;
+  color: #fff;
+  font-weight: 700;
+}
+#main-content :is(.eb-custom-request, .eb-custom-prompt) a[href]:hover { background: #103753; }
+.dark #main-content :is(.eb-custom-request, .eb-custom-prompt) a[href] {
+  background: #a0d4f6;
+  color: #111f34;
+}
+.dark #main-content :is(.eb-custom-request, .eb-custom-prompt) a[href]:hover { background: #c7e8ff; }
+:is(.eb-custom-request a, .eb-custom-prompt a, .eb-custom-dismiss):focus-visible {
+  outline: 2px solid var(--eb-ink);
+  outline-offset: 3px;
+}
+.eb-custom-prompt {
+  position: fixed;
+  z-index: 40;
+  right: 16px;
+  bottom: 72px;
+  width: min(320px, calc(100vw - 32px));
+  padding: 20px;
+  background: var(--eb-paper);
+  color: var(--eb-ink);
+  border: 1px solid var(--eb-line);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / .24);
+  animation: eb-custom-slide-in .28s ease-out;
+}
+.eb-custom-prompt h2 { margin: 0 44px 6px 0; font-size: 1.4rem; }
+.eb-custom-prompt p { margin: 0 0 14px; font-size: .9rem; }
+.eb-custom-dismiss {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.eb-custom-dismiss:hover { background: var(--eb-mint); }
+@keyframes eb-custom-slide-in {
+  from { transform: translateX(calc(100% + 16px)); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .eb-custom-prompt { animation: none; }
+}
 .board-page > h2 { padding-block-start: 18px; border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent); }
 .board-page :is(h1, h2, h3, h4, h5, h6) > .anchor + span { display: none; }
 @media (max-width: 760px) {

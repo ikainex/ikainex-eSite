@@ -105,8 +105,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.6a3046a7fc61627244cf6ce7c52a0de226059a21e02303fe6ec9a78afb2b3d5ab3b367ee77847d4bbea7e87130aa49d519a201fb109d364662cc7b7d432c586a.css"
-    integrity="sha512-ajBGp/xhYnJEz2znxSoN4iYFmiHgIwP&#43;bsmnivsrPVqzs2fud4R9S76n6HEwqknVGaIB&#43;xCdNkZizHt9QyxYag==">
+    href="/css/main.bundle.min.c6a9671be1db8c949038e3ffd50a616787f291745f90e6c48b579c7cd0dd1af0ff74d7c600483012f47d1ffc7f1e7ffade78a51843addc1bc200951c8e6170aa.css"
+    integrity="sha512-xqlnG&#43;HbjJSQOOP/1QphZ4fykXRfkObEi1ecfNDdGvD/dNfGAEgwEvR9H/x/Hn/63nilGEOt3BvCAJUcjmFwqg==">
 
   
   
@@ -660,8 +660,11 @@
   <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
     
     <div class="min-w-0 min-h-0 max-w-prose w-full">
-      <div class="quote-form not-prose mx-auto w-full max-w-3xl">
+      
+<div class="quote-form not-prose mx-auto w-full max-w-3xl">
+  
   <p class="mb-6 text-neutral-600 dark:text-neutral-300">Enter your quantity and delivery location, then review your request and send it by email or WhatsApp.</p>
+  
   <form id="quote-request-form" class="space-y-6" novalidate>
     <div>
       <label for="quote-name" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Name</label>
@@ -679,11 +682,13 @@
       </div>
     </div>
 
+    
     <div>
       <label for="quote-product" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Product</label>
       <input id="quote-product" name="product" type="text" readonly class="w-full rounded-lg border border-neutral-300 bg-neutral-100 px-4 py-3 text-base text-neutral-700 outline-none dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200" />
       <p id="quote-product-details" class="mt-2 text-sm text-neutral-600 dark:text-neutral-300" hidden></p>
     </div>
+    
 
     <div class="grid gap-6 sm:grid-cols-2">
       <div>
@@ -698,7 +703,8 @@
 
     <div>
       <label for="quote-description" class="mb-2 block text-sm font-semibold text-neutral-800 dark:text-neutral-100">Additional notes (optional)</label>
-      <textarea id="quote-description" name="description" rows="3" class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/30 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"></textarea>
+      
+      <textarea id="quote-description" name="description" rows="3"  class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base text-neutral-900 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/30 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"></textarea>
     </div>
 
     <button type="submit" class="quote-prepare-button">
@@ -745,15 +751,19 @@
     const emailLink = document.getElementById('quote-email-link');
     const whatsappLink = document.getElementById('quote-whatsapp-link');
     const quoteEmail = "team@ikainex.com";
-    const quoteWhatsApp = "919876543210";
-    const contactPhone = "9876543210";
+    const quoteWhatsApp = "919496326193";
+    const contactPhone = "9496326193";
 
-    product.value = query.get('product') || 'General quote request';
-    const adcDetails = product.value === 'ADC Add-on Board'
+    const isCustom =  false ;
+    const description = form.elements.description;
+    if (product) product.value = query.get('product') || 'General quote request';
+    const adcDetails = product?.value === 'ADC Add-on Board'
       ? 'MCP3204 · 12-bit · 4 single-ended channels · SPI · up to 100 kSPS'
       : '';
-    productDetails.textContent = adcDetails;
-    productDetails.hidden = !adcDetails;
+    if (productDetails) {
+      productDetails.textContent = adcDetails;
+      productDetails.hidden = !adcDetails;
+    }
 
     form.addEventListener('input', function () {
       actions.classList.add('hidden');
@@ -762,23 +772,28 @@
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
+      if (isCustom) {
+        description.setCustomValidity(description.value.trim() ? '' : 'Describe what your board needs to do.');
+      }
       if (!form.reportValidity()) return;
 
       const values = new FormData(form);
+      const subject = isCustom ? 'Custom add-on board request' : 'Quote request: ' + values.get('product');
+      const notes = values.get('description').trim();
       const message = [
-        'Hello Ikainex, I would like to request a quote for an order.',
-        'Product: ' + values.get('product'),
+        isCustom ? 'Hello Ikainex, I would like to request a custom add-on board.' : 'Hello Ikainex, I would like to request a quote for an order.',
+        product && 'Product: ' + product.value,
         adcDetails && 'Board details: ' + adcDetails,
-        'Quantity: ' + values.get('quantity'),
-        'Delivery location: ' + values.get('delivery'),
+        values.get('quantity') && (isCustom ? 'Estimated quantity: ' : 'Quantity: ') + values.get('quantity'),
+        values.get('delivery') && 'Delivery location: ' + values.get('delivery'),
         'Name: ' + values.get('name'),
         'Phone: ' + values.get('phone'),
         'Email: ' + values.get('email'),
-        values.get('description').trim() && 'Notes: ' + values.get('description').trim(),
-        'Please confirm availability, pricing, shipping costs, and lead time.'
+        notes && (isCustom ? 'Board requirements: ' : 'Notes: ') + notes,
+        isCustom ? 'Please review the requirements and let me know the next steps.' : 'Please confirm availability, pricing, shipping costs, and lead time.'
       ].filter(Boolean).join('\n');
 
-      emailLink.href = 'mailto:' + quoteEmail + '?subject=' + encodeURIComponent('Quote request: ' + values.get('product')) + '&body=' + encodeURIComponent(message);
+      emailLink.href = 'mailto:' + quoteEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
       preview.value = message;
       whatsappLink.href = 'https://wa.me/' + quoteWhatsApp.replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(message);
       document.getElementById('quote-whatsapp-label').textContent = quoteWhatsApp ? 'Send by WhatsApp' : 'Open in WhatsApp';
@@ -835,7 +850,7 @@
   <ul>
     <li><span>General enquiries and quotes</span><a href="mailto:team@ikainex.com">team@ikainex.com</a></li>
     <li><span>Product support</span><a href="mailto:support@ikainex.com">support@ikainex.com</a></li>
-    <li><span>Phone</span><a href="tel:9876543210">9876543210</a></li>
+    <li><span>Phone</span><a href="tel:9496326193">9496326193</a></li>
   </ul>
 </details>
 <footer id="site-footer" class="py-10 print:hidden">

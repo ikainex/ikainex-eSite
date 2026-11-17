@@ -38,7 +38,7 @@
         {{ end }}
       </main>
       <div class="relative w-screen max-w-[1600px] px-[30px] start-[calc(max(-50vw,-800px)+50%)]">
-        {{- if or .IsHome (in (slice "eproducts" "request-quote") (lower .Section)) -}}
+        {{- if in (slice "eproducts" "request-quote" "request-custom-board") (lower .Section) -}}
           {{- partialCached "contact-details.html" . -}}
         {{- end -}}
         {{- partial "footer.html" . -}}

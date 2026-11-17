@@ -29,7 +29,7 @@ disableImageZoom = true
 # Quote request destinations. WhatsApp number must include country code, without + or spaces.
 quoteEmail = "team@ikainex.com"
 
-quoteWhatsApp = "919876543210"
+quoteWhatsApp = "919496326193"
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
@@ -52,7 +52,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 # metaDescriptionOrder = ["summary", "description", "site"] # Controls the fallback order for the HTML meta description. Valid values are "summary", "description", and "site".
 
 [contact]
-  phone = "9876543210"
+  phone = "9496326193"
   supportEmail = "support@ikainex.com"
 
 [header]

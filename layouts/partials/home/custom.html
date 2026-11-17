@@ -95,4 +95,49 @@
       </div>
     </div>
   </section>
+  <section id="contact" class="ik-wrap ik-section" aria-labelledby="ik-contact-title">
+    <h2 id="ik-contact-title">Contact us</h2>
+    <div class="ik-home-contact">
+      <div class="ik-home-contact-panel">
+        <h3>Get in touch</h3>
+        <dl>
+          <dt>General enquiries and quotes</dt>
+          <dd><a href="mailto:{{ site.Params.quoteEmail }}">{{ site.Params.quoteEmail }}</a></dd>
+          <dt>Product support</dt>
+          <dd><a href="mailto:{{ site.Params.contact.supportEmail }}">{{ site.Params.contact.supportEmail }}</a></dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:{{ site.Params.contact.phone }}">{{ site.Params.contact.phone }}</a></dd>
+        </dl>
+      </div>
+      <div class="ik-home-contact-panel">
+        <h3>Office address</h3>
+        <address itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Unit 101, Oxford Towers<br>139/88, HAL Old Airport Rd, Kodihalli</span><br>
+          <span itemprop="addressLocality">Bangalore</span>, <span itemprop="addressRegion">Karnataka</span> <span itemprop="postalCode">560008</span><br>
+          <span itemprop="addressCountry">India</span>
+        </address>
+      </div>
+    </div>
+  </section>
+  <section id="follow-us" class="ik-wrap ik-section" aria-labelledby="ik-follow-title">
+    <h2 id="ik-follow-title">Follow us</h2>
+    {{ $socialLinks := slice
+      (dict "name" "YouTube" "icon" "youtube" "url" "https://www.youtube.com/")
+      (dict "name" "Instagram" "icon" "instagram" "url" "https://www.instagram.com/")
+      (dict "name" "LinkedIn" "icon" "linkedin" "url" "https://www.linkedin.com/")
+    }}
+    {{ range where site.Menus.footer "Identifier" "github" }}
+      {{ $socialLinks = $socialLinks | append (dict "name" "GitHub" "icon" "github" "url" .URL) }}
+    {{ end }}
+    <ul class="ik-social-links">
+      {{ range $socialLinks }}
+        <li>
+          <a href="{{ .url }}">
+            <span aria-hidden="true">{{ partial "icon.html" .icon }}</span>
+            {{ .name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
 </div>
